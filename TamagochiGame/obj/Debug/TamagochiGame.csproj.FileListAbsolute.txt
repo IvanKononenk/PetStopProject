@@ -1,0 +1,10 @@
+D:\Git\gameProjectTamagochi\TamagochiGame\bin\Debug\TamagochiGame.exe.config
+D:\Git\gameProjectTamagochi\TamagochiGame\bin\Debug\TamagochiGame.exe
+D:\Git\gameProjectTamagochi\TamagochiGame\bin\Debug\TamagochiGame.pdb
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.AssemblyReference.cache
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.Form1.resources
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.Properties.Resources.resources
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.GenerateResource.cache
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.CoreCompileInputs.cache
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.exe
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.pdb
