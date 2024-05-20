@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace TamagochiGame
 {
-	public partial class Form1 : Form
+	public partial class FrmGame : Form
 	{
 		int feedAmount = 50;
-		public Form1()
+		public FrmGame()
 		{
 			InitializeComponent();
 		}
@@ -32,38 +32,56 @@ namespace TamagochiGame
 		{
 			int starveAmount = 1;
 
-			if (prBarHunger.Value - starveAmount < prBarHunger.Minimum)
-				prBarHunger.Value = prBarHunger.Minimum;
-			else prBarHunger.Value -= starveAmount;
+			if (PrBarHunger.Value - starveAmount < PrBarHunger.Minimum)
+				PrBarHunger.Value = PrBarHunger.Minimum;
+			else PrBarHunger.Value -= starveAmount;
 
-			if (prBarThirst.Value - starveAmount < prBarThirst.Minimum)
-				prBarThirst.Value = prBarThirst.Minimum;
-			else prBarThirst.Value -= starveAmount;
+			if (PrBarThirst.Value - starveAmount < PrBarThirst.Minimum)
+				PrBarThirst.Value = PrBarThirst.Minimum;
+			else PrBarThirst.Value -= starveAmount;
 
-			if (prBarHappy.Value - starveAmount < prBarHappy.Minimum)
-				prBarHappy.Value = prBarHappy.Minimum;
-			else prBarHappy.Value -= starveAmount;
+			if (PrBarHappy.Value - starveAmount < PrBarHappy.Minimum)
+				PrBarHappy.Value = PrBarHappy.Minimum;
+			else PrBarHappy.Value -= starveAmount;
 		}
 
 		private void BtnPlay_Click(object sender, EventArgs e)
 		{
-			if (prBarHappy.Value + feedAmount > prBarHappy.Maximum)
-				prBarHappy.Value = prBarHappy.Maximum;
-			else prBarHappy.Value += feedAmount;
+			if (PrBarHappy.Value + feedAmount > PrBarHappy.Maximum)
+				PrBarHappy.Value = PrBarHappy.Maximum;
+			else PrBarHappy.Value += feedAmount;
 		}
 
 		private void BtnFeed_Click(object sender, EventArgs e)
 		{
-			if (prBarHunger.Value + feedAmount > prBarHunger.Maximum)
-				prBarHunger.Value = prBarHunger.Maximum;
-			else prBarHunger.Value += feedAmount;
+			if (PrBarHunger.Value + feedAmount > PrBarHunger.Maximum)
+				PrBarHunger.Value = PrBarHunger.Maximum;
+			else PrBarHunger.Value += feedAmount;
 		}
 
 		private void BtnDrink_Click(object sender, EventArgs e)
 		{
-			if (prBarThirst.Value + feedAmount > prBarThirst.Maximum)
-				prBarThirst.Value = prBarThirst.Maximum;
-			else prBarThirst.Value += feedAmount;
+			if (PrBarThirst.Value + feedAmount > PrBarThirst.Maximum)
+				PrBarThirst.Value = PrBarThirst.Maximum;
+			else PrBarThirst.Value += feedAmount;
+		}
+
+		private void tsmiChangeBG_Click(object sender, EventArgs e)
+		{
+			BGChangeForm bgChange = new BGChangeForm();
+			if(bgChange.ShowDialog() == DialogResult.OK) 
+			{
+				PicBoxPet.BackgroundImage = Image.FromFile(bgChange.bgFileName);
+			}
+		}
+
+		private void TSMIChangePet_Click(object sender, EventArgs e)
+		{
+			PetChangeForm ptChange = new PetChangeForm();
+			if(ptChange.ShowDialog() == DialogResult.OK)
+			{
+				PicBoxPet.Image = Image.FromFile(ptChange.petFileName);
+			}
 		}
 	}
 }
