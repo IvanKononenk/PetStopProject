@@ -20,12 +20,12 @@ namespace TamagochiGame
 
 		private void BGChangeForm_Load(object sender, EventArgs e)
 		{
-			System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo("Sprites/backgrounds");
+			System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo("game/Sprites/backgrounds");
 			foreach (System.IO.FileInfo bg in dirInfo.GetFiles())
 			{
 				try
 				{
-					DGVBGs.Rows.Add("Sprites/backgrounds/" + bg.ToString(), Image.FromFile("Sprites/backgrounds/" + bg.ToString()));
+					DGVBGs.Rows.Add("Sprites/backgrounds/" + bg.ToString(), Image.FromFile("game/Sprites/backgrounds/" + bg.ToString()));
 				}
 				catch 
 				{

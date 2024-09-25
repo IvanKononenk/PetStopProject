@@ -43,6 +43,7 @@
 			this.TSMIDebug = new System.Windows.Forms.ToolStripMenuItem();
 			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
 			this.TSMIChangePet = new System.Windows.Forms.ToolStripMenuItem();
+			this.LblAge = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.MenuStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -166,10 +167,12 @@
 			// 
 			// MenuStrip
 			// 
+			this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
 			this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMIDebug});
 			this.MenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.MenuStrip.Name = "MenuStrip";
+			this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
 			this.MenuStrip.Size = new System.Drawing.Size(1034, 24);
 			this.MenuStrip.TabIndex = 10;
 			this.MenuStrip.Text = "menuStrip1";
@@ -180,28 +183,39 @@
             this.TSMIChangeBG,
             this.TSMIChangePet});
 			this.TSMIDebug.Name = "TSMIDebug";
-			this.TSMIDebug.Size = new System.Drawing.Size(64, 20);
+			this.TSMIDebug.Size = new System.Drawing.Size(64, 22);
 			this.TSMIDebug.Text = "Отладка";
 			// 
 			// TSMIChangeBG
 			// 
 			this.TSMIChangeBG.Name = "TSMIChangeBG";
-			this.TSMIChangeBG.Size = new System.Drawing.Size(180, 22);
+			this.TSMIChangeBG.Size = new System.Drawing.Size(173, 22);
 			this.TSMIChangeBG.Text = "Сменить фон";
 			this.TSMIChangeBG.Click += new System.EventHandler(this.tsmiChangeBG_Click);
 			// 
 			// TSMIChangePet
 			// 
 			this.TSMIChangePet.Name = "TSMIChangePet";
-			this.TSMIChangePet.Size = new System.Drawing.Size(180, 22);
+			this.TSMIChangePet.Size = new System.Drawing.Size(173, 22);
 			this.TSMIChangePet.Text = "Сменить питомца";
 			this.TSMIChangePet.Click += new System.EventHandler(this.TSMIChangePet_Click);
+			// 
+			// LblAge
+			// 
+			this.LblAge.AutoSize = true;
+			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblAge.Location = new System.Drawing.Point(969, 27);
+			this.LblAge.Name = "LblAge";
+			this.LblAge.Size = new System.Drawing.Size(53, 23);
+			this.LblAge.TabIndex = 11;
+			this.LblAge.Text = "label1";
 			// 
 			// FrmGame
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1034, 505);
+			this.Controls.Add(this.LblAge);
 			this.Controls.Add(this.BtnPlay);
 			this.Controls.Add(this.BtnDrink);
 			this.Controls.Add(this.BtnFeed);
@@ -214,12 +228,12 @@
 			this.Controls.Add(this.PicBoxPet);
 			this.Controls.Add(this.MenuStrip);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
 			this.MainMenuStrip = this.MenuStrip;
-			this.MinimumSize = new System.Drawing.Size(376, 400);
+			this.MinimumSize = new System.Drawing.Size(374, 394);
 			this.Name = "FrmGame";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Игра";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGame_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
 			this.MenuStrip.ResumeLayout(false);
@@ -245,6 +259,7 @@
 		private System.Windows.Forms.ToolStripMenuItem TSMIDebug;
 		private System.Windows.Forms.ToolStripMenuItem TSMIChangeBG;
 		private System.Windows.Forms.ToolStripMenuItem TSMIChangePet;
+		private System.Windows.Forms.Label LblAge;
 	}
 }
 

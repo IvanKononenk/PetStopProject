@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -15,6 +16,7 @@ namespace TamagochiGame
 	public partial class FrmGame : Form
 	{
 		int feedAmount = 50;
+		float timeAge = 0;
 		public FrmGame()
 		{
 			InitializeComponent();
@@ -22,6 +24,21 @@ namespace TamagochiGame
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			try
+			{
+				StreamReader saveData = new StreamReader("game/save.txt");
+				timeAge = float.Parse(saveData.ReadLine());
+				PrBarHunger.Value = int.Parse(saveData.ReadLine());
+				PrBarThirst.Value = int.Parse(saveData.ReadLine());
+				PrBarHappy.Value = int.Parse(saveData.ReadLine());
+				TimeSpan timeDiff = DateTime.Now - DateTime.Parse(saveData.ReadLine());
+				MessageBox.Show(timeDiff.TotalMinutes.ToString("F2"));
+				saveData.Close();
+			}
+			catch 
+			{
+				MessageBox.Show("Ошибка при прочтении файла сохранения! Игра начнется заново!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 			System.Windows.Forms.Timer aTimer = new System.Windows.Forms.Timer();
 			aTimer.Tick += Timer_Elapsed;
 			aTimer.Interval = 100;
@@ -43,6 +60,13 @@ namespace TamagochiGame
 			if (PrBarHappy.Value - starveAmount < PrBarHappy.Minimum)
 				PrBarHappy.Value = PrBarHappy.Minimum;
 			else PrBarHappy.Value -= starveAmount;
+
+			if ((PrBarThirst.Value + PrBarHappy.Value + PrBarThirst.Value) > 1000)
+			{
+				timeAge += 1f/10f;
+				LblAge.Text = timeAge.ToString("F0");
+
+			}
 		}
 
 		private void BtnPlay_Click(object sender, EventArgs e)
@@ -81,6 +105,24 @@ namespace TamagochiGame
 			if(ptChange.ShowDialog() == DialogResult.OK)
 			{
 				PicBoxPet.Image = Image.FromFile(ptChange.petFileName);
+			}
+		}
+
+		private void FrmGame_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			try
+			{
+				StreamWriter saveData = new StreamWriter("game/save.txt", false, Encoding.Unicode);
+				saveData.WriteLine(timeAge.ToString("F0"));
+				saveData.WriteLine(PrBarHunger.Value.ToString());
+				saveData.WriteLine(PrBarThirst.Value.ToString());
+				saveData.WriteLine(PrBarHappy.Value.ToString());
+				saveData.WriteLine(DateTime.Now.ToString());
+				saveData.Close();
+			}
+			catch 
+			{
+				MessageBox.Show("Возникла ошибка при сохранении файла! Прогресс не был сохранен!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 	}

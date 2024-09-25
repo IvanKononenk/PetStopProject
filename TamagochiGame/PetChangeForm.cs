@@ -20,12 +20,12 @@ namespace TamagochiGame
 
 		private void PetChangeForm_Load(object sender, EventArgs e)
 		{
-			System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo("Sprites/pets");
+			System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo("game/Sprites/pets");
 			foreach (System.IO.FileInfo bg in dirInfo.GetFiles())
 			{
 				try
 				{
-					DGVPets.Rows.Add("Sprites/pets/" + bg.ToString(), Image.FromFile("Sprites/pets/" + bg.ToString()));
+					DGVPets.Rows.Add("Sprites/pets/" + bg.ToString(), Image.FromFile("game/Sprites/pets/" + bg.ToString()));
 				}
 				catch
 				{
