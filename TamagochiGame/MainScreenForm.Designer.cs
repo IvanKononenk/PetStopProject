@@ -211,9 +211,9 @@
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
 			this.LblAge.Location = new System.Drawing.Point(847, 478);
 			this.LblAge.Name = "LblAge";
-			this.LblAge.Size = new System.Drawing.Size(53, 23);
+			this.LblAge.Size = new System.Drawing.Size(69, 23);
 			this.LblAge.TabIndex = 11;
-			this.LblAge.Text = "label1";
+			this.LblAge.Text = "Возраст";
 			// 
 			// LblMoney
 			// 
@@ -222,9 +222,9 @@
 			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
 			this.LblMoney.Location = new System.Drawing.Point(847, 27);
 			this.LblMoney.Name = "LblMoney";
-			this.LblMoney.Size = new System.Drawing.Size(53, 23);
+			this.LblMoney.Size = new System.Drawing.Size(65, 23);
 			this.LblMoney.TabIndex = 12;
-			this.LblMoney.Text = "label1";
+			this.LblMoney.Text = "Деньги";
 			// 
 			// LblDirty
 			// 

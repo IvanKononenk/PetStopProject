@@ -19,6 +19,7 @@ namespace TamagochiGame
 		int feedAmount = 50;
 		float timeAge = 0;
 		int money = 0;
+		int hunger, thrist, happiness, dirty;
 		Random chance = new Random();
 		public FrmMainScreen()
 		{
@@ -30,13 +31,13 @@ namespace TamagochiGame
 			try
 			{
 				StreamReader saveData = new StreamReader("game/save.txt");
-				timeAge = float.Parse(saveData.ReadLine());
-				PrBarHunger.Value = int.Parse(saveData.ReadLine());
-				PrBarThirst.Value = int.Parse(saveData.ReadLine());
-				PrBarHappy.Value = int.Parse(saveData.ReadLine());
-				PrBarDirty.Value = int.Parse(saveData.ReadLine());
-				money = int.Parse(saveData.ReadLine());
 				TimeSpan timeDiff = DateTime.Now - DateTime.Parse(saveData.ReadLine());
+				timeAge = float.Parse(saveData.ReadLine());
+				hunger = int.Parse(saveData.ReadLine());
+				thrist = int.Parse(saveData.ReadLine());
+				happiness = int.Parse(saveData.ReadLine());
+				dirty = int.Parse(saveData.ReadLine());
+				money = int.Parse(saveData.ReadLine());
 				MessageBox.Show(timeDiff.TotalMinutes.ToString("F2"));
 				saveData.Close();
 			}
@@ -44,6 +45,10 @@ namespace TamagochiGame
 			{
 				MessageBox.Show("Ошибка при прочтении файла сохранения! Игра начнется заново!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+			PrBarHunger.Value = hunger;
+			PrBarThirst.Value = thrist;
+			PrBarHappy.Value = happiness;
+			PrBarDirty.Value = dirty;
 			System.Windows.Forms.Timer aTimer = new System.Windows.Forms.Timer();
 			aTimer.Tick += Timer_Elapsed;
 			aTimer.Interval = 100;
@@ -131,13 +136,13 @@ namespace TamagochiGame
 			try
 			{
 				StreamWriter saveData = new StreamWriter("game/save.txt", false, Encoding.Unicode);
+				saveData.WriteLine(DateTime.Now.ToString());
 				saveData.WriteLine(timeAge.ToString("F0"));
 				saveData.WriteLine(PrBarHunger.Value.ToString());
 				saveData.WriteLine(PrBarThirst.Value.ToString());
 				saveData.WriteLine(PrBarHappy.Value.ToString());
 				saveData.WriteLine(PrBarDirty.Value.ToString());
 				saveData.WriteLine(money.ToString());
-				saveData.WriteLine(DateTime.Now.ToString());
 				saveData.Close();
 			}
 			catch 
