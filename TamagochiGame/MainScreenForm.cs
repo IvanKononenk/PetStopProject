@@ -33,9 +33,9 @@ namespace TamagochiGame
 				StreamReader saveData = new StreamReader("game/save.txt");
 				TimeSpan timeDiff = DateTime.Now - DateTime.Parse(saveData.ReadLine());
 				timeAge = float.Parse(saveData.ReadLine());
-				hunger = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 10;
-				thrist = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 20;
-				happiness = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 5;
+				hunger = int.Parse(saveData.ReadLine()) - (int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 10);
+				thrist = int.Parse(saveData.ReadLine()) - (int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 20);
+				happiness = int.Parse(saveData.ReadLine()) - (int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 5);
 				dirty = int.Parse(saveData.ReadLine());
 				money = int.Parse(saveData.ReadLine());
 				MessageBox.Show(timeDiff.TotalMinutes.ToString("F2"));
