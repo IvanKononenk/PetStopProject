@@ -25,7 +25,7 @@ namespace TamagochiGame
 			{
 				try
 				{
-					DGVBGs.Rows.Add("Sprites/backgrounds/" + bg.ToString(), Image.FromFile("game/Sprites/backgrounds/" + bg.ToString()));
+					DGVBGs.Rows.Add("game/Sprites/backgrounds/" + bg.ToString(), Image.FromFile("game/Sprites/backgrounds/" + bg.ToString()));
 				}
 				catch 
 				{

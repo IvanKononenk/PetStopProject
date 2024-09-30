@@ -25,7 +25,7 @@ namespace TamagochiGame
 			{
 				try
 				{
-					DGVPets.Rows.Add("Sprites/pets/" + bg.ToString(), Image.FromFile("game/Sprites/pets/" + bg.ToString()));
+					DGVPets.Rows.Add("game/Sprites/pets/" + bg.ToString(), Image.FromFile("game/Sprites/pets/" + bg.ToString()));
 				}
 				catch
 				{

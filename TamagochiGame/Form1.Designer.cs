@@ -44,6 +44,10 @@
 			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
 			this.TSMIChangePet = new System.Windows.Forms.ToolStripMenuItem();
 			this.LblAge = new System.Windows.Forms.Label();
+			this.LblMoney = new System.Windows.Forms.Label();
+			this.LblDirty = new System.Windows.Forms.Label();
+			this.PrBarDirty = new System.Windows.Forms.ProgressBar();
+			this.BtnClean = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.MenuStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -202,19 +206,68 @@
 			// 
 			// LblAge
 			// 
+			this.LblAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblAge.AutoSize = true;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(969, 27);
+			this.LblAge.Location = new System.Drawing.Point(969, 473);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(53, 23);
 			this.LblAge.TabIndex = 11;
 			this.LblAge.Text = "label1";
+			// 
+			// LblMoney
+			// 
+			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblMoney.AutoSize = true;
+			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblMoney.Location = new System.Drawing.Point(969, 27);
+			this.LblMoney.Name = "LblMoney";
+			this.LblMoney.Size = new System.Drawing.Size(53, 23);
+			this.LblMoney.TabIndex = 12;
+			this.LblMoney.Text = "label1";
+			// 
+			// LblDirty
+			// 
+			this.LblDirty.AutoSize = true;
+			this.LblDirty.BackColor = System.Drawing.Color.Transparent;
+			this.LblDirty.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblDirty.Location = new System.Drawing.Point(29, 431);
+			this.LblDirty.Name = "LblDirty";
+			this.LblDirty.Size = new System.Drawing.Size(57, 23);
+			this.LblDirty.TabIndex = 14;
+			this.LblDirty.Text = "Грязь:";
+			// 
+			// PrBarDirty
+			// 
+			this.PrBarDirty.Location = new System.Drawing.Point(92, 431);
+			this.PrBarDirty.MarqueeAnimationSpeed = 10;
+			this.PrBarDirty.Name = "PrBarDirty";
+			this.PrBarDirty.Size = new System.Drawing.Size(100, 23);
+			this.PrBarDirty.Step = 1;
+			this.PrBarDirty.TabIndex = 13;
+			// 
+			// BtnClean
+			// 
+			this.BtnClean.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnClean.AutoSize = true;
+			this.BtnClean.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.BtnClean.Location = new System.Drawing.Point(92, 460);
+			this.BtnClean.Name = "BtnClean";
+			this.BtnClean.Size = new System.Drawing.Size(100, 33);
+			this.BtnClean.TabIndex = 15;
+			this.BtnClean.Text = "Помыть";
+			this.BtnClean.UseVisualStyleBackColor = true;
+			this.BtnClean.Click += new System.EventHandler(this.BtnClean_Click);
 			// 
 			// FrmGame
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1034, 505);
+			this.Controls.Add(this.BtnClean);
+			this.Controls.Add(this.LblDirty);
+			this.Controls.Add(this.PrBarDirty);
+			this.Controls.Add(this.LblMoney);
 			this.Controls.Add(this.LblAge);
 			this.Controls.Add(this.BtnPlay);
 			this.Controls.Add(this.BtnDrink);
@@ -260,6 +313,10 @@
 		private System.Windows.Forms.ToolStripMenuItem TSMIChangeBG;
 		private System.Windows.Forms.ToolStripMenuItem TSMIChangePet;
 		private System.Windows.Forms.Label LblAge;
+		private System.Windows.Forms.Label LblMoney;
+		private System.Windows.Forms.Label LblDirty;
+		private System.Windows.Forms.ProgressBar PrBarDirty;
+		private System.Windows.Forms.Button BtnClean;
 	}
 }
 
