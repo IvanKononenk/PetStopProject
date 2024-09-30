@@ -1,6 +1,6 @@
 ﻿namespace TamagochiGame
 {
-	partial class FrmGame
+	partial class FrmMainScreen
 	{
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGame));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainScreen));
 			this.PrBarHunger = new System.Windows.Forms.ProgressBar();
 			this.PrBarThirst = new System.Windows.Forms.ProgressBar();
 			this.PrBarHappy = new System.Windows.Forms.ProgressBar();
@@ -92,7 +92,7 @@
 			this.PicBoxPet.InitialImage = null;
 			this.PicBoxPet.Location = new System.Drawing.Point(0, 24);
 			this.PicBoxPet.Name = "PicBoxPet";
-			this.PicBoxPet.Size = new System.Drawing.Size(1034, 481);
+			this.PicBoxPet.Size = new System.Drawing.Size(912, 486);
 			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.PicBoxPet.TabIndex = 3;
 			this.PicBoxPet.TabStop = false;
@@ -135,7 +135,7 @@
 			this.BtnFeed.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 			this.BtnFeed.AutoSize = true;
 			this.BtnFeed.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnFeed.Location = new System.Drawing.Point(349, 460);
+			this.BtnFeed.Location = new System.Drawing.Point(288, 465);
 			this.BtnFeed.Name = "BtnFeed";
 			this.BtnFeed.Size = new System.Drawing.Size(108, 33);
 			this.BtnFeed.TabIndex = 7;
@@ -148,7 +148,7 @@
 			this.BtnDrink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 			this.BtnDrink.AutoSize = true;
 			this.BtnDrink.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnDrink.Location = new System.Drawing.Point(463, 460);
+			this.BtnDrink.Location = new System.Drawing.Point(402, 465);
 			this.BtnDrink.Name = "BtnDrink";
 			this.BtnDrink.Size = new System.Drawing.Size(108, 33);
 			this.BtnDrink.TabIndex = 8;
@@ -161,7 +161,7 @@
 			this.BtnPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 			this.BtnPlay.AutoSize = true;
 			this.BtnPlay.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnPlay.Location = new System.Drawing.Point(577, 460);
+			this.BtnPlay.Location = new System.Drawing.Point(516, 465);
 			this.BtnPlay.Name = "BtnPlay";
 			this.BtnPlay.Size = new System.Drawing.Size(108, 33);
 			this.BtnPlay.TabIndex = 9;
@@ -177,7 +177,7 @@
 			this.MenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.MenuStrip.Name = "MenuStrip";
 			this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-			this.MenuStrip.Size = new System.Drawing.Size(1034, 24);
+			this.MenuStrip.Size = new System.Drawing.Size(912, 24);
 			this.MenuStrip.TabIndex = 10;
 			this.MenuStrip.Text = "menuStrip1";
 			// 
@@ -209,7 +209,7 @@
 			this.LblAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblAge.AutoSize = true;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(969, 473);
+			this.LblAge.Location = new System.Drawing.Point(847, 478);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(53, 23);
 			this.LblAge.TabIndex = 11;
@@ -220,7 +220,7 @@
 			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblMoney.AutoSize = true;
 			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblMoney.Location = new System.Drawing.Point(969, 27);
+			this.LblMoney.Location = new System.Drawing.Point(847, 27);
 			this.LblMoney.Name = "LblMoney";
 			this.LblMoney.Size = new System.Drawing.Size(53, 23);
 			this.LblMoney.TabIndex = 12;
@@ -228,10 +228,11 @@
 			// 
 			// LblDirty
 			// 
+			this.LblDirty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.LblDirty.AutoSize = true;
 			this.LblDirty.BackColor = System.Drawing.Color.Transparent;
 			this.LblDirty.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblDirty.Location = new System.Drawing.Point(29, 431);
+			this.LblDirty.Location = new System.Drawing.Point(29, 436);
 			this.LblDirty.Name = "LblDirty";
 			this.LblDirty.Size = new System.Drawing.Size(57, 23);
 			this.LblDirty.TabIndex = 14;
@@ -239,7 +240,8 @@
 			// 
 			// PrBarDirty
 			// 
-			this.PrBarDirty.Location = new System.Drawing.Point(92, 431);
+			this.PrBarDirty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.PrBarDirty.Location = new System.Drawing.Point(92, 436);
 			this.PrBarDirty.MarqueeAnimationSpeed = 10;
 			this.PrBarDirty.Name = "PrBarDirty";
 			this.PrBarDirty.Size = new System.Drawing.Size(100, 23);
@@ -248,10 +250,10 @@
 			// 
 			// BtnClean
 			// 
-			this.BtnClean.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnClean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.BtnClean.AutoSize = true;
 			this.BtnClean.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnClean.Location = new System.Drawing.Point(92, 460);
+			this.BtnClean.Location = new System.Drawing.Point(92, 465);
 			this.BtnClean.Name = "BtnClean";
 			this.BtnClean.Size = new System.Drawing.Size(100, 33);
 			this.BtnClean.TabIndex = 15;
@@ -259,11 +261,11 @@
 			this.BtnClean.UseVisualStyleBackColor = true;
 			this.BtnClean.Click += new System.EventHandler(this.BtnClean_Click);
 			// 
-			// FrmGame
+			// FrmMainScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1034, 505);
+			this.ClientSize = new System.Drawing.Size(912, 510);
 			this.Controls.Add(this.BtnClean);
 			this.Controls.Add(this.LblDirty);
 			this.Controls.Add(this.PrBarDirty);
@@ -282,8 +284,8 @@
 			this.Controls.Add(this.MenuStrip);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.MenuStrip;
-			this.MinimumSize = new System.Drawing.Size(374, 394);
-			this.Name = "FrmGame";
+			this.MinimumSize = new System.Drawing.Size(759, 394);
+			this.Name = "FrmMainScreen";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Игра";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGame_FormClosing);

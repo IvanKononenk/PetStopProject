@@ -14,13 +14,13 @@ using System.Windows.Forms;
 namespace TamagochiGame
 {
 	
-	public partial class FrmGame : Form
+	public partial class FrmMainScreen : Form
 	{
 		int feedAmount = 50;
 		float timeAge = 0;
 		int money = 0;
 		Random chance = new Random();
-		public FrmGame()
+		public FrmMainScreen()
 		{
 			InitializeComponent();
 		}
