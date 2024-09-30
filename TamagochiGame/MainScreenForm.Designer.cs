@@ -55,32 +55,29 @@
 			// PrBarHunger
 			// 
 			this.PrBarHunger.Location = new System.Drawing.Point(92, 27);
-			this.PrBarHunger.MarqueeAnimationSpeed = 10;
-			this.PrBarHunger.Maximum = 1000;
+			this.PrBarHunger.Maximum = 10000;
 			this.PrBarHunger.Name = "PrBarHunger";
 			this.PrBarHunger.Size = new System.Drawing.Size(100, 23);
 			this.PrBarHunger.TabIndex = 0;
-			this.PrBarHunger.Value = 1000;
+			this.PrBarHunger.Value = 10000;
 			// 
 			// PrBarThirst
 			// 
 			this.PrBarThirst.Location = new System.Drawing.Point(92, 56);
-			this.PrBarThirst.MarqueeAnimationSpeed = 10;
-			this.PrBarThirst.Maximum = 1000;
+			this.PrBarThirst.Maximum = 10000;
 			this.PrBarThirst.Name = "PrBarThirst";
 			this.PrBarThirst.Size = new System.Drawing.Size(100, 23);
 			this.PrBarThirst.TabIndex = 1;
-			this.PrBarThirst.Value = 1000;
+			this.PrBarThirst.Value = 10000;
 			// 
 			// PrBarHappy
 			// 
 			this.PrBarHappy.Location = new System.Drawing.Point(92, 85);
-			this.PrBarHappy.MarqueeAnimationSpeed = 10;
-			this.PrBarHappy.Maximum = 1000;
+			this.PrBarHappy.Maximum = 10000;
 			this.PrBarHappy.Name = "PrBarHappy";
 			this.PrBarHappy.Size = new System.Drawing.Size(100, 23);
 			this.PrBarHappy.TabIndex = 2;
-			this.PrBarHappy.Value = 1000;
+			this.PrBarHappy.Value = 10000;
 			// 
 			// PicBoxPet
 			// 

@@ -16,7 +16,7 @@ namespace TamagochiGame
 	
 	public partial class FrmMainScreen : Form
 	{
-		int feedAmount = 50;
+		int feedAmount = 500;
 		float timeAge = 0;
 		int money = 0;
 		int hunger, thrist, happiness, dirty;
@@ -33,9 +33,9 @@ namespace TamagochiGame
 				StreamReader saveData = new StreamReader("game/save.txt");
 				TimeSpan timeDiff = DateTime.Now - DateTime.Parse(saveData.ReadLine());
 				timeAge = float.Parse(saveData.ReadLine());
-				hunger = int.Parse(saveData.ReadLine());
-				thrist = int.Parse(saveData.ReadLine());
-				happiness = int.Parse(saveData.ReadLine());
+				hunger = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 10;
+				thrist = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 20;
+				happiness = int.Parse(saveData.ReadLine()) - int.Parse(timeDiff.TotalMinutes.ToString("F0")) * 5;
 				dirty = int.Parse(saveData.ReadLine());
 				money = int.Parse(saveData.ReadLine());
 				MessageBox.Show(timeDiff.TotalMinutes.ToString("F2"));
@@ -45,9 +45,21 @@ namespace TamagochiGame
 			{
 				MessageBox.Show("Ошибка при прочтении файла сохранения! Игра начнется заново!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
-			PrBarHunger.Value = hunger;
-			PrBarThirst.Value = thrist;
-			PrBarHappy.Value = happiness;
+			if (hunger < 500)
+				PrBarHunger.Value = 500;
+			else
+				PrBarHunger.Value = hunger;
+			
+			if (thrist < 500) 
+				PrBarHunger.Value = 500;
+			else
+				PrBarThirst.Value = thrist;
+			
+			if (happiness < 500)
+				PrBarHappy.Value = 500; 
+			else
+				PrBarHappy.Value = happiness;
+
 			PrBarDirty.Value = dirty;
 			System.Windows.Forms.Timer aTimer = new System.Windows.Forms.Timer();
 			aTimer.Tick += Timer_Elapsed;
@@ -57,7 +69,7 @@ namespace TamagochiGame
 
 		private void Timer_Elapsed(object sender, EventArgs e)
 		{
-			int starveAmount = 1;
+			int starveAmount = 10;
 
 			if (PrBarHunger.Value - starveAmount < PrBarHunger.Minimum)
 				PrBarHunger.Value = PrBarHunger.Minimum;
@@ -71,7 +83,7 @@ namespace TamagochiGame
 				PrBarHappy.Value = PrBarHappy.Minimum;
 			else PrBarHappy.Value -= starveAmount;
 
-			if ((PrBarThirst.Value + PrBarHappy.Value + PrBarThirst.Value) > 1000)
+			if ((PrBarThirst.Value + PrBarHappy.Value + PrBarThirst.Value) > 10000)
 			{
 				timeAge += 1f/10f;
 				LblAge.Text = timeAge.ToString("F0");
