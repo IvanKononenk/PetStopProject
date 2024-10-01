@@ -29,9 +29,6 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainScreen));
-			this.PrBarHunger = new System.Windows.Forms.ProgressBar();
-			this.PrBarThirst = new System.Windows.Forms.ProgressBar();
-			this.PrBarHappy = new System.Windows.Forms.ProgressBar();
 			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.LblHunger = new System.Windows.Forms.Label();
 			this.LblThirst = new System.Windows.Forms.Label();
@@ -44,40 +41,16 @@
 			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
 			this.TSMIChangePet = new System.Windows.Forms.ToolStripMenuItem();
 			this.LblAge = new System.Windows.Forms.Label();
-			this.LblMoney = new System.Windows.Forms.Label();
 			this.LblDirty = new System.Windows.Forms.Label();
-			this.PrBarDirty = new System.Windows.Forms.ProgressBar();
 			this.BtnClean = new System.Windows.Forms.Button();
+			this.PrBarDirty = new System.Windows.Forms.ProgressBar();
+			this.LblMoney = new System.Windows.Forms.Label();
+			this.PrBarHappy = new System.Windows.Forms.ProgressBar();
+			this.PrBarThirst = new System.Windows.Forms.ProgressBar();
+			this.PrBarHunger = new System.Windows.Forms.ProgressBar();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.MenuStrip.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// PrBarHunger
-			// 
-			this.PrBarHunger.Location = new System.Drawing.Point(92, 27);
-			this.PrBarHunger.Maximum = 10000;
-			this.PrBarHunger.Name = "PrBarHunger";
-			this.PrBarHunger.Size = new System.Drawing.Size(100, 23);
-			this.PrBarHunger.TabIndex = 0;
-			this.PrBarHunger.Value = 10000;
-			// 
-			// PrBarThirst
-			// 
-			this.PrBarThirst.Location = new System.Drawing.Point(92, 56);
-			this.PrBarThirst.Maximum = 10000;
-			this.PrBarThirst.Name = "PrBarThirst";
-			this.PrBarThirst.Size = new System.Drawing.Size(100, 23);
-			this.PrBarThirst.TabIndex = 1;
-			this.PrBarThirst.Value = 10000;
-			// 
-			// PrBarHappy
-			// 
-			this.PrBarHappy.Location = new System.Drawing.Point(92, 85);
-			this.PrBarHappy.Maximum = 10000;
-			this.PrBarHappy.Name = "PrBarHappy";
-			this.PrBarHappy.Size = new System.Drawing.Size(100, 23);
-			this.PrBarHappy.TabIndex = 2;
-			this.PrBarHappy.Value = 10000;
 			// 
 			// PicBoxPet
 			// 
@@ -212,17 +185,6 @@
 			this.LblAge.TabIndex = 11;
 			this.LblAge.Text = "Возраст";
 			// 
-			// LblMoney
-			// 
-			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.LblMoney.AutoSize = true;
-			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblMoney.Location = new System.Drawing.Point(847, 27);
-			this.LblMoney.Name = "LblMoney";
-			this.LblMoney.Size = new System.Drawing.Size(65, 23);
-			this.LblMoney.TabIndex = 12;
-			this.LblMoney.Text = "Деньги";
-			// 
 			// LblDirty
 			// 
 			this.LblDirty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -234,16 +196,6 @@
 			this.LblDirty.Size = new System.Drawing.Size(57, 23);
 			this.LblDirty.TabIndex = 14;
 			this.LblDirty.Text = "Грязь:";
-			// 
-			// PrBarDirty
-			// 
-			this.PrBarDirty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.PrBarDirty.Location = new System.Drawing.Point(92, 436);
-			this.PrBarDirty.MarqueeAnimationSpeed = 10;
-			this.PrBarDirty.Name = "PrBarDirty";
-			this.PrBarDirty.Size = new System.Drawing.Size(100, 23);
-			this.PrBarDirty.Step = 1;
-			this.PrBarDirty.TabIndex = 13;
 			// 
 			// BtnClean
 			// 
@@ -257,6 +209,55 @@
 			this.BtnClean.Text = "Помыть";
 			this.BtnClean.UseVisualStyleBackColor = true;
 			this.BtnClean.Click += new System.EventHandler(this.BtnClean_Click);
+			// 
+			// PrBarDirty
+			// 
+			this.PrBarDirty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.PrBarDirty.Location = new System.Drawing.Point(92, 436);
+			this.PrBarDirty.MarqueeAnimationSpeed = 10;
+			this.PrBarDirty.Name = "PrBarDirty";
+			this.PrBarDirty.Size = new System.Drawing.Size(100, 23);
+			this.PrBarDirty.Step = 1;
+			this.PrBarDirty.TabIndex = 13;
+			this.PrBarDirty.Value = 0;
+			// 
+			// LblMoney
+			// 
+			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblMoney.AutoSize = true;
+			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblMoney.Location = new System.Drawing.Point(847, 27);
+			this.LblMoney.Name = "LblMoney";
+			this.LblMoney.Size = new System.Drawing.Size(65, 23);
+			this.LblMoney.TabIndex = 12;
+			this.LblMoney.Text = "Деньги";
+			// 
+			// PrBarHappy
+			// 
+			this.PrBarHappy.Location = new System.Drawing.Point(92, 85);
+			this.PrBarHappy.Maximum = 10000;
+			this.PrBarHappy.Name = "PrBarHappy";
+			this.PrBarHappy.Size = new System.Drawing.Size(100, 23);
+			this.PrBarHappy.TabIndex = 2;
+			this.PrBarHappy.Value = 10000;
+			// 
+			// PrBarThirst
+			// 
+			this.PrBarThirst.Location = new System.Drawing.Point(92, 56);
+			this.PrBarThirst.Maximum = 10000;
+			this.PrBarThirst.Name = "PrBarThirst";
+			this.PrBarThirst.Size = new System.Drawing.Size(100, 23);
+			this.PrBarThirst.TabIndex = 1;
+			this.PrBarThirst.Value = 10000;
+			// 
+			// PrBarHunger
+			// 
+			this.PrBarHunger.Location = new System.Drawing.Point(92, 27);
+			this.PrBarHunger.Maximum = 10000;
+			this.PrBarHunger.Name = "PrBarHunger";
+			this.PrBarHunger.Size = new System.Drawing.Size(100, 23);
+			this.PrBarHunger.TabIndex = 0;
+			this.PrBarHunger.Value = 10000;
 			// 
 			// FrmMainScreen
 			// 

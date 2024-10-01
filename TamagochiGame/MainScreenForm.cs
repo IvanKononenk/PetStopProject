@@ -51,7 +51,7 @@ namespace TamagochiGame
 				PrBarHunger.Value = hunger;
 			
 			if (thrist < 500) 
-				PrBarHunger.Value = 500;
+				PrBarThirst.Value = 500;
 			else
 				PrBarThirst.Value = thrist;
 			
@@ -102,7 +102,9 @@ namespace TamagochiGame
 				if (chance.Next(0, 10) == 9)
 					money += 1;
 				if (chance.Next(0, 5) == 4)
-					PrBarDirty.Value += 10;
+					if (!(PrBarDirty.Value + 10 >= 100))
+						PrBarDirty.Value += 10;
+					else PrBarDirty.Value = 100;
 			}
 		}
 
@@ -114,7 +116,9 @@ namespace TamagochiGame
 			{
 				PrBarHunger.Value += feedAmount;
 				if (chance.Next(0, 10) == 9)
-					PrBarDirty.Value += 1;
+					if (!(PrBarDirty.Value + 1 >= 100))
+						PrBarDirty.Value += 1;
+					else PrBarDirty.Value = 100;
 			}
 		}
 
