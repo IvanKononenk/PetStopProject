@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainScreen));
 			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.LblHunger = new System.Windows.Forms.Label();
@@ -48,8 +49,13 @@
 			this.PrBarHappy = new System.Windows.Forms.ProgressBar();
 			this.PrBarThirst = new System.Windows.Forms.ProgressBar();
 			this.PrBarHunger = new System.Windows.Forms.ProgressBar();
+			this.CMSFeed = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.FoodOne = new System.Windows.Forms.ToolStripMenuItem();
+			this.FoodTwo = new System.Windows.Forms.ToolStripMenuItem();
+			this.FoodThree = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.MenuStrip.SuspendLayout();
+			this.CMSFeed.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// PicBoxPet
@@ -219,7 +225,6 @@
 			this.PrBarDirty.Size = new System.Drawing.Size(100, 23);
 			this.PrBarDirty.Step = 1;
 			this.PrBarDirty.TabIndex = 13;
-			this.PrBarDirty.Value = 0;
 			// 
 			// LblMoney
 			// 
@@ -259,6 +264,39 @@
 			this.PrBarHunger.TabIndex = 0;
 			this.PrBarHunger.Value = 10000;
 			// 
+			// CMSFeed
+			// 
+			this.CMSFeed.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FoodOne,
+            this.FoodTwo,
+            this.FoodThree});
+			this.CMSFeed.Name = "CMSFeed";
+			this.CMSFeed.Size = new System.Drawing.Size(114, 70);
+			// 
+			// FoodOne
+			// 
+			this.FoodOne.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.FoodOne.Name = "FoodOne";
+			this.FoodOne.Size = new System.Drawing.Size(180, 22);
+			this.FoodOne.Text = "Корм 1";
+			this.FoodOne.Click += new System.EventHandler(this.FoodOne_Click);
+			// 
+			// FoodTwo
+			// 
+			this.FoodTwo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.FoodTwo.Name = "FoodTwo";
+			this.FoodTwo.Size = new System.Drawing.Size(180, 22);
+			this.FoodTwo.Text = "Корм 2";
+			this.FoodTwo.Click += new System.EventHandler(this.FoodTwo_Click);
+			// 
+			// FoodThree
+			// 
+			this.FoodThree.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.FoodThree.Name = "FoodThree";
+			this.FoodThree.Size = new System.Drawing.Size(180, 22);
+			this.FoodThree.Text = "Корм 3";
+			this.FoodThree.Click += new System.EventHandler(this.FoodThree_Click);
+			// 
 			// FrmMainScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,12 +323,13 @@
 			this.MinimumSize = new System.Drawing.Size(759, 394);
 			this.Name = "FrmMainScreen";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Игра";
+			this.Text = "PetStop";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGame_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
 			this.MenuStrip.ResumeLayout(false);
 			this.MenuStrip.PerformLayout();
+			this.CMSFeed.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -317,6 +356,10 @@
 		private System.Windows.Forms.Label LblDirty;
 		private System.Windows.Forms.ProgressBar PrBarDirty;
 		private System.Windows.Forms.Button BtnClean;
+		private System.Windows.Forms.ContextMenuStrip CMSFeed;
+		private System.Windows.Forms.ToolStripMenuItem FoodOne;
+		private System.Windows.Forms.ToolStripMenuItem FoodTwo;
+		private System.Windows.Forms.ToolStripMenuItem FoodThree;
 	}
 }
 

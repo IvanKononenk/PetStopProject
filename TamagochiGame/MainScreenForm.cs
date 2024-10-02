@@ -17,8 +17,8 @@ namespace TamagochiGame
 	public partial class FrmMainScreen : Form
 	{
 		int feedAmount = 500;
-		float timeAge = 0;
-		int money = 0;
+		float timeAge;
+		int money;
 		int hunger, thrist, happiness, dirty;
 		Random chance = new Random();
 		public FrmMainScreen()
@@ -110,16 +110,7 @@ namespace TamagochiGame
 
 		private void BtnFeed_Click(object sender, EventArgs e)
 		{
-			if (PrBarHunger.Value + feedAmount > PrBarHunger.Maximum)
-				PrBarHunger.Value = PrBarHunger.Maximum;
-			else
-			{
-				PrBarHunger.Value += feedAmount;
-				if (chance.Next(0, 10) == 9)
-					if (!(PrBarDirty.Value + 1 >= 100))
-						PrBarDirty.Value += 1;
-					else PrBarDirty.Value = 100;
-			}
+			CMSFeed.Show(this, BtnFeed.Location);
 		}
 
 		private void BtnDrink_Click(object sender, EventArgs e)
@@ -136,6 +127,64 @@ namespace TamagochiGame
 			{
 				PicBoxPet.BackgroundImage = Image.FromFile(bgChange.bgFileName);
 			}
+		}
+
+		private void FoodOne_Click(object sender, EventArgs e)
+		{
+			if (money >= 1)
+			{
+				money -= 1;
+				if (PrBarHunger.Value + 1000 > PrBarHunger.Maximum)
+					PrBarHunger.Value = PrBarHunger.Maximum;
+				else
+				{
+					PrBarHunger.Value += 1000;
+					if (chance.Next(0, 10) == 9)
+						if (!(PrBarDirty.Value + 1 >= 100))
+							PrBarDirty.Value += 1;
+						else PrBarDirty.Value = 100;
+				}
+			}
+			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+		}
+
+		private void FoodTwo_Click(object sender, EventArgs e)
+		{
+			if (money >= 2)
+			{
+				money -= 2;
+				if (PrBarHunger.Value + 2500 > PrBarHunger.Maximum)
+					PrBarHunger.Value = PrBarHunger.Maximum;
+				else
+				{
+					PrBarHunger.Value += 2500;
+					if (chance.Next(0, 10) == 9)
+						if (!(PrBarDirty.Value + 1 >= 100))
+							PrBarDirty.Value += 1;
+						else PrBarDirty.Value = 100;
+				}
+			}
+			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		}
+
+		private void FoodThree_Click(object sender, EventArgs e)
+		{
+			if (money >= 3)
+			{
+				money -= 3;
+				if (PrBarHunger.Value + 5000 > PrBarHunger.Maximum)
+					PrBarHunger.Value = PrBarHunger.Maximum;
+				else
+				{
+					PrBarHunger.Value += 5000;
+					if (chance.Next(0, 10) == 9)
+						if (!(PrBarDirty.Value + 1 >= 100))
+							PrBarDirty.Value += 1;
+						else PrBarDirty.Value = 100;
+				}
+			}
+			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
 		private void TSMIChangePet_Click(object sender, EventArgs e)
