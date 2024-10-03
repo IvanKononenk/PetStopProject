@@ -187,9 +187,9 @@
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
 			this.LblAge.Location = new System.Drawing.Point(847, 478);
 			this.LblAge.Name = "LblAge";
-			this.LblAge.Size = new System.Drawing.Size(69, 23);
+			this.LblAge.Size = new System.Drawing.Size(20, 23);
 			this.LblAge.TabIndex = 11;
-			this.LblAge.Text = "Возраст";
+			this.LblAge.Text = "0";
 			// 
 			// LblDirty
 			// 
@@ -277,7 +277,7 @@
 			// 
 			this.FoodOne.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.FoodOne.Name = "FoodOne";
-			this.FoodOne.Size = new System.Drawing.Size(180, 22);
+			this.FoodOne.Size = new System.Drawing.Size(113, 22);
 			this.FoodOne.Text = "Корм 1";
 			this.FoodOne.Click += new System.EventHandler(this.FoodOne_Click);
 			// 
@@ -285,7 +285,7 @@
 			// 
 			this.FoodTwo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.FoodTwo.Name = "FoodTwo";
-			this.FoodTwo.Size = new System.Drawing.Size(180, 22);
+			this.FoodTwo.Size = new System.Drawing.Size(113, 22);
 			this.FoodTwo.Text = "Корм 2";
 			this.FoodTwo.Click += new System.EventHandler(this.FoodTwo_Click);
 			// 
@@ -293,7 +293,7 @@
 			// 
 			this.FoodThree.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.FoodThree.Name = "FoodThree";
-			this.FoodThree.Size = new System.Drawing.Size(180, 22);
+			this.FoodThree.Size = new System.Drawing.Size(113, 22);
 			this.FoodThree.Text = "Корм 3";
 			this.FoodThree.Click += new System.EventHandler(this.FoodThree_Click);
 			// 

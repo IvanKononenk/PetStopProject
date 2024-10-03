@@ -27,20 +27,26 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D4C5463D1A00434BB93498A3FD248468"
+        "MsmKey" = "8:_AF9A38E3B8DF44ECB08A79C2D1E00993"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E7E4C0B4B58C417A915F50BB8471768D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_EC43F40B95C934BE09440D8B4BF206D1"
-        "OwnerKey" = "8:_D4C5463D1A00434BB93498A3FD248468"
+        "OwnerKey" = "8:_AF9A38E3B8DF44ECB08A79C2D1E00993"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D4C5463D1A00434BB93498A3FD248468"
+        "OwnerKey" = "8:_AF9A38E3B8DF44ECB08A79C2D1E00993"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -106,6 +112,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -162,6 +176,26 @@
             "TargetName" = "8:gs_1.png"
             "Tag" = "8:"
             "Folder" = "8:_9102F7D581104064B6C4108E6ACE071F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E7E4C0B4B58C417A915F50BB8471768D"
+            {
+            "SourcePath" = "8:..\\TamagochiGame\\bin\\Debug\\game\\Sprites\\logo.ico"
+            "TargetName" = "8:logo.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_4C94CE70AD784210A350D15129C51AAB"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -237,7 +271,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_3320734D14994872B20CB959E43ECB36"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[DesktopFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -245,7 +279,7 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_BBC6875C782F415CB200824ED66F87E5"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_0D372ED3DF024A4CA005CCE63D70844D"
                     {
                     "Name" = "8:game"
                     "AlwaysCreate" = "11:FALSE"
@@ -308,7 +342,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PetStop"
         "ProductCode" = "8:{2999B0CD-5FD3-4674-9A08-49AEAFEE5B03}"
-        "PackageCode" = "8:{3F0F1D90-0DEC-4E89-AED4-8647D604FA45}"
+        "PackageCode" = "8:{DB289144-45FD-460A-BD7D-56DE977B314B}"
         "UpgradeCode" = "8:{E5CC6A8B-624A-4FC8-9AB2-8533EA7C03AD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -428,20 +462,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AA243C189FCE4040B512B214FA4731AE"
-            {
-            "Name" = "8:Shortcut to %sОсновные выходные файлы from TamagochiGame (Active)"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_D4C5463D1A00434BB93498A3FD248468"
-            "Folder" = "8:_2BA5B60FC4DF4F69B5C2196D63BABA1D"
-            "WorkingFolder" = "8:_3320734D14994872B20CB959E43ECB36"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {
@@ -841,7 +861,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D4C5463D1A00434BB93498A3FD248468"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AF9A38E3B8DF44ECB08A79C2D1E00993"
             {
             "SourcePath" = "8:..\\TamagochiGame\\obj\\Debug\\PetStop.exe"
             "TargetName" = "8:"
