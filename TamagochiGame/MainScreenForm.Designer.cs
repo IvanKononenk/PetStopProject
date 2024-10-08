@@ -53,6 +53,7 @@
 			this.FoodOne = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodTwo = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodThree = new System.Windows.Forms.ToolStripMenuItem();
+			this.TSMIPromocode = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.MenuStrip.SuspendLayout();
 			this.CMSFeed.SuspendLayout();
@@ -149,7 +150,8 @@
 			// 
 			this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
 			this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMIDebug});
+            this.TSMIDebug,
+            this.TSMIPromocode});
 			this.MenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.MenuStrip.Name = "MenuStrip";
 			this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -297,6 +299,13 @@
 			this.FoodThree.Text = "Корм 3";
 			this.FoodThree.Click += new System.EventHandler(this.FoodThree_Click);
 			// 
+			// TSMIPromocode
+			// 
+			this.TSMIPromocode.Name = "TSMIPromocode";
+			this.TSMIPromocode.Size = new System.Drawing.Size(115, 22);
+			this.TSMIPromocode.Text = "Ввести промокод";
+			this.TSMIPromocode.Click += new System.EventHandler(this.TSMIPromocode_Click);
+			// 
 			// FrmMainScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,6 +369,7 @@
 		private System.Windows.Forms.ToolStripMenuItem FoodOne;
 		private System.Windows.Forms.ToolStripMenuItem FoodTwo;
 		private System.Windows.Forms.ToolStripMenuItem FoodThree;
+		private System.Windows.Forms.ToolStripMenuItem TSMIPromocode;
 	}
 }
 

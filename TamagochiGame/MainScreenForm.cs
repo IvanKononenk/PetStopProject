@@ -187,6 +187,11 @@ namespace TamagochiGame
 			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
+		private void TSMIPromocode_Click(object sender, EventArgs e)
+		{
+
+		}
+
 		private void TSMIChangePet_Click(object sender, EventArgs e)
 		{
 			PetChangeForm ptChange = new PetChangeForm();
