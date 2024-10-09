@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -189,7 +190,8 @@ namespace TamagochiGame
 
 		private void TSMIPromocode_Click(object sender, EventArgs e)
 		{
-
+			EnterPromocodeForm EPForm = new EnterPromocodeForm();
+			EPForm.ShowDialog();
 		}
 
 		private void TSMIChangePet_Click(object sender, EventArgs e)

@@ -36,8 +36,9 @@
 			// 
 			// LblEnterPromocode
 			// 
+			this.LblEnterPromocode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblEnterPromocode.AutoSize = true;
-			this.LblEnterPromocode.Location = new System.Drawing.Point(15, 97);
+			this.LblEnterPromocode.Location = new System.Drawing.Point(18, 18);
 			this.LblEnterPromocode.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
 			this.LblEnterPromocode.Name = "LblEnterPromocode";
 			this.LblEnterPromocode.Size = new System.Drawing.Size(187, 26);
@@ -46,16 +47,18 @@
 			// 
 			// TxtBxPromocode
 			// 
-			this.TxtBxPromocode.Location = new System.Drawing.Point(214, 94);
-			this.TxtBxPromocode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.TxtBxPromocode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.TxtBxPromocode.Location = new System.Drawing.Point(217, 15);
+			this.TxtBxPromocode.Margin = new System.Windows.Forms.Padding(6);
 			this.TxtBxPromocode.Name = "TxtBxPromocode";
 			this.TxtBxPromocode.Size = new System.Drawing.Size(196, 34);
 			this.TxtBxPromocode.TabIndex = 1;
 			// 
 			// BtnExit
 			// 
-			this.BtnExit.Location = new System.Drawing.Point(15, 189);
-			this.BtnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.BtnExit.Location = new System.Drawing.Point(20, 76);
+			this.BtnExit.Margin = new System.Windows.Forms.Padding(6);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(150, 46);
 			this.BtnExit.TabIndex = 2;
@@ -65,8 +68,9 @@
 			// 
 			// BtnCheckPromocode
 			// 
-			this.BtnCheckPromocode.Location = new System.Drawing.Point(393, 325);
-			this.BtnCheckPromocode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.BtnCheckPromocode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.BtnCheckPromocode.Location = new System.Drawing.Point(263, 76);
+			this.BtnCheckPromocode.Margin = new System.Windows.Forms.Padding(6);
 			this.BtnCheckPromocode.Name = "BtnCheckPromocode";
 			this.BtnCheckPromocode.Size = new System.Drawing.Size(150, 46);
 			this.BtnCheckPromocode.TabIndex = 3;
@@ -77,13 +81,13 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 26F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(692, 445);
+			this.ClientSize = new System.Drawing.Size(428, 137);
 			this.Controls.Add(this.BtnCheckPromocode);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.TxtBxPromocode);
 			this.Controls.Add(this.LblEnterPromocode);
 			this.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "EnterPromocodeForm";
 			this.Text = "EnterPromocodeForm";
 			this.ResumeLayout(false);
