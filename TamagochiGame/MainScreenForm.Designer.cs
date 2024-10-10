@@ -30,7 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainScreen));
-			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.LblHunger = new System.Windows.Forms.Label();
 			this.LblThirst = new System.Windows.Forms.Label();
 			this.LblHappy = new System.Windows.Forms.Label();
@@ -38,9 +37,6 @@
 			this.BtnDrink = new System.Windows.Forms.Button();
 			this.BtnPlay = new System.Windows.Forms.Button();
 			this.MenuStrip = new System.Windows.Forms.MenuStrip();
-			this.TSMIDebug = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIChangePet = new System.Windows.Forms.ToolStripMenuItem();
 			this.LblAge = new System.Windows.Forms.Label();
 			this.LblDirty = new System.Windows.Forms.Label();
 			this.BtnClean = new System.Windows.Forms.Button();
@@ -53,26 +49,14 @@
 			this.FoodOne = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodTwo = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodThree = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIPromocode = new System.Windows.Forms.ToolStripMenuItem();
-			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
+			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.TSMIFieldBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.TSMIHouseBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.MenuStrip.SuspendLayout();
 			this.CMSFeed.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// PicBoxPet
-			// 
-			this.PicBoxPet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.BackgroundImage")));
-			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
-			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PicBoxPet.Image = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.Image")));
-			this.PicBoxPet.InitialImage = null;
-			this.PicBoxPet.Location = new System.Drawing.Point(0, 24);
-			this.PicBoxPet.Name = "PicBoxPet";
-			this.PicBoxPet.Size = new System.Drawing.Size(912, 486);
-			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.PicBoxPet.TabIndex = 3;
-			this.PicBoxPet.TabStop = false;
 			// 
 			// LblHunger
 			// 
@@ -150,37 +134,13 @@
 			// 
 			this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
 			this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMIDebug,
-            this.TSMIPromocode});
+            this.TSMIChangeBG});
 			this.MenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.MenuStrip.Name = "MenuStrip";
 			this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
 			this.MenuStrip.Size = new System.Drawing.Size(912, 24);
 			this.MenuStrip.TabIndex = 10;
 			this.MenuStrip.Text = "menuStrip1";
-			// 
-			// TSMIDebug
-			// 
-			this.TSMIDebug.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMIChangeBG,
-            this.TSMIChangePet});
-			this.TSMIDebug.Name = "TSMIDebug";
-			this.TSMIDebug.Size = new System.Drawing.Size(64, 22);
-			this.TSMIDebug.Text = "Отладка";
-			// 
-			// TSMIChangeBG
-			// 
-			this.TSMIChangeBG.Name = "TSMIChangeBG";
-			this.TSMIChangeBG.Size = new System.Drawing.Size(173, 22);
-			this.TSMIChangeBG.Text = "Сменить фон";
-			this.TSMIChangeBG.Click += new System.EventHandler(this.tsmiChangeBG_Click);
-			// 
-			// TSMIChangePet
-			// 
-			this.TSMIChangePet.Name = "TSMIChangePet";
-			this.TSMIChangePet.Size = new System.Drawing.Size(173, 22);
-			this.TSMIChangePet.Text = "Сменить питомца";
-			this.TSMIChangePet.Click += new System.EventHandler(this.TSMIChangePet_Click);
 			// 
 			// LblAge
 			// 
@@ -299,12 +259,43 @@
 			this.FoodThree.Text = "Корм 3";
 			this.FoodThree.Click += new System.EventHandler(this.FoodThree_Click);
 			// 
-			// TSMIPromocode
+			// TSMIChangeBG
 			// 
-			this.TSMIPromocode.Name = "TSMIPromocode";
-			this.TSMIPromocode.Size = new System.Drawing.Size(115, 22);
-			this.TSMIPromocode.Text = "Ввести промокод";
-			this.TSMIPromocode.Click += new System.EventHandler(this.TSMIPromocode_Click);
+			this.TSMIChangeBG.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMIFieldBG,
+            this.TSMIHouseBG});
+			this.TSMIChangeBG.Name = "TSMIChangeBG";
+			this.TSMIChangeBG.Size = new System.Drawing.Size(93, 22);
+			this.TSMIChangeBG.Text = "Сменить фон";
+			// 
+			// TSMIFieldBG
+			// 
+			this.TSMIFieldBG.Name = "TSMIFieldBG";
+			this.TSMIFieldBG.Size = new System.Drawing.Size(180, 22);
+			this.TSMIFieldBG.Text = "Поле";
+			this.TSMIFieldBG.Click += new System.EventHandler(this.TSMIFieldBG_Click);
+			// 
+			// TSMIHouseBG
+			// 
+			this.TSMIHouseBG.Name = "TSMIHouseBG";
+			this.TSMIHouseBG.Size = new System.Drawing.Size(180, 22);
+			this.TSMIHouseBG.Text = "Дом";
+			this.TSMIHouseBG.Click += new System.EventHandler(this.TSMIHouseBG_Click);
+			// 
+			// PicBoxPet
+			// 
+			this.PicBoxPet.BackgroundImage = global::PetStop.Properties.Resources.bgField;
+			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
+			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
+			this.PicBoxPet.InitialImage = null;
+			this.PicBoxPet.Location = new System.Drawing.Point(0, 24);
+			this.PicBoxPet.Name = "PicBoxPet";
+			this.PicBoxPet.Size = new System.Drawing.Size(912, 486);
+			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.PicBoxPet.TabIndex = 3;
+			this.PicBoxPet.TabStop = false;
 			// 
 			// FrmMainScreen
 			// 
@@ -335,10 +326,10 @@
 			this.Text = "PetStop";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGame_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
 			this.MenuStrip.ResumeLayout(false);
 			this.MenuStrip.PerformLayout();
 			this.CMSFeed.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -357,9 +348,6 @@
 		private System.Windows.Forms.Button BtnDrink;
 		private System.Windows.Forms.Button BtnPlay;
 		private System.Windows.Forms.MenuStrip MenuStrip;
-		private System.Windows.Forms.ToolStripMenuItem TSMIDebug;
-		private System.Windows.Forms.ToolStripMenuItem TSMIChangeBG;
-		private System.Windows.Forms.ToolStripMenuItem TSMIChangePet;
 		private System.Windows.Forms.Label LblAge;
 		private System.Windows.Forms.Label LblMoney;
 		private System.Windows.Forms.Label LblDirty;
@@ -369,7 +357,9 @@
 		private System.Windows.Forms.ToolStripMenuItem FoodOne;
 		private System.Windows.Forms.ToolStripMenuItem FoodTwo;
 		private System.Windows.Forms.ToolStripMenuItem FoodThree;
-		private System.Windows.Forms.ToolStripMenuItem TSMIPromocode;
+		private System.Windows.Forms.ToolStripMenuItem TSMIChangeBG;
+		private System.Windows.Forms.ToolStripMenuItem TSMIFieldBG;
+		private System.Windows.Forms.ToolStripMenuItem TSMIHouseBG;
 	}
 }
 

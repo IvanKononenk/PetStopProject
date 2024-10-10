@@ -11,8 +11,6 @@ D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.frmGame.resour
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.BGChangeForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.PetChangeForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.AssemblyReference.cache
-C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.BGChangeForm.resources
-C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.PetChangeForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.GenerateResource.cache
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\TamagochiGame.FrmMainScreen.resources

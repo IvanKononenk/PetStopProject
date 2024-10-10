@@ -72,52 +72,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BGChangeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BGChangeForm.Designer.cs">
-      <DependentUpon>BGChangeForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EnterPromocodeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EnterPromocodeForm.Designer.cs">
-      <DependentUpon>EnterPromocodeForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainScreenForm.Designer.cs">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PetChangeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PetChangeForm.Designer.cs">
-      <DependentUpon>PetChangeForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BGChangeForm.resx">
-      <DependentUpon>BGChangeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EnterPromocodeForm.resx">
-      <DependentUpon>EnterPromocodeForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainScreenForm.resx">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PetChangeForm.resx">
-      <DependentUpon>PetChangeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -141,6 +120,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\petPlatypus.png" />
+    <None Include="Resources\petPerry.png" />
+    <None Include="Resources\petParrot.png" />
+    <None Include="Resources\petGS3.png" />
+    <None Include="Resources\petGS2.png" />
+    <None Include="Resources\petGS1.png" />
+    <None Include="Resources\bgHouse.jpg" />
+    <None Include="Resources\bgField.jpg" />
+    <None Include="Resources\taco.png" />
+    <None Include="Resources\soapShadow.png" />
+    <None Include="Resources\soap.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\sandwich.png" />
+    <None Include="Resources\hat.png" />
+    <None Include="Resources\crate3.png" />
+    <None Include="Resources\crate2.png" />
+    <None Include="Resources\crate1.png" />
+    <None Include="Resources\cookie.png" />
+    <None Include="Resources\chicken.png" />
+    <None Include="Resources\btnWash.png" />
+    <None Include="Resources\btnFeed.png" />
+    <None Include="Resources\btnDrink.png" />
+    <None Include="Resources\btnBlank.png" />
+    <None Include="Resources\bone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

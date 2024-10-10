@@ -1,4 +1,5 @@
 ﻿using PetStop;
+using PetStop.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -120,15 +121,6 @@ namespace TamagochiGame
 				PrBarThirst.Value = PrBarThirst.Maximum;
 			else PrBarThirst.Value += feedAmount;
 		}
-		
-		private void tsmiChangeBG_Click(object sender, EventArgs e)
-		{
-			BGChangeForm bgChange = new BGChangeForm();
-			if(bgChange.ShowDialog() == DialogResult.OK) 
-			{
-				PicBoxPet.BackgroundImage = Image.FromFile(bgChange.bgFileName);
-			}
-		}
 
 		private void FoodOne_Click(object sender, EventArgs e)
 		{
@@ -169,6 +161,16 @@ namespace TamagochiGame
 			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
+		private void TSMIFieldBG_Click(object sender, EventArgs e)
+		{
+			PicBoxPet.BackgroundImage = Resources.bgField;
+		}
+
+		private void TSMIHouseBG_Click(object sender, EventArgs e)
+		{
+			PicBoxPet.BackgroundImage = Resources.bgHouse;
+		}
+
 		private void FoodThree_Click(object sender, EventArgs e)
 		{
 			if (money >= 3)
@@ -186,21 +188,6 @@ namespace TamagochiGame
 				}
 			}
 			else MessageBox.Show("Недостаточно средств!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		}
-
-		private void TSMIPromocode_Click(object sender, EventArgs e)
-		{
-			EnterPromocodeForm EPForm = new EnterPromocodeForm();
-			EPForm.ShowDialog();
-		}
-
-		private void TSMIChangePet_Click(object sender, EventArgs e)
-		{
-			PetChangeForm ptChange = new PetChangeForm();
-			if(ptChange.ShowDialog() == DialogResult.OK)
-			{
-				PicBoxPet.Image = Image.FromFile(ptChange.petFileName);
-			}
 		}
 
 		private void FrmGame_FormClosing(object sender, FormClosingEventArgs e)
