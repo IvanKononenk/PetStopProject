@@ -113,6 +113,16 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnDrinkHover {
+            get {
+                object obj = ResourceManager.GetObject("btnDrinkHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnFeed {
             get {
                 object obj = ResourceManager.GetObject("btnFeed", resourceCulture);
@@ -123,9 +133,29 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnFeedHover {
+            get {
+                object obj = ResourceManager.GetObject("btnFeedHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnWash {
             get {
                 object obj = ResourceManager.GetObject("btnWash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnWashHover {
+            get {
+                object obj = ResourceManager.GetObject("btnWashHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

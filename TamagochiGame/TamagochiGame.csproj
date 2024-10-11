@@ -120,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\btnWashHover.png" />
+    <None Include="Resources\btnFeedHover.png" />
+    <None Include="Resources\btnDrinkHover.png" />
     <None Include="Resources\petPlatypus.png" />
     <None Include="Resources\petPerry.png" />
     <None Include="Resources\petParrot.png" />

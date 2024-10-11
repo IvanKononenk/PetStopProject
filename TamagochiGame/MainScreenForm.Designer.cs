@@ -33,10 +33,10 @@
 			this.LblHunger = new System.Windows.Forms.Label();
 			this.LblThirst = new System.Windows.Forms.Label();
 			this.LblHappy = new System.Windows.Forms.Label();
-			this.BtnFeed = new System.Windows.Forms.Button();
-			this.BtnDrink = new System.Windows.Forms.Button();
-			this.BtnPlay = new System.Windows.Forms.Button();
 			this.MenuStrip = new System.Windows.Forms.MenuStrip();
+			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.TSMIFieldBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.TSMIHouseBG = new System.Windows.Forms.ToolStripMenuItem();
 			this.LblAge = new System.Windows.Forms.Label();
 			this.LblDirty = new System.Windows.Forms.Label();
 			this.BtnClean = new System.Windows.Forms.Button();
@@ -49,9 +49,9 @@
 			this.FoodOne = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodTwo = new System.Windows.Forms.ToolStripMenuItem();
 			this.FoodThree = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIChangeBG = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIFieldBG = new System.Windows.Forms.ToolStripMenuItem();
-			this.TSMIHouseBG = new System.Windows.Forms.ToolStripMenuItem();
+			this.BtnPlay = new System.Windows.Forms.Button();
+			this.BtnDrink = new System.Windows.Forms.Button();
+			this.BtnFeed = new System.Windows.Forms.Button();
 			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.MenuStrip.SuspendLayout();
 			this.CMSFeed.SuspendLayout();
@@ -91,45 +91,6 @@
 			this.LblHappy.TabIndex = 6;
 			this.LblHappy.Text = "Счастье:";
 			// 
-			// BtnFeed
-			// 
-			this.BtnFeed.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.BtnFeed.AutoSize = true;
-			this.BtnFeed.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnFeed.Location = new System.Drawing.Point(288, 465);
-			this.BtnFeed.Name = "BtnFeed";
-			this.BtnFeed.Size = new System.Drawing.Size(108, 33);
-			this.BtnFeed.TabIndex = 7;
-			this.BtnFeed.Text = "Покормить";
-			this.BtnFeed.UseVisualStyleBackColor = true;
-			this.BtnFeed.Click += new System.EventHandler(this.BtnFeed_Click);
-			// 
-			// BtnDrink
-			// 
-			this.BtnDrink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.BtnDrink.AutoSize = true;
-			this.BtnDrink.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnDrink.Location = new System.Drawing.Point(402, 465);
-			this.BtnDrink.Name = "BtnDrink";
-			this.BtnDrink.Size = new System.Drawing.Size(108, 33);
-			this.BtnDrink.TabIndex = 8;
-			this.BtnDrink.Text = "Напоить";
-			this.BtnDrink.UseVisualStyleBackColor = true;
-			this.BtnDrink.Click += new System.EventHandler(this.BtnDrink_Click);
-			// 
-			// BtnPlay
-			// 
-			this.BtnPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.BtnPlay.AutoSize = true;
-			this.BtnPlay.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.BtnPlay.Location = new System.Drawing.Point(516, 465);
-			this.BtnPlay.Name = "BtnPlay";
-			this.BtnPlay.Size = new System.Drawing.Size(108, 33);
-			this.BtnPlay.TabIndex = 9;
-			this.BtnPlay.Text = "Поиграть";
-			this.BtnPlay.UseVisualStyleBackColor = true;
-			this.BtnPlay.Click += new System.EventHandler(this.BtnPlay_Click);
-			// 
 			// MenuStrip
 			// 
 			this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -141,6 +102,29 @@
 			this.MenuStrip.Size = new System.Drawing.Size(912, 24);
 			this.MenuStrip.TabIndex = 10;
 			this.MenuStrip.Text = "menuStrip1";
+			// 
+			// TSMIChangeBG
+			// 
+			this.TSMIChangeBG.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMIFieldBG,
+            this.TSMIHouseBG});
+			this.TSMIChangeBG.Name = "TSMIChangeBG";
+			this.TSMIChangeBG.Size = new System.Drawing.Size(93, 22);
+			this.TSMIChangeBG.Text = "Сменить фон";
+			// 
+			// TSMIFieldBG
+			// 
+			this.TSMIFieldBG.Name = "TSMIFieldBG";
+			this.TSMIFieldBG.Size = new System.Drawing.Size(103, 22);
+			this.TSMIFieldBG.Text = "Поле";
+			this.TSMIFieldBG.Click += new System.EventHandler(this.TSMIFieldBG_Click);
+			// 
+			// TSMIHouseBG
+			// 
+			this.TSMIHouseBG.Name = "TSMIHouseBG";
+			this.TSMIHouseBG.Size = new System.Drawing.Size(103, 22);
+			this.TSMIHouseBG.Text = "Дом";
+			this.TSMIHouseBG.Click += new System.EventHandler(this.TSMIHouseBG_Click);
 			// 
 			// LblAge
 			// 
@@ -259,28 +243,50 @@
 			this.FoodThree.Text = "Корм 3";
 			this.FoodThree.Click += new System.EventHandler(this.FoodThree_Click);
 			// 
-			// TSMIChangeBG
+			// BtnPlay
 			// 
-			this.TSMIChangeBG.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMIFieldBG,
-            this.TSMIHouseBG});
-			this.TSMIChangeBG.Name = "TSMIChangeBG";
-			this.TSMIChangeBG.Size = new System.Drawing.Size(93, 22);
-			this.TSMIChangeBG.Text = "Сменить фон";
+			this.BtnPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnPlay.BackgroundImage = global::PetStop.Properties.Resources.btnWash;
+			this.BtnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnPlay.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.BtnPlay.Location = new System.Drawing.Point(506, 436);
+			this.BtnPlay.Name = "BtnPlay";
+			this.BtnPlay.Size = new System.Drawing.Size(72, 62);
+			this.BtnPlay.TabIndex = 9;
+			this.BtnPlay.UseVisualStyleBackColor = true;
+			this.BtnPlay.Click += new System.EventHandler(this.BtnPlay_Click);
+			this.BtnPlay.MouseEnter += new System.EventHandler(this.BtnPlay_MouseEnter);
+			this.BtnPlay.MouseLeave += new System.EventHandler(this.BtnPlay_MouseLeave);
 			// 
-			// TSMIFieldBG
+			// BtnDrink
 			// 
-			this.TSMIFieldBG.Name = "TSMIFieldBG";
-			this.TSMIFieldBG.Size = new System.Drawing.Size(180, 22);
-			this.TSMIFieldBG.Text = "Поле";
-			this.TSMIFieldBG.Click += new System.EventHandler(this.TSMIFieldBG_Click);
+			this.BtnDrink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnDrink.BackgroundImage = global::PetStop.Properties.Resources.btnDrink;
+			this.BtnDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnDrink.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.BtnDrink.Location = new System.Drawing.Point(428, 436);
+			this.BtnDrink.Name = "BtnDrink";
+			this.BtnDrink.Size = new System.Drawing.Size(72, 62);
+			this.BtnDrink.TabIndex = 8;
+			this.BtnDrink.UseVisualStyleBackColor = true;
+			this.BtnDrink.Click += new System.EventHandler(this.BtnDrink_Click);
+			this.BtnDrink.MouseEnter += new System.EventHandler(this.BtnDrink_MouseEnter);
+			this.BtnDrink.MouseLeave += new System.EventHandler(this.BtnDrink_MouseLeave);
 			// 
-			// TSMIHouseBG
+			// BtnFeed
 			// 
-			this.TSMIHouseBG.Name = "TSMIHouseBG";
-			this.TSMIHouseBG.Size = new System.Drawing.Size(180, 22);
-			this.TSMIHouseBG.Text = "Дом";
-			this.TSMIHouseBG.Click += new System.EventHandler(this.TSMIHouseBG_Click);
+			this.BtnFeed.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnFeed.BackgroundImage = global::PetStop.Properties.Resources.btnFeed;
+			this.BtnFeed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnFeed.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.BtnFeed.Location = new System.Drawing.Point(350, 436);
+			this.BtnFeed.Name = "BtnFeed";
+			this.BtnFeed.Size = new System.Drawing.Size(72, 62);
+			this.BtnFeed.TabIndex = 7;
+			this.BtnFeed.UseVisualStyleBackColor = true;
+			this.BtnFeed.Click += new System.EventHandler(this.BtnFeed_Click);
+			this.BtnFeed.MouseEnter += new System.EventHandler(this.BtnFeed_MouseEnter);
+			this.BtnFeed.MouseLeave += new System.EventHandler(this.BtnFeed_MouseLeave);
 			// 
 			// PicBoxPet
 			// 
@@ -288,7 +294,7 @@
 			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
 			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
+			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petPlatypus;
 			this.PicBoxPet.InitialImage = null;
 			this.PicBoxPet.Location = new System.Drawing.Point(0, 24);
 			this.PicBoxPet.Name = "PicBoxPet";

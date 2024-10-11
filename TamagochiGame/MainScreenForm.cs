@@ -171,6 +171,36 @@ namespace TamagochiGame
 			PicBoxPet.BackgroundImage = Resources.bgHouse;
 		}
 
+		private void BtnFeed_MouseEnter(object sender, EventArgs e)
+		{
+			BtnFeed.BackgroundImage = Resources.btnFeedHover;
+		}
+
+		private void BtnFeed_MouseLeave(object sender, EventArgs e)
+		{
+			BtnFeed.BackgroundImage = Resources.btnFeed;
+		}
+
+		private void BtnDrink_MouseEnter(object sender, EventArgs e)
+		{
+			BtnDrink.BackgroundImage = Resources.btnDrinkHover;
+		}
+
+		private void BtnDrink_MouseLeave(object sender, EventArgs e)
+		{
+			BtnDrink.BackgroundImage = Resources.btnDrink;
+		}
+
+		private void BtnPlay_MouseEnter(object sender, EventArgs e)
+		{
+			BtnPlay.BackgroundImage = Resources.btnWashHover;
+		}
+
+		private void BtnPlay_MouseLeave(object sender, EventArgs e)
+		{
+			BtnPlay.BackgroundImage = Resources.btnWash;
+		}
+
 		private void FoodThree_Click(object sender, EventArgs e)
 		{
 			if (money >= 3)
