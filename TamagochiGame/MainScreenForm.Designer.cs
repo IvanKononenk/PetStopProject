@@ -290,7 +290,7 @@
 			// 
 			// PicBoxPet
 			// 
-			this.PicBoxPet.BackgroundImage = global::PetStop.Properties.Resources.bgField;
+			this.PicBoxPet.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
 			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
 			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;

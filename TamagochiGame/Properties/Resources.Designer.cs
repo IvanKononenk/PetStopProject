@@ -63,19 +63,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bgField {
+        internal static System.Drawing.Bitmap bgRoom {
             get {
-                object obj = ResourceManager.GetObject("bgField", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bgHouse {
-            get {
-                object obj = ResourceManager.GetObject("bgHouse", resourceCulture);
+                object obj = ResourceManager.GetObject("bgRoom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

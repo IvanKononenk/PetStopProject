@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\bgRoom.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\btnWashHover.png" />
     <None Include="Resources\btnFeedHover.png" />
