@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TamagochiGame
+namespace PetStop
 {
 	internal static class Program
 	{
@@ -16,7 +16,7 @@ namespace TamagochiGame
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmMainScreen());
+			Application.Run(new LoadingScreen());
 		}
 	}
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "effect": "Болезнь",
+    "effectEng": "sick",
+    "modHappiness": -500,
+    "modSatiety": 0,
+    "modHydration": 0,
+    "modCommunication": 0,
+    "modVigor": -500,
+    "modCleanliness": 0
+  },
+  {
+    "effect": "Отравление",
+    "effectEng": "poisoned",
+    "modHappiness": -1000,
+    "modSatiety": -500,
+    "modHydration": -500,
+    "modCommunication": 0,
+    "modVigor": -750,
+    "modCleanliness": 0
+  }
+]

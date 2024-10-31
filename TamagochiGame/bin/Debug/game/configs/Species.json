@@ -1,0 +1,42 @@
+[
+	{
+		"speciesName": "Немецкая овчарка",
+		"speciesEng": "germanShepherd",
+		"modHappiness": 0,
+		"modSatiety": 0,
+		"modHydration": 0,
+		"modCommunication": 0,
+		"modVigor": 0,
+		"modCleanliness": 0
+	},
+	{
+		"speciesName": "Попугай",
+		"speciesEng": "parrot",
+		"modHappiness": 0,
+		"modSatiety": 0,
+		"modHydration": 0,
+		"modCommunication": 0,
+		"modVigor": 0,
+		"modCleanliness": 0
+	},
+	{
+		"speciesName": "Утконос",
+		"speciesEng": "platypus",
+		"modHappiness": 0,
+		"modSatiety": 0,
+		"modHydration": 0,
+		"modCommunication": 0,
+		"modVigor": 0,
+		"modCleanliness": 0
+	},
+	{
+		"speciesName": "Перри-утконос",
+		"speciesEng": "platypusPerry",
+		"modHappiness": 0,
+		"modSatiety": 0,
+		"modHydration": 0,
+		"modCommunication": 0,
+		"modVigor": 0,
+		"modCleanliness": 0
+	}
+]

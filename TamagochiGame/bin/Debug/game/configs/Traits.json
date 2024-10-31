@@ -1,0 +1,74 @@
+[
+  {
+    "trait": "Чистюля",
+    "traitEng": "clean",
+    "modSatiety": 100,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 50
+  },
+  {
+    "trait": "Грязнуля",
+    "traitEng": "muddy",
+    "modSatiety": 100,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 150
+  },
+  {
+    "trait": "Неугомонный",
+    "traitEng": "restless",
+    "modSatiety": 130,
+    "modHydration": 130,
+    "modCommunication": 110,
+    "modVigor": 75,
+    "modCleanliness": 100
+  },
+  {
+    "trait": "Лентяй",
+    "traitEng": "lazy",
+    "modSatiety": 115,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 125,
+    "modCleanliness": 100
+  },
+  {
+    "trait": "Интроверт",
+    "traitEng": "introvert",
+    "modSatiety": 100,
+    "modHydration": 100,
+    "modCommunication": 75,
+    "modVigor": 100,
+    "modCleanliness": 100
+  },
+  {
+    "trait": "Экстраверт",
+    "traitEng": "extravert",
+    "modSatiety": 100,
+    "modHydration": 100,
+    "modCommunication": 125,
+    "modVigor": 100,
+    "modCleanliness": 100
+  },
+  {
+    "trait": "Водохлёб",
+    "traitEng": "watermouth",
+    "modSatiety": 100,
+    "modHydration": 135,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 100
+  },
+  {
+    "trait": "Обжора",
+    "traitEng": "glutton",
+    "modSatiety": 135,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 100
+  }
+]

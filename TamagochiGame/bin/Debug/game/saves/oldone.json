@@ -1,0 +1,32 @@
+{
+  "name": "Старый",
+  "species": {
+    "speciesName": "Немецкая овчарка",
+    "speciesEng": "germanShepherd",
+    "modHappiness": 0,
+    "modSatiety": 0,
+    "modHydration": 0,
+    "modCommunication": 0,
+    "modVigor": 0,
+    "modCleanliness": 0
+  },
+  "gender": "Мужской",
+  "happiness": 49850,
+  "satiety": 9070,
+  "hydration": 9450,
+  "communication": 9840,
+  "vigor": 10000,
+  "cleanliness": 6900,
+  "trait": {
+    "trait": "Лентяй",
+    "traitEng": "lazy",
+    "modSatiety": 115,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 125,
+    "modCleanliness": 100
+  },
+  "ageMinutes": 0,
+  "inventory": [],
+  "effects": []
+}
