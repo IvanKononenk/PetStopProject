@@ -57,6 +57,7 @@
 			// LoadingBar
 			// 
 			this.LoadingBar.Location = new System.Drawing.Point(274, 143);
+			this.LoadingBar.MarqueeAnimationSpeed = 1;
 			this.LoadingBar.Name = "LoadingBar";
 			this.LoadingBar.Size = new System.Drawing.Size(514, 32);
 			this.LoadingBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;

@@ -1,15 +1,16 @@
 {
   "name": "Старый",
-  "species": {
-    "speciesName": "Немецкая овчарка",
-    "speciesEng": "germanShepherd",
-    "modHappiness": 0,
-    "modSatiety": 0,
-    "modHydration": 0,
-    "modCommunication": 0,
-    "modVigor": 0,
-    "modCleanliness": 0
-  },
+    "species": {
+        "speciesName": "Немецкая овчарка",
+        "speciesEng": "germanShepherd",
+        "modHappiness": 0,
+        "modSatiety": 0,
+        "modHydration": 0,
+        "modCommunication": 0,
+        "modVigor": 0,
+        "modCleanliness": 0
+    },
+  "petPic": "petGS2",
   "gender": "Мужской",
   "happiness": 49850,
   "satiety": 9070,

@@ -41,9 +41,7 @@ namespace PetStop
 				// Fallback to hardcoded values if JSON file is missing
 				speciesDictionary = new Dictionary<string, Species>
 				{
-					{ "germanShepherd", new Species("Немецкая овчарка", "germanShepherd", 0, 0, 0, 0, 0, 0) },
-					{ "species2", new Species("Специес 2", "species2", 1, 1, 1, 1, 1, 1) }
-					// Add more species here...
+					
 				};
 			}
 		}
@@ -81,7 +79,6 @@ namespace PetStop
 	{
 		public string speciesName { get; set; }
 		public string speciesEng { get; set; }
-
 		public int modHappiness { get; set; }
 		public int modSatiety { get; set; }
 		public int modHydration { get; set; }

@@ -105,6 +105,12 @@
     <Compile Include="Classes\PetClasses.cs" />
     <Compile Include="Classes\SpeciesClasses.cs" />
     <Compile Include="Classes\TraitsClasses.cs" />
+    <Compile Include="Forms\ChooseACrateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseACrateForm.Designer.cs">
+      <DependentUpon>ChooseACrateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ChooseACrateForm.resx">
+      <DependentUpon>ChooseACrateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoadingScreen.resx">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,34 +181,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
-    <None Include="Resources\bgRoom.png" />
+    <None Include="Resources\pets\platypuses\petPlatypus.png" />
+    <None Include="Resources\pets\platypuses\petPerry.png" />
+    <None Include="Resources\pets\parrots\petParrot.png" />
+    <None Include="Resources\pets\germanShepherds\petGS3.png" />
+    <None Include="Resources\pets\germanShepherds\petGS2.png" />
+    <None Include="Resources\pets\germanShepherds\petGS1.png" />
+    <None Include="Resources\crates\crate3.png" />
+    <None Include="Resources\crates\crate2.png" />
+    <None Include="Resources\crates\crate1.png" />
+    <None Include="Resources\buttons\btnWashHover.png" />
+    <None Include="Resources\buttons\btnWash.png" />
+    <None Include="Resources\buttons\btnFeedHover.png" />
+    <None Include="Resources\buttons\btnFeed.png" />
+    <None Include="Resources\buttons\btnDrinkHover.png" />
+    <None Include="Resources\buttons\btnDrink.png" />
+    <None Include="Resources\buttons\btnBlank.png" />
+    <None Include="Resources\backgrounds\bgRoom.png" />
     <None Include="Resources\logo.png" />
-    <None Include="Resources\btnWashHover.png" />
-    <None Include="Resources\btnFeedHover.png" />
-    <None Include="Resources\btnDrinkHover.png" />
-    <None Include="Resources\petPlatypus.png" />
-    <None Include="Resources\petPerry.png" />
-    <None Include="Resources\petParrot.png" />
-    <None Include="Resources\petGS3.png" />
-    <None Include="Resources\petGS2.png" />
-    <None Include="Resources\petGS1.png" />
-    <None Include="Resources\bgHouse.jpg" />
-    <None Include="Resources\bgField.jpg" />
     <None Include="Resources\taco.png" />
     <None Include="Resources\soapShadow.png" />
     <None Include="Resources\soap.png" />
     <None Include="Resources\settings.png" />
     <None Include="Resources\sandwich.png" />
     <None Include="Resources\hat.png" />
-    <None Include="Resources\crate3.png" />
-    <None Include="Resources\crate2.png" />
-    <None Include="Resources\crate1.png" />
     <None Include="Resources\cookie.png" />
     <None Include="Resources\chicken.png" />
-    <None Include="Resources\btnWash.png" />
-    <None Include="Resources\btnFeed.png" />
-    <None Include="Resources\btnDrink.png" />
-    <None Include="Resources\btnBlank.png" />
     <None Include="Resources\bone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

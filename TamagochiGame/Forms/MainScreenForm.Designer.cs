@@ -44,7 +44,9 @@
 			this.LblCommunication = new System.Windows.Forms.Label();
 			this.LblVigor = new System.Windows.Forms.Label();
 			this.LblCleanliness = new System.Windows.Forms.Label();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
+			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// LblHunger
@@ -82,21 +84,21 @@
 			// 
 			// LblAge
 			// 
-			this.LblAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblAge.AutoSize = true;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(1058, 596);
+			this.LblAge.Location = new System.Drawing.Point(3, 0);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(20, 23);
 			this.LblAge.TabIndex = 11;
 			this.LblAge.Text = "0";
+			this.LblAge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// LblMoney
 			// 
 			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblMoney.AutoSize = true;
 			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblMoney.Location = new System.Drawing.Point(1046, 9);
+			this.LblMoney.Location = new System.Drawing.Point(885, 9);
 			this.LblMoney.Name = "LblMoney";
 			this.LblMoney.Size = new System.Drawing.Size(65, 23);
 			this.LblMoney.TabIndex = 12;
@@ -131,15 +133,15 @@
 			// 
 			// PicBoxPet
 			// 
-			this.PicBoxPet.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
+			this.PicBoxPet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.BackgroundImage")));
 			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
 			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petPlatypus;
+			this.PicBoxPet.Image = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.Image")));
 			this.PicBoxPet.InitialImage = null;
 			this.PicBoxPet.Location = new System.Drawing.Point(0, 0);
 			this.PicBoxPet.Name = "PicBoxPet";
-			this.PicBoxPet.Size = new System.Drawing.Size(1123, 628);
+			this.PicBoxPet.Size = new System.Drawing.Size(962, 600);
 			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.PicBoxPet.TabIndex = 3;
 			this.PicBoxPet.TabStop = false;
@@ -204,11 +206,28 @@
 			this.LblCleanliness.TabIndex = 21;
 			this.LblCleanliness.Text = "Чистота:";
 			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.tableLayoutPanel1.AutoSize = true;
+			this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.tableLayoutPanel1.ColumnCount = 1;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel1.Controls.Add(this.LblAge, 0, 0);
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(924, 565);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 1;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(26, 23);
+			this.tableLayoutPanel1.TabIndex = 22;
+			// 
 			// MainScreenForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1123, 628);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.ClientSize = new System.Drawing.Size(962, 600);
+			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.LblCleanliness);
 			this.Controls.Add(this.LblVigor);
 			this.Controls.Add(this.LblCommunication);
@@ -216,7 +235,6 @@
 			this.Controls.Add(this.PrBarVigor);
 			this.Controls.Add(this.PrBarCommunication);
 			this.Controls.Add(this.LblMoney);
-			this.Controls.Add(this.LblAge);
 			this.Controls.Add(this.LblHappy);
 			this.Controls.Add(this.LblThirst);
 			this.Controls.Add(this.LblHunger);
@@ -224,6 +242,7 @@
 			this.Controls.Add(this.PrBarSatiety);
 			this.Controls.Add(this.PrBarHappiness);
 			this.Controls.Add(this.PicBoxPet);
+			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MinimumSize = new System.Drawing.Size(759, 394);
 			this.Name = "MainScreenForm";
@@ -232,6 +251,8 @@
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreenForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainScreenForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
+			this.tableLayoutPanel1.ResumeLayout(false);
+			this.tableLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -254,6 +275,7 @@
 		private System.Windows.Forms.Label LblCommunication;
 		private System.Windows.Forms.Label LblVigor;
 		private System.Windows.Forms.Label LblCleanliness;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 	}
 }
 

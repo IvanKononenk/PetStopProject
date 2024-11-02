@@ -1,5 +1,7 @@
 ﻿using PetStop.Forms;
+using PetStop.Properties;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -18,9 +20,10 @@ namespace PetStop
 
 		private void LoadingScreen_Load(object sender, EventArgs e)
 		{
-			timer.Interval = 1000;
-			timer.Tick += TimerBeforeLoad;
-			timer.Start();
+			//timer.Interval = 1000;
+			//timer.Tick += TimerBeforeLoad;
+			//timer.Start();
+			Application.
 		}
 
 		private void TimerBeforeLoad(object sender, EventArgs e)

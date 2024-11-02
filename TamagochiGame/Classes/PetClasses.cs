@@ -15,6 +15,7 @@ namespace PetStop
 	{
 		public string name { get; set; }
 		public Species species { get; set; }
+		public string petPic { get; set; }
 		public string gender { get; set; }
 
 		public int happiness { get; set; }
@@ -36,10 +37,11 @@ namespace PetStop
 		/// <param name="species">Вид питомца</param>
 		/// <param name="gender">Пол питомца</param>
 		/// <param name="trait">Черта питомца</param>
-		public Pet(string name, Species species, string gender, Traits trait)
+		public Pet(string name, Species species, string petPic, string gender, Traits trait)
 		{
 			this.name = name;
 			this.species = species;
+			this.petPic = petPic;
 			this.gender = gender;
 			happiness = 500000;
 			satiety = 10000;
