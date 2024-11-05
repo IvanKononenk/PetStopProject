@@ -1,12 +1,8 @@
 ﻿using PetStop.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace PetStop.Forms
@@ -20,7 +16,16 @@ namespace PetStop.Forms
 
 		private void ChooseACrateForm_Load(object sender, EventArgs e)
 		{
-			//pictureBox1.Image = Resources.ResourceManager.
+			Random rnd = new Random();
+			string[] crates = JsonSerializer.Deserialize<string[]>(Resources.CratesList);
+			pictureBox1.Image = (Bitmap)Resources.ResourceManager.GetObject(crates[rnd.Next(crates.Count())]);
+			pictureBox2.Image = (Bitmap)Resources.ResourceManager.GetObject(crates[rnd.Next(crates.Count())]);
+			pictureBox3.Image = (Bitmap)Resources.ResourceManager.GetObject(crates[rnd.Next(crates.Count())]);
+		}
+
+		private void pictureBox_Click(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

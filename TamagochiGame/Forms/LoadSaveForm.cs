@@ -33,6 +33,8 @@ namespace PetStop.Forms
 			Pet.lastPlay = DateTime.UtcNow - DateTime.Parse(File.GetLastWriteTimeUtc("game\\saves\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + ".json").ToString());
 			MainScreenForm mainScrFrm = new MainScreenForm();
 			mainScrFrm.Show();
+			PetInfoForm ptInfFrm = new PetInfoForm();
+			ptInfFrm.Show();
 			Hide();
 		}
 	}

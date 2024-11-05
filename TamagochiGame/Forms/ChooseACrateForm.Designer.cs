@@ -38,38 +38,45 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(70, 133);
+			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox_Click);
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.Location = new System.Drawing.Point(276, 133);
+			this.pictureBox2.Location = new System.Drawing.Point(218, 12);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(200, 200);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox2.TabIndex = 1;
 			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.pictureBox_Click);
 			// 
 			// pictureBox3
 			// 
-			this.pictureBox3.Location = new System.Drawing.Point(482, 133);
+			this.pictureBox3.Location = new System.Drawing.Point(424, 12);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(200, 200);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox3.TabIndex = 2;
 			this.pictureBox3.TabStop = false;
+			this.pictureBox3.Click += new System.EventHandler(this.pictureBox_Click);
 			// 
 			// ChooseACrateForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(636, 450);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "ChooseACrateForm";
-			this.Text = "ChooseACrateForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Новый питомец";
 			this.Load += new System.EventHandler(this.ChooseACrateForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

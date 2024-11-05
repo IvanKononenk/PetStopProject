@@ -201,12 +201,42 @@ namespace PetStop.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] CratesList {
+            get {
+                object obj = ResourceManager.GetObject("CratesList", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Effects {
+            get {
+                object obj = ResourceManager.GetObject("Effects", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hat {
             get {
                 object obj = ResourceManager.GetObject("hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Items {
+            get {
+                object obj = ResourceManager.GetObject("Items", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -321,12 +351,32 @@ namespace PetStop.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Species {
+            get {
+                object obj = ResourceManager.GetObject("Species", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap taco {
             get {
                 object obj = ResourceManager.GetObject("taco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Traits {
+            get {
+                object obj = ResourceManager.GetObject("Traits", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }

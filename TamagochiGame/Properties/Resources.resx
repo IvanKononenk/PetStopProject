@@ -160,8 +160,17 @@
   <data name="crate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crates\crate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CratesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\CratesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Effects.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="hat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Items.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,7 +205,13 @@
   <data name="soapShadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soapShadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Species" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Species.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="taco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Traits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Traits.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop.Properties;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,29 +19,18 @@ namespace PetStop
 		/// </summary>
 		static EffectsFactory()
 		{
-			LoadEffectsFromJson("effects.json");
+			LoadEffectsFromJson();
 		}
 
 		/// <summary>
 		/// Метод заполнения словаря черт из файла или грубым кодом
 		/// </summary>
 		/// <param name="filePath">Путь к JSON файлу</param>
-		static void LoadEffectsFromJson(string filePath)
+		static void LoadEffectsFromJson()
 		{
-			if (File.Exists(filePath))
-			{
-				var json = File.ReadAllBytes(filePath);
-				var effectsList = JsonSerializer.Deserialize<List<Effects>>(json);
-				effectsDictionary = effectsList?.ToDictionary(s => s.effectEng)
-								   ?? new Dictionary<string, Effects>();
-			}
-			else
-			{
-				effectsDictionary = new Dictionary<string, Effects>
-				{
-
-				};
-			}
+			var effectsList = JsonSerializer.Deserialize<List<Effects>>(Resources.Effects);
+			effectsDictionary = effectsList?.ToDictionary(s => s.effectEng)
+								?? new Dictionary<string, Effects>();
 		}
 
 		/// <summary>

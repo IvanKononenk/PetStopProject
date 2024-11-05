@@ -42,3 +42,4 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\Tamagoc
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.LoadSaveForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.MainScreenForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.ChooseACrateForm.resources
+C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.PetInfoForm.resources

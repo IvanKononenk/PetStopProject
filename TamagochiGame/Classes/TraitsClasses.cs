@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop.Properties;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,29 +19,18 @@ namespace PetStop
 		/// </summary>
 		static TraitsFactory()
 		{
-			LoadTraitsFromJson("traits.json");
+			LoadTraitsFromJson();
 		}
 		
 		/// <summary>
 		/// Метод заполнения словаря черт из файла или грубым кодом
 		/// </summary>
 		/// <param name="filePath">Путь к JSON файлу</param>
-		private static void LoadTraitsFromJson(string filePath)
+		private static void LoadTraitsFromJson()
 		{
-			if (File.Exists(filePath))
-			{
-				var json = File.ReadAllBytes(filePath);
-				var traitsList = JsonSerializer.Deserialize<List<Traits>>(json);
-				traitsDictionary = traitsList?.ToDictionary(s => s.traitEng)
-								   ?? new Dictionary<string, Traits>();
-			}
-			else
-			{
-				traitsDictionary = new Dictionary<string, Traits>
-				{
-
-				};
-			}
+			var traitsList = JsonSerializer.Deserialize<List<Traits>>(Resources.Traits);
+			traitsDictionary = traitsList?.ToDictionary(s => s.traitEng)
+								?? new Dictionary<string, Traits>();
 		}
 		
 		/// <summary>
@@ -49,7 +39,7 @@ namespace PetStop
 		/// <returns>Случайная черта питомца</returns>
 		public static Traits RandomTrait()
 		{
-			LoadTraitsFromJson("traits.json");
+			LoadTraitsFromJson();
 			Random rnd = new Random();
 			return traitsDictionary.ElementAt(rnd.Next(traitsDictionary.Count)).Value;
 		}

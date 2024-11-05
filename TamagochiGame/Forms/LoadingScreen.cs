@@ -20,10 +20,12 @@ namespace PetStop
 
 		private void LoadingScreen_Load(object sender, EventArgs e)
 		{
-			//timer.Interval = 1000;
-			//timer.Tick += TimerBeforeLoad;
-			//timer.Start();
-			Application.
+			timer.Interval = 1000;
+			timer.Tick += TimerBeforeLoad;
+			timer.Start();
+			//ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
+			//chsACrtFrm.Show();
+			//Hide();
 		}
 
 		private void TimerBeforeLoad(object sender, EventArgs e)

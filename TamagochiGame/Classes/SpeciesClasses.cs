@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop.Properties;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,31 +20,19 @@ namespace PetStop
 		static SpeciesFactory()
 		{
 			// Initialize the species from JSON or hardcoded values
-			LoadSpeciesFromJson("species.json"); // Optional JSON loading
+			LoadSpeciesFromJson(); // Optional JSON loading
 		}
 		
 		/// <summary>
 		/// Метод загрузки объектов класса из файла JSON
 		/// </summary>
 		/// <param name="filePath">Путь к файлу JSON</param>
-		private static void LoadSpeciesFromJson(string filePath)
+		private static void LoadSpeciesFromJson()
 		{
-			if (File.Exists(filePath))
-			{
-				var json = File.ReadAllBytes(filePath);
-				var speciesList = JsonSerializer.Deserialize<List<Species>>(json);
+			var speciesList = JsonSerializer.Deserialize<List<Species>>(Resources.Species);
 
-				speciesDictionary = speciesList?.ToDictionary(s => s.speciesEng)
-									?? new Dictionary<string, Species>();
-			}
-			else
-			{
-				// Fallback to hardcoded values if JSON file is missing
-				speciesDictionary = new Dictionary<string, Species>
-				{
-					
-				};
-			}
+			speciesDictionary = speciesList?.ToDictionary(s => s.speciesEng)
+								?? new Dictionary<string, Species>();
 		}
 		
 		/// <summary>
@@ -52,7 +41,7 @@ namespace PetStop
 		/// <returns>Случайная порода\вид питомца</returns>
 		public static Species RandomSpecies()
 		{
-			LoadSpeciesFromJson("species.json");
+			LoadSpeciesFromJson();
 			Random rnd = new Random();
 			return speciesDictionary.ElementAt(rnd.Next(speciesDictionary.Count)).Value;
 		}
