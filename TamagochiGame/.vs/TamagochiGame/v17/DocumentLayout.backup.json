@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\chooseacrateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\debug\\game\\configs\\crateslist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:bin\\debug\\game\\configs\\crateslist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\chooseacrateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\chooseacrateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,28 +35,12 @@
       "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\chooseacrateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadsaveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\dog.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -43,23 +51,7 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\game\\saves\\parrot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\forms\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:forms\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TamagochiGame||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\bin\\debug\\game\\configs\\crateslist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:bin\\debug\\game\\configs\\crateslist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|c:\\users\\hp\\desktop\\project\\gameprojecttamagochi\\tamagochigame\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{8DE9F4C5-56CB-4193-A2F4-375D5D1CD126}|TamagochiGame.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,11 +61,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "dog.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\dog.json",
+              "RelativeDocumentMoniker": "bin\\Debug\\game\\saves\\dog.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\dog.json",
+              "RelativeToolTip": "bin\\Debug\\game\\saves\\dog.json",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-05T14:43:45.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "parrot.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\parrot.json",
+              "RelativeDocumentMoniker": "bin\\Debug\\game\\saves\\parrot.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\parrot.json",
+              "RelativeToolTip": "bin\\Debug\\game\\saves\\parrot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-05T14:36:47.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PetInfoForm.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\PetInfoForm.cs",
+              "RelativeDocumentMoniker": "Forms\\PetInfoForm.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\PetInfoForm.cs",
+              "RelativeToolTip": "Forms\\PetInfoForm.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T14:34:45.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoadingScreen.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadingScreen.cs",
+              "RelativeDocumentMoniker": "Forms\\LoadingScreen.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadingScreen.cs",
+              "RelativeToolTip": "Forms\\LoadingScreen.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T10:55:47.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoadSaveForm.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadSaveForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoadSaveForm.cs",
@@ -87,45 +129,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "dog.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\dog.json",
-              "RelativeDocumentMoniker": "bin\\Debug\\game\\saves\\dog.json",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\dog.json",
-              "RelativeToolTip": "bin\\Debug\\game\\saves\\dog.json",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T14:43:45.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "parrot.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\parrot.json",
-              "RelativeDocumentMoniker": "bin\\Debug\\game\\saves\\parrot.json",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\saves\\parrot.json",
-              "RelativeToolTip": "bin\\Debug\\game\\saves\\parrot.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T14:36:47.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PetInfoForm.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\PetInfoForm.cs",
-              "RelativeDocumentMoniker": "Forms\\PetInfoForm.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\PetInfoForm.cs",
-              "RelativeToolTip": "Forms\\PetInfoForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAArwCUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:34:45.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "PetInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\PetInfoForm.cs",
               "RelativeDocumentMoniker": "Forms\\PetInfoForm.cs",
@@ -137,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "LoadSaveForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadSaveForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoadSaveForm.cs",
@@ -149,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "LoadingScreen.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadingScreen.cs",
               "RelativeDocumentMoniker": "Forms\\LoadingScreen.cs",
@@ -161,20 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:23:20.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "CratesList.json",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\bin\\Debug\\game\\configs\\CratesList.json",
               "RelativeDocumentMoniker": "bin\\Debug\\game\\configs\\CratesList.json",
@@ -194,25 +184,11 @@
               "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\TamagochiGame.csproj",
               "RelativeToolTip": "TamagochiGame.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-05T12:01:46.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T12:01:46.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoadingScreen.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadingScreen.cs",
-              "RelativeDocumentMoniker": "Forms\\LoadingScreen.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\LoadingScreen.cs",
-              "RelativeToolTip": "Forms\\LoadingScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T10:55:47.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ChooseACrateForm.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\ChooseACrateForm.cs",
               "RelativeDocumentMoniker": "Forms\\ChooseACrateForm.cs",
@@ -225,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ChooseACrateForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\ChooseACrateForm.cs",
               "RelativeDocumentMoniker": "Forms\\ChooseACrateForm.cs",
@@ -237,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "MainScreenForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Forms\\MainScreenForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainScreenForm.cs",
