@@ -130,6 +130,12 @@
     <Compile Include="Forms\MainScreenForm.Designer.cs">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\NewPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewPlayerForm.Designer.cs">
+      <DependentUpon>NewPlayerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PetInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainScreenForm.resx">
       <DependentUpon>MainScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewPlayerForm.resx">
+      <DependentUpon>NewPlayerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PetInfoForm.resx">
       <DependentUpon>PetInfoForm.cs</DependentUpon>
