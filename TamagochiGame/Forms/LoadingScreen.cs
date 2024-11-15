@@ -48,7 +48,7 @@ namespace PetStop
 			load.Stop();
 			if (Directory.EnumerateFiles("game/saves").Count() > 0)
 			{
-				LoadSaveForm LSForm = new LoadSaveForm();
+				LoadPetForm LSForm = new LoadPetForm();
 				LSForm.Show();
 				Hide();
 			}

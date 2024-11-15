@@ -29,20 +29,20 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPlayerForm));
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.TxtProfileName = new System.Windows.Forms.TextBox();
 			this.LblUsername = new System.Windows.Forms.Label();
 			this.BtnExit = new System.Windows.Forms.Button();
 			this.BtnConfirm = new System.Windows.Forms.Button();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+			this.DTPBDay = new System.Windows.Forms.DateTimePicker();
 			this.LblBDay = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// TxtProfileName
 			// 
-			this.textBox1.Location = new System.Drawing.Point(200, 12);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(150, 31);
-			this.textBox1.TabIndex = 0;
+			this.TxtProfileName.Location = new System.Drawing.Point(200, 12);
+			this.TxtProfileName.Name = "TxtProfileName";
+			this.TxtProfileName.Size = new System.Drawing.Size(150, 31);
+			this.TxtProfileName.TabIndex = 0;
 			// 
 			// LblUsername
 			// 
@@ -75,14 +75,15 @@
 			this.BtnConfirm.TabIndex = 3;
 			this.BtnConfirm.Text = "Сохранить";
 			this.BtnConfirm.UseVisualStyleBackColor = true;
+			this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
 			// 
-			// dateTimePicker1
+			// DTPBDay
 			// 
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker1.Location = new System.Drawing.Point(200, 49);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(150, 31);
-			this.dateTimePicker1.TabIndex = 4;
+			this.DTPBDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.DTPBDay.Location = new System.Drawing.Point(200, 49);
+			this.DTPBDay.Name = "DTPBDay";
+			this.DTPBDay.Size = new System.Drawing.Size(150, 31);
+			this.DTPBDay.TabIndex = 4;
 			// 
 			// LblBDay
 			// 
@@ -99,11 +100,11 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(389, 131);
 			this.Controls.Add(this.LblBDay);
-			this.Controls.Add(this.dateTimePicker1);
+			this.Controls.Add(this.DTPBDay);
 			this.Controls.Add(this.BtnConfirm);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.LblUsername);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.TxtProfileName);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -118,11 +119,11 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox TxtProfileName;
 		private System.Windows.Forms.Label LblUsername;
 		private System.Windows.Forms.Button BtnExit;
 		private System.Windows.Forms.Button BtnConfirm;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
+		private System.Windows.Forms.DateTimePicker DTPBDay;
 		private System.Windows.Forms.Label LblBDay;
 	}
 }

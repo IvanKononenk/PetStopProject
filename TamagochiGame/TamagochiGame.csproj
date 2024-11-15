@@ -118,11 +118,17 @@
     <Compile Include="Forms\LoadingScreen.Designer.cs">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoadSaveForm.cs">
+    <Compile Include="Forms\LoadPetForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoadSaveForm.Designer.cs">
-      <DependentUpon>LoadSaveForm.cs</DependentUpon>
+    <Compile Include="Forms\LoadPetForm.Designer.cs">
+      <DependentUpon>LoadPetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadProfileForm.Designer.cs">
+      <DependentUpon>LoadProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainScreenForm.cs">
       <SubType>Form</SubType>
@@ -150,8 +156,11 @@
     <EmbeddedResource Include="Forms\LoadingScreen.resx">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoadSaveForm.resx">
-      <DependentUpon>LoadSaveForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LoadPetForm.resx">
+      <DependentUpon>LoadPetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadProfileForm.resx">
+      <DependentUpon>LoadProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainScreenForm.resx">
       <DependentUpon>MainScreenForm.cs</DependentUpon>

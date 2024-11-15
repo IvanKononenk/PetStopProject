@@ -1,6 +1,6 @@
 ﻿namespace PetStop.Forms
 {
-	partial class LoadSaveForm
+	partial class LoadPetForm
 	{
 		/// <summary>
 		/// Required designer variable.

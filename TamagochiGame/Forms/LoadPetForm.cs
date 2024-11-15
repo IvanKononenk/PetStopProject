@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace PetStop.Forms
 {
-	public partial class LoadSaveForm : Form
+	public partial class LoadPetForm : Form
 	{
-		public LoadSaveForm()
+		public LoadPetForm()
 		{
 			InitializeComponent();
 		}
