@@ -28,7 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadPetForm));
 			this.DGVSaveFIles = new System.Windows.Forms.DataGridView();
 			this.SaveFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SaveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +44,8 @@
 			this.DGVSaveFIles.AllowUserToAddRows = false;
 			this.DGVSaveFIles.AllowUserToDeleteRows = false;
 			this.DGVSaveFIles.AllowUserToResizeRows = false;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.DGVSaveFIles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.DGVSaveFIles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this.DGVSaveFIles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -110,7 +111,7 @@
 			this.LblSavesCount.TabIndex = 3;
 			this.LblSavesCount.Text = "Сохранений найдено: 0";
 			// 
-			// LoadSaveForm
+			// LoadPetForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,7 +121,8 @@
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.DGVSaveFIles);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
-			this.Name = "LoadSaveForm";
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Name = "LoadPetForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Список сохранений";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoadSaveForm_FormClosing);

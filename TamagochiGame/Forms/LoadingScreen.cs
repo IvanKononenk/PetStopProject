@@ -23,9 +23,6 @@ namespace PetStop
 			timer.Interval = 1000;
 			timer.Tick += TimerBeforeLoad;
 			timer.Start();
-			//ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
-			//chsACrtFrm.Show();
-			//Hide();
 		}
 
 		private void TimerBeforeLoad(object sender, EventArgs e)
@@ -46,15 +43,17 @@ namespace PetStop
 		private void EndLoading()
 		{
 			load.Stop();
-			if (Directory.EnumerateFiles("game/saves").Count() > 0)
+			if (Directory.EnumerateDirectories("game\\saves").Count() > 0)
 			{
-				LoadPetForm LSForm = new LoadPetForm();
-				LSForm.Show();
+				LoadProfileForm ldPrflFrm = new LoadProfileForm();
+				ldPrflFrm.Show(this);
 				Hide();
 			}
 			else
 			{
-
+				NewPlayerForm nwPlrFrm = new NewPlayerForm();
+				nwPlrFrm.Show(this);
+				Hide();
 			}
 		}
 	}

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,20 +14,10 @@ namespace PetStop.Forms
 {
 	public partial class NewPlayerForm : Form
 	{
-		public string closingReason;
+		public Player activePlayer;
 		public NewPlayerForm()
 		{
 			InitializeComponent();
-		}
-		public NewPlayerForm(LoadingScreen ldngScrn)
-		{
-			InitializeComponent();
-			closingReason = "startupCancel";
-		}
-		public NewPlayerForm(string NOTIMPLEMENTED)
-		{
-			InitializeComponent();
-			closingReason = "newPLayer";
 		}
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
@@ -34,16 +25,9 @@ namespace PetStop.Forms
 		}
 		private void NewPlayerForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			switch (closingReason)
+			if (Owner == LoadingScreen && activePlayer != null)
 			{
-				case "startupCancel":
-					Application.Exit();
-					break;
-				case "newPLayer":
-					MessageBox.Show("NOT IMPLEMENTED");
-					break;
-				case "startupConfirm":
-					break;
+
 			}
 		}
 
@@ -51,13 +35,17 @@ namespace PetStop.Forms
 		{
 			if (TxtProfileName.Text != "" && DTPBDay.Value > DTPBDay.MinDate)
 			{
-				List<Pet> petList = new List<Pet>();
-				Player activePLayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value, petList);
-				//ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
-				//chsACrtFrm.Show();
-				//Hide();
-				activePLayer.SaveAUser(activePLayer);
-				Close();
+				if (!Directory.Exists("game\\saves\\" + TxtProfileName.Text))
+				{
+					List<Pet> petList = new List<Pet>();
+					Player activePLayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value, petList);
+					activePLayer.SaveAUser(activePLayer);
+				}
+				else
+				{
+					MessageBox.Show("Данное имя пользователя занято!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					TxtProfileName.Focus();
+				}
 			}
 			else
 			{

@@ -30,7 +30,8 @@ namespace PetStop.Classes
 		{
 			try
 			{
-				StreamWriter sw = new StreamWriter(username + ".json", false);
+				Directory.CreateDirectory("game\\saves\\" + username);
+				StreamWriter sw = new StreamWriter("game\\saves\\" + username + "\\player.json", false);
 				var options = new JsonSerializerOptions
 				{
 					WriteIndented = true,
