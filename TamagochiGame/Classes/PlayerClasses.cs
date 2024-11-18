@@ -52,5 +52,7 @@ namespace PetStop.Classes
 			byte[] json = File.ReadAllBytes(file);
 			return JsonSerializer.Deserialize<Player>(json);
 		}
+
+		public static Player activePlayer;
 	}
 }

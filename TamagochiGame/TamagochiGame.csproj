@@ -130,17 +130,23 @@
     <Compile Include="Forms\LoadProfileForm.Designer.cs">
       <DependentUpon>LoadProfileForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainScreenForm.cs">
+    <Compile Include="Forms\MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainScreenForm.Designer.cs">
-      <DependentUpon>MainScreenForm.cs</DependentUpon>
+    <Compile Include="Forms\MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\NewPlayerForm.cs">
+    <Compile Include="Forms\GameScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\NewPlayerForm.Designer.cs">
-      <DependentUpon>NewPlayerForm.cs</DependentUpon>
+    <Compile Include="Forms\GameScreenForm.Designer.cs">
+      <DependentUpon>GameScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewProfileForm.Designer.cs">
+      <DependentUpon>NewProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PetInfoForm.cs">
       <SubType>Form</SubType>
@@ -162,11 +168,14 @@
     <EmbeddedResource Include="Forms\LoadProfileForm.resx">
       <DependentUpon>LoadProfileForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainScreenForm.resx">
-      <DependentUpon>MainScreenForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\GameScreenForm.resx">
+      <DependentUpon>GameScreenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NewPlayerForm.resx">
-      <DependentUpon>NewPlayerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewProfileForm.resx">
+      <DependentUpon>NewProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PetInfoForm.resx">
       <DependentUpon>PetInfoForm.cs</DependentUpon>

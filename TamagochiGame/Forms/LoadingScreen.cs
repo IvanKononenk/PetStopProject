@@ -43,18 +43,8 @@ namespace PetStop
 		private void EndLoading()
 		{
 			load.Stop();
-			if (Directory.EnumerateDirectories("game\\saves").Count() > 0)
-			{
-				LoadProfileForm ldPrflFrm = new LoadProfileForm();
-				ldPrflFrm.Show(this);
-				Hide();
-			}
-			else
-			{
-				NewPlayerForm nwPlrFrm = new NewPlayerForm();
-				nwPlrFrm.Show(this);
-				Hide();
-			}
+			Application.OpenForms[0].Show();
+			Close();
 		}
 	}
 }

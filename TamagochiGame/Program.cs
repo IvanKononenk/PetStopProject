@@ -17,7 +17,7 @@ namespace PetStop
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new LoadingScreen());
+			Application.Run(new MainMenuForm());
 		}
 	}
 }

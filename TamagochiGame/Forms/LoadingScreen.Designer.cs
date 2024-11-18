@@ -76,7 +76,7 @@
 			this.MinimumSize = new System.Drawing.Size(816, 319);
 			this.Name = "LoadingScreen";
 			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Загрузка...";
 			this.Load += new System.EventHandler(this.LoadingScreen_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PIcBoxLogo)).EndInit();
