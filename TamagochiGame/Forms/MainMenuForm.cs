@@ -15,6 +15,8 @@ namespace PetStop.Forms
 		public MainMenuForm()
 		{
 			InitializeComponent();
+			picBoxLogo.Parent = picBoxBackground;
+			picBoxMascot.Parent = picBoxBackground;
 		}
 
 		private void BtnExit_Click(object sender, EventArgs e)

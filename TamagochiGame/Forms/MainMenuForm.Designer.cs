@@ -32,13 +32,19 @@
 			this.BtnNewProfile = new System.Windows.Forms.Button();
 			this.BtnLoadProfile = new System.Windows.Forms.Button();
 			this.BtnExit = new System.Windows.Forms.Button();
+			this.picBoxMascot = new System.Windows.Forms.PictureBox();
+			this.picBoxLogo = new System.Windows.Forms.PictureBox();
+			this.picBoxBackground = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.picBoxMascot)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBoxBackground)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// BtnNewProfile
 			// 
-			this.BtnNewProfile.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.BtnNewProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnNewProfile.AutoSize = true;
-			this.BtnNewProfile.Location = new System.Drawing.Point(205, 91);
+			this.BtnNewProfile.Location = new System.Drawing.Point(55, 123);
 			this.BtnNewProfile.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnNewProfile.Name = "BtnNewProfile";
 			this.BtnNewProfile.Size = new System.Drawing.Size(211, 41);
@@ -49,9 +55,9 @@
 			// 
 			// BtnLoadProfile
 			// 
-			this.BtnLoadProfile.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.BtnLoadProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnLoadProfile.AutoSize = true;
-			this.BtnLoadProfile.Location = new System.Drawing.Point(205, 142);
+			this.BtnLoadProfile.Location = new System.Drawing.Point(55, 174);
 			this.BtnLoadProfile.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnLoadProfile.Name = "BtnLoadProfile";
 			this.BtnLoadProfile.Size = new System.Drawing.Size(211, 41);
@@ -62,9 +68,9 @@
 			// 
 			// BtnExit
 			// 
-			this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnExit.AutoSize = true;
-			this.BtnExit.Location = new System.Drawing.Point(205, 244);
+			this.BtnExit.Location = new System.Drawing.Point(55, 276);
 			this.BtnExit.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(211, 41);
@@ -73,14 +79,53 @@
 			this.BtnExit.UseVisualStyleBackColor = true;
 			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
 			// 
+			// picBoxMascot
+			// 
+			this.picBoxMascot.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.picBoxMascot.BackColor = System.Drawing.Color.Transparent;
+			this.picBoxMascot.Image = global::PetStop.Properties.Resources.mascot;
+			this.picBoxMascot.Location = new System.Drawing.Point(360, 165);
+			this.picBoxMascot.Name = "picBoxMascot";
+			this.picBoxMascot.Size = new System.Drawing.Size(262, 242);
+			this.picBoxMascot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.picBoxMascot.TabIndex = 5;
+			this.picBoxMascot.TabStop = false;
+			// 
+			// picBoxLogo
+			// 
+			this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
+			this.picBoxLogo.BackgroundImage = global::PetStop.Properties.Resources.logoBig;
+			this.picBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.picBoxLogo.Location = new System.Drawing.Point(55, 0);
+			this.picBoxLogo.Name = "picBoxLogo";
+			this.picBoxLogo.Size = new System.Drawing.Size(211, 93);
+			this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.picBoxLogo.TabIndex = 4;
+			this.picBoxLogo.TabStop = false;
+			// 
+			// picBoxBackground
+			// 
+			this.picBoxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.picBoxBackground.Image = global::PetStop.Properties.Resources.bgMainMenu;
+			this.picBoxBackground.Location = new System.Drawing.Point(0, 0);
+			this.picBoxBackground.Name = "picBoxBackground";
+			this.picBoxBackground.Size = new System.Drawing.Size(634, 419);
+			this.picBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.picBoxBackground.TabIndex = 3;
+			this.picBoxBackground.TabStop = false;
+			// 
 			// MainMenuForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(621, 377);
+			this.ClientSize = new System.Drawing.Size(634, 419);
+			this.Controls.Add(this.picBoxMascot);
+			this.Controls.Add(this.picBoxLogo);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.BtnLoadProfile);
 			this.Controls.Add(this.BtnNewProfile);
+			this.Controls.Add(this.picBoxBackground);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -89,6 +134,9 @@
 			this.Text = "Главное меню";
 			this.Load += new System.EventHandler(this.MainMenuForm_Load);
 			this.Shown += new System.EventHandler(this.MainMenuForm_Shown);
+			((System.ComponentModel.ISupportInitialize)(this.picBoxMascot)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBoxBackground)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -99,5 +147,8 @@
 		private System.Windows.Forms.Button BtnNewProfile;
 		private System.Windows.Forms.Button BtnLoadProfile;
 		private System.Windows.Forms.Button BtnExit;
+		private System.Windows.Forms.PictureBox picBoxBackground;
+		private System.Windows.Forms.PictureBox picBoxLogo;
+		private System.Windows.Forms.PictureBox picBoxMascot;
 	}
 }

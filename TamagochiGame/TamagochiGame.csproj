@@ -223,6 +223,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\bgMainMenu.png" />
+    <None Include="Resources\bgMainMenu.webp" />
+    <None Include="Resources\Mascot.png" />
+    <None Include="Resources\BigLogo.png" />
     <None Include="Resources\pets\platypuses\petPlatypus.png" />
     <None Include="Resources\pets\platypuses\petPerry.png" />
     <None Include="Resources\pets\parrots\petParrot.png" />
