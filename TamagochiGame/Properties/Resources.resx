@@ -169,6 +169,9 @@
   <data name="Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\game\configs\Effects.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="GermanShepherdsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\GermanShepherdsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="hat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +186,12 @@
   </data>
   <data name="mascot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mascot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParrotsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\ParrotsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PerryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\PerryList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="petGS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pets\germanShepherds\petGS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,6 +210,9 @@
   </data>
   <data name="petPlatypus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pets\platypuses\petPlatypus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlatypusesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\PlatypusesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="sandwich" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sandwich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

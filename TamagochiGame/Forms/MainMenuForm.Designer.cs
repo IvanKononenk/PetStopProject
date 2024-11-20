@@ -44,7 +44,7 @@
 			// 
 			this.BtnNewProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnNewProfile.AutoSize = true;
-			this.BtnNewProfile.Location = new System.Drawing.Point(55, 123);
+			this.BtnNewProfile.Location = new System.Drawing.Point(55, 165);
 			this.BtnNewProfile.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnNewProfile.Name = "BtnNewProfile";
 			this.BtnNewProfile.Size = new System.Drawing.Size(211, 41);
@@ -57,7 +57,7 @@
 			// 
 			this.BtnLoadProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnLoadProfile.AutoSize = true;
-			this.BtnLoadProfile.Location = new System.Drawing.Point(55, 174);
+			this.BtnLoadProfile.Location = new System.Drawing.Point(55, 216);
 			this.BtnLoadProfile.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnLoadProfile.Name = "BtnLoadProfile";
 			this.BtnLoadProfile.Size = new System.Drawing.Size(211, 41);
@@ -71,7 +71,7 @@
 			this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Left;
 			this.BtnExit.AutoSize = true;
 			this.BtnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.BtnExit.Location = new System.Drawing.Point(55, 276);
+			this.BtnExit.Location = new System.Drawing.Point(55, 318);
 			this.BtnExit.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(211, 41);
@@ -86,9 +86,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.picBoxMascot.BackColor = System.Drawing.Color.Transparent;
 			this.picBoxMascot.Image = global::PetStop.Properties.Resources.mascot;
-			this.picBoxMascot.Location = new System.Drawing.Point(360, 165);
+			this.picBoxMascot.Location = new System.Drawing.Point(340, 145);
 			this.picBoxMascot.Name = "picBoxMascot";
-			this.picBoxMascot.Size = new System.Drawing.Size(262, 242);
+			this.picBoxMascot.Size = new System.Drawing.Size(282, 262);
 			this.picBoxMascot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.picBoxMascot.TabIndex = 5;
 			this.picBoxMascot.TabStop = false;
@@ -98,7 +98,7 @@
 			this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
 			this.picBoxLogo.BackgroundImage = global::PetStop.Properties.Resources.logoBig;
 			this.picBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.picBoxLogo.Location = new System.Drawing.Point(55, 0);
+			this.picBoxLogo.Location = new System.Drawing.Point(55, 31);
 			this.picBoxLogo.Name = "picBoxLogo";
 			this.picBoxLogo.Size = new System.Drawing.Size(211, 93);
 			this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,6 +129,7 @@
 			this.Controls.Add(this.BtnNewProfile);
 			this.Controls.Add(this.picBoxBackground);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.MaximizeBox = false;

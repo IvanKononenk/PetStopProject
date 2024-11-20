@@ -63,7 +63,7 @@
 			this.DGVSaveFIles.ReadOnly = true;
 			this.DGVSaveFIles.RowHeadersVisible = false;
 			this.DGVSaveFIles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.DGVSaveFIles.Size = new System.Drawing.Size(816, 315);
+			this.DGVSaveFIles.Size = new System.Drawing.Size(573, 157);
 			this.DGVSaveFIles.TabIndex = 4;
 			// 
 			// SaveFile
@@ -82,7 +82,7 @@
 			// 
 			this.LblSavesCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.LblSavesCount.AutoSize = true;
-			this.LblSavesCount.Location = new System.Drawing.Point(12, 330);
+			this.LblSavesCount.Location = new System.Drawing.Point(12, 172);
 			this.LblSavesCount.Name = "LblSavesCount";
 			this.LblSavesCount.Size = new System.Drawing.Size(245, 23);
 			this.LblSavesCount.TabIndex = 7;
@@ -92,7 +92,7 @@
 			// 
 			this.BtnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnLoad.AutoSize = true;
-			this.BtnLoad.Location = new System.Drawing.Point(711, 333);
+			this.BtnLoad.Location = new System.Drawing.Point(468, 175);
 			this.BtnLoad.Name = "BtnLoad";
 			this.BtnLoad.Size = new System.Drawing.Size(117, 33);
 			this.BtnLoad.TabIndex = 6;
@@ -104,7 +104,7 @@
 			// 
 			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.BtnExit.Location = new System.Drawing.Point(711, 372);
+			this.BtnExit.Location = new System.Drawing.Point(468, 214);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(117, 33);
 			this.BtnExit.TabIndex = 5;
@@ -118,7 +118,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.BtnExit;
-			this.ClientSize = new System.Drawing.Size(840, 417);
+			this.ClientSize = new System.Drawing.Size(597, 259);
 			this.Controls.Add(this.DGVSaveFIles);
 			this.Controls.Add(this.LblSavesCount);
 			this.Controls.Add(this.BtnLoad);
@@ -126,6 +126,7 @@
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MinimumSize = new System.Drawing.Size(613, 298);
 			this.Name = "LoadProfileForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Выбор профиля";

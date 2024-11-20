@@ -57,8 +57,6 @@ D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.ChooseACrateFo
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.LoadingScreen.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.LoadPetForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.LoadProfileForm.resources
-D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.MainScreenForm.resources
-D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.NewPlayerForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.PetInfoForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Properties.Resources.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\Tamagoch.6515E4D9.Up2Date
@@ -69,3 +67,6 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.MainMenuForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.NewProfileForm.resources
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenForm.resources
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.MainMenuForm.resources
+D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.NewProfileForm.resources

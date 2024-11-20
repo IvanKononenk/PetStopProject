@@ -112,7 +112,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.Name = "NewProfileForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Новый профиль";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewPlayerForm_FormClosing);
 			this.ResumeLayout(false);

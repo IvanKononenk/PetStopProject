@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreen));
 			this.PIcBoxLogo = new System.Windows.Forms.PictureBox();
 			this.LblHello = new System.Windows.Forms.Label();
 			this.LoadingBar = new System.Windows.Forms.ProgressBar();
@@ -71,6 +72,8 @@
 			this.Controls.Add(this.LblHello);
 			this.Controls.Add(this.PIcBoxLogo);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MaximumSize = new System.Drawing.Size(816, 319);
 			this.MinimumSize = new System.Drawing.Size(816, 319);

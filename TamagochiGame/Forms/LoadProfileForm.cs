@@ -15,7 +15,7 @@ namespace PetStop.Forms
 {
 	public partial class LoadProfileForm : Form
 	{
-		bool gameLoading = false;
+		bool petLoading = false;
 		public LoadProfileForm()
 		{
 			InitializeComponent();
@@ -30,7 +30,7 @@ namespace PetStop.Forms
 
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
-			gameLoading = false;
+			petLoading = false;
 			Close();
 		}
 
@@ -38,14 +38,14 @@ namespace PetStop.Forms
 		{
 			Player.activePlayer = Player.LoadAPlayer("game\\saves\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + "\\player.json");
 			LoadPetForm ldPtFrm = new LoadPetForm();
-			gameLoading = true;
+			petLoading = true;
 			ldPtFrm.Show();
 			Close();
 		}
 
 		private void LoadProfileForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			if (!gameLoading)
+			if (!petLoading)
 				Application.OpenForms["MainMenuForm"].Show();
 		}
 	}

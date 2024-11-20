@@ -12,7 +12,7 @@ namespace PetStop
 	/// </summary>
 	public static class SpeciesFactory
 	{
-		private static Dictionary<string, Species> speciesDictionary;
+		public static Dictionary<string, Species> speciesDictionary;
 
 		/// <summary>
 		/// Конструктор класса непонятного назначения
@@ -68,6 +68,7 @@ namespace PetStop
 	{
 		public string speciesName { get; set; }
 		public string speciesEng { get; set; }
+		public string listFile { get; set; }
 		public int modHappiness { get; set; }
 		public int modSatiety { get; set; }
 		public int modHydration { get; set; }
@@ -80,16 +81,18 @@ namespace PetStop
 		/// </summary>
 		/// <param name="speciesName">Название породы</param>
 		/// <param name="speciesEng">Название породы по-английски</param>
+		/// <param name="listFile">Имя файла со спрайтами</param>
 		/// <param name="modHappiness"></param>
 		/// <param name="modSatiety"></param>
 		/// <param name="modHydration"></param>
 		/// <param name="modCommunication"></param>
 		/// <param name="modVigor"></param>
 		/// <param name="modCleanliness"></param>
-		public Species(string speciesName, string speciesEng, int modHappiness, int modSatiety, int modHydration, int modCommunication, int modVigor, int modCleanliness)
+		public Species(string speciesName, string speciesEng, string listFile, int modHappiness, int modSatiety, int modHydration, int modCommunication, int modVigor, int modCleanliness)
 		{
 			this.speciesName = speciesName;
 			this.speciesEng = speciesEng;
+			this.listFile = listFile;
 			this.modHappiness = modHappiness;
 			this.modSatiety = modSatiety;
 			this.modHydration = modHydration;
@@ -97,5 +100,6 @@ namespace PetStop
 			this.modVigor = modVigor;
 			this.modCleanliness = modCleanliness;
 		}
+		public static Species newSpecies;
 	}
 }

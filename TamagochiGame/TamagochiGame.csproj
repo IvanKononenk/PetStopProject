@@ -187,7 +187,11 @@
     </EmbeddedResource>
     <None Include="bin\Debug\game\configs\CratesList.json" />
     <None Include="bin\Debug\game\configs\Effects.json" />
+    <None Include="bin\Debug\game\configs\GermanShepherdsList.json" />
     <None Include="bin\Debug\game\configs\Items.json" />
+    <None Include="bin\Debug\game\configs\ParrotsList.json" />
+    <None Include="bin\Debug\game\configs\PerryList.json" />
+    <None Include="bin\Debug\game\configs\PlatypusesList.json" />
     <None Include="bin\Debug\game\configs\Species.json" />
     <None Include="bin\Debug\game\configs\Traits.json" />
     <None Include="packages.config" />
@@ -224,7 +228,6 @@
   <ItemGroup>
     <Content Include="logo.ico" />
     <None Include="Resources\bgMainMenu.png" />
-    <None Include="Resources\bgMainMenu.webp" />
     <None Include="Resources\Mascot.png" />
     <None Include="Resources\BigLogo.png" />
     <None Include="Resources\pets\platypuses\petPlatypus.png" />

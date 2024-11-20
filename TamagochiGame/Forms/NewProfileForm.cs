@@ -14,21 +14,20 @@ namespace PetStop.Forms
 {
 	public partial class NewProfileForm : Form
 	{
-		public Player outerPlayer;
+		bool creatingPet = false;
 		public NewProfileForm()
 		{
 			InitializeComponent();
 		}
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
+			creatingPet = false;
 			Close();
 		}
 		private void NewPlayerForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			if (Owner == Application.OpenForms["LoadingScreen"] && outerPlayer == null)
-			{
-				Application.Exit();
-			}
+			if (!creatingPet)
+				Application.OpenForms["MainMenuForm"].Show();
 		}
 
 		private void BtnConfirm_Click(object sender, EventArgs e)
@@ -39,7 +38,10 @@ namespace PetStop.Forms
 				{
 					List<Pet> petList = new List<Pet>();
 					Player.activePlayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value.Date, petList);
-					Player.activePlayer.SaveAUser(Player.activePlayer);
+					ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
+					creatingPet = true;
+					chsACrtFrm.Show();
+					Close();
 				}
 				else
 				{

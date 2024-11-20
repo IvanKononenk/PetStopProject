@@ -165,5 +165,6 @@ namespace PetStop
 
 		public static TimeSpan lastPlay;
 		public static Pet activePet;
+		public static Pet newPet;
 	}
 }

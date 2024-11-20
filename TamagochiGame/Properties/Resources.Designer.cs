@@ -231,6 +231,16 @@ namespace PetStop.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] GermanShepherdsList {
+            get {
+                object obj = ResourceManager.GetObject("GermanShepherdsList", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hat {
@@ -277,6 +287,26 @@ namespace PetStop.Properties {
             get {
                 object obj = ResourceManager.GetObject("mascot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] ParrotsList {
+            get {
+                object obj = ResourceManager.GetObject("ParrotsList", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] PerryList {
+            get {
+                object obj = ResourceManager.GetObject("PerryList", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -337,6 +367,16 @@ namespace PetStop.Properties {
             get {
                 object obj = ResourceManager.GetObject("petPlatypus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] PlatypusesList {
+            get {
+                object obj = ResourceManager.GetObject("PlatypusesList", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
