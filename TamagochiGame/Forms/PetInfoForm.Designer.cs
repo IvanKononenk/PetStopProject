@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PetInfoForm));
 			this.PicBoxPet = new System.Windows.Forms.PictureBox();
 			this.LblName = new System.Windows.Forms.Label();
 			this.LblSpecies = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
 			// BtnClose
 			// 
 			this.BtnClose.AutoSize = true;
+			this.BtnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.BtnClose.Location = new System.Drawing.Point(871, 316);
 			this.BtnClose.Name = "BtnClose";
 			this.BtnClose.Size = new System.Drawing.Size(101, 33);
@@ -124,6 +126,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.CancelButton = this.BtnClose;
 			this.ClientSize = new System.Drawing.Size(984, 361);
 			this.Controls.Add(this.BtnClose);
 			this.Controls.Add(this.LblEffects);
@@ -134,6 +137,7 @@
 			this.Controls.Add(this.LblName);
 			this.Controls.Add(this.PicBoxPet);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.Name = "PetInfoForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

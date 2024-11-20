@@ -1,0 +1,70 @@
+{
+  "name": "Пёс",
+  "species": {
+    "speciesName": "Немецкая овчарка",
+    "speciesEng": "germanShepherd",
+    "modHappiness": 0,
+    "modSatiety": 0,
+    "modHydration": 0,
+    "modCommunication": 0,
+    "modVigor": 0,
+    "modCleanliness": 0
+  },
+  "petPic": "petGS1",
+  "gender": "Мужской",
+  "happiness": 49850,
+  "satiety": 9500,
+  "hydration": 9500,
+  "communication": 10000,
+  "vigor": 8750,
+  "cleanliness": 10000,
+  "trait": {
+    "trait": "Лентяй",
+    "traitEng": "lazy",
+    "modSatiety": 115,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 125,
+    "modCleanliness": 100
+  },
+  "ageMinutes": 0,
+  "inventory": [
+    {
+      "item": "Предмет 1",
+      "itemEng": "item1",
+      "count": 1
+    },
+    {
+      "item": "Предмет 2",
+      "itemEng": "item2",
+      "count": 2
+    },
+    {
+      "item": "Предмет 3",
+      "itemEng": "item3",
+      "count": 3
+    }
+  ],
+  "effects": [
+    {
+      "effect": "Болезнь",
+      "effectEng": "sick",
+      "modHappiness": -500,
+      "modSatiety": 0,
+      "modHydration": 0,
+      "modCommunication": 0,
+      "modVigor": -500,
+      "modCleanliness": 0
+    },
+    {
+      "effect": "Отравление",
+      "effectEng": "poisoned",
+      "modHappiness": -1000,
+      "modSatiety": -500,
+      "modHydration": -500,
+      "modCommunication": 0,
+      "modVigor": -750,
+      "modCleanliness": 0
+    }
+  ]
+}

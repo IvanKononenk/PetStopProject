@@ -1,4 +1,5 @@
-﻿using PetStop.Properties;
+﻿using PetStop.Classes;
+using PetStop.Properties;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -27,6 +28,18 @@ namespace PetStop
 			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 		}
 
-		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e) => Application.OpenForms[0].Close();
+		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Pet.activePet.SaveAPet(Pet.activePet);
+			Pet.activePet = null;
+			Player.activePlayer.SaveAUser(Player.activePlayer);
+			Player.activePlayer = null;
+			Application.OpenForms["MainMenuForm"].Show();
+		}
+
+		private void BtnExit_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

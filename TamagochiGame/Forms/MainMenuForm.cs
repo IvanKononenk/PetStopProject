@@ -21,7 +21,7 @@ namespace PetStop.Forms
 
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
-			Application.Exit();
+			Close();
 		}
 
 		private void BtnLoadProfile_Click(object sender, EventArgs e)

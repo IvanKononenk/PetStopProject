@@ -40,11 +40,11 @@ namespace PetStop.Classes
 				var saveJson = JsonSerializer.Serialize<Player>(player, options);
 				sw.Write(saveJson);
 				sw.Close();
-				MessageBox.Show("Запись выполнена!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Данные игрока сохранены!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 			catch
 			{
-				MessageBox.Show("Ошибка при записи!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Ошибка при сохранении данных пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		public static Player LoadAPlayer(string file)

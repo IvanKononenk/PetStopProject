@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Encodings.Web;
@@ -79,7 +80,7 @@ namespace PetStop
 		{
 			try
 			{
-				StreamWriter sw = new StreamWriter(name + ".json", false);
+				StreamWriter sw = new StreamWriter("game\\saves\\" + Player.activePlayer.username + "\\" + name + ".json", false);
 				var options = new JsonSerializerOptions
 				{
 					WriteIndented = true,
@@ -88,12 +89,12 @@ namespace PetStop
 				var saveJson = JsonSerializer.Serialize<Pet>(saveTarget, options);
 				sw.Write(saveJson);
 				sw.Close();
-				MessageBox.Show("Запись выполнена!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Сохранение данных питомца выполнено!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return true;
 			}
 			catch
 			{
-				MessageBox.Show("Ошибка при записи!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Ошибка при сохранении данных питомца!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return false;
 			}
 		}

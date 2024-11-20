@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStop.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +15,7 @@ namespace PetStop.Forms
 {
 	public partial class LoadProfileForm : Form
 	{
+		bool gameLoading = false;
 		public LoadProfileForm()
 		{
 			InitializeComponent();
@@ -21,12 +24,29 @@ namespace PetStop.Forms
 		private void LoadProfileForm_Load(object sender, EventArgs e)
 		{
 			foreach (string save in Directory.GetDirectories("game\\saves"))
-			{ DGVSaveFIles.Rows.Add(save, Directory.GetLastAccessTime(save)); }
+			{ DGVSaveFIles.Rows.Add(Regex.Replace(save, @"game\\saves\\", ""), Directory.GetLastAccessTime(save)); }
+			LblSavesCount.Text = "Найдено сохранений: " + DGVSaveFIles.RowCount;
 		}
 
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
+			gameLoading = false;
 			Close();
+		}
+
+		private void BtnLoad_Click(object sender, EventArgs e)
+		{
+			Player.activePlayer = Player.LoadAPlayer("game\\saves\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + "\\player.json");
+			LoadPetForm ldPtFrm = new LoadPetForm();
+			gameLoading = true;
+			ldPtFrm.Show();
+			Close();
+		}
+
+		private void LoadProfileForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			if (!gameLoading)
+				Application.OpenForms["MainMenuForm"].Show();
 		}
 	}
 }

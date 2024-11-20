@@ -98,10 +98,12 @@
 			this.BtnLoad.TabIndex = 6;
 			this.BtnLoad.Text = "Загрузить";
 			this.BtnLoad.UseVisualStyleBackColor = true;
+			this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
 			// 
 			// BtnExit
 			// 
 			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.BtnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.BtnExit.Location = new System.Drawing.Point(711, 372);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(117, 33);
@@ -112,8 +114,10 @@
 			// 
 			// LoadProfileForm
 			// 
+			this.AcceptButton = this.BtnLoad;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.CancelButton = this.BtnExit;
 			this.ClientSize = new System.Drawing.Size(840, 417);
 			this.Controls.Add(this.DGVSaveFIles);
 			this.Controls.Add(this.LblSavesCount);
@@ -125,6 +129,7 @@
 			this.Name = "LoadProfileForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Выбор профиля";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoadProfileForm_FormClosing);
 			this.Load += new System.EventHandler(this.LoadProfileForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.DGVSaveFIles)).EndInit();
 			this.ResumeLayout(false);

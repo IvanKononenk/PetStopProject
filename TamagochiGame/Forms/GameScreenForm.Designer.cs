@@ -45,8 +45,8 @@
 			this.LblVigor = new System.Windows.Forms.Label();
 			this.LblCleanliness = new System.Windows.Forms.Label();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.BtnExit = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
-			this.tableLayoutPanel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// LblHunger
@@ -86,7 +86,7 @@
 			// 
 			this.LblAge.AutoSize = true;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(3, 0);
+			this.LblAge.Location = new System.Drawing.Point(715, 12);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(20, 23);
 			this.LblAge.TabIndex = 11;
@@ -214,19 +214,31 @@
 			this.tableLayoutPanel1.ColumnCount = 1;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Controls.Add(this.LblAge, 0, 0);
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(924, 565);
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(950, 588);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 1;
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(26, 23);
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(0, 0);
 			this.tableLayoutPanel1.TabIndex = 22;
 			// 
-			// MainScreenForm
+			// BtnExit
+			// 
+			this.BtnExit.AutoSize = true;
+			this.BtnExit.Location = new System.Drawing.Point(790, 555);
+			this.BtnExit.Name = "BtnExit";
+			this.BtnExit.Size = new System.Drawing.Size(160, 33);
+			this.BtnExit.TabIndex = 23;
+			this.BtnExit.Text = "Выход в меню";
+			this.BtnExit.UseVisualStyleBackColor = true;
+			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+			// 
+			// GameScreenForm
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(962, 600);
+			this.Controls.Add(this.BtnExit);
+			this.Controls.Add(this.LblAge);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.LblCleanliness);
 			this.Controls.Add(this.LblVigor);
@@ -245,14 +257,12 @@
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MinimumSize = new System.Drawing.Size(759, 394);
-			this.Name = "MainScreenForm";
+			this.Name = "GameScreenForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "PetStop";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreenForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainScreenForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.tableLayoutPanel1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -276,6 +286,7 @@
 		private System.Windows.Forms.Label LblVigor;
 		private System.Windows.Forms.Label LblCleanliness;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+		private System.Windows.Forms.Button BtnExit;
 	}
 }
 

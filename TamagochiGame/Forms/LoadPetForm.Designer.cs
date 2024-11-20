@@ -81,6 +81,7 @@
 			// BtnExit
 			// 
 			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.BtnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.BtnExit.Location = new System.Drawing.Point(711, 372);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(117, 33);
@@ -113,8 +114,10 @@
 			// 
 			// LoadPetForm
 			// 
+			this.AcceptButton = this.BtnLoad;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.CancelButton = this.BtnExit;
 			this.ClientSize = new System.Drawing.Size(840, 417);
 			this.Controls.Add(this.LblSavesCount);
 			this.Controls.Add(this.BtnLoad);
