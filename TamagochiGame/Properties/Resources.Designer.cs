@@ -183,9 +183,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crate1 {
+        internal static System.Drawing.Bitmap crateCat {
             get {
-                object obj = ResourceManager.GetObject("crate1", resourceCulture);
+                object obj = ResourceManager.GetObject("crateCat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crate2 {
+        internal static System.Drawing.Bitmap crateDog {
             get {
-                object obj = ResourceManager.GetObject("crate2", resourceCulture);
+                object obj = ResourceManager.GetObject("crateDog", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crate3 {
+        internal static System.Drawing.Bitmap crateExotic {
             get {
-                object obj = ResourceManager.GetObject("crate3", resourceCulture);
+                object obj = ResourceManager.GetObject("crateExotic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
+        internal static System.Drawing.Bitmap logoPetStop {
             get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                object obj = ResourceManager.GetObject("logoPetStop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logoBig {
+        internal static System.Drawing.Bitmap logoSerpents {
             get {
-                object obj = ResourceManager.GetObject("logoBig", resourceCulture);
+                object obj = ResourceManager.GetObject("logoSerpents", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -307,6 +307,106 @@ namespace PetStop.Properties {
             get {
                 object obj = ResourceManager.GetObject("PerryList", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petCat1 {
+            get {
+                object obj = ResourceManager.GetObject("petCat1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petCat2 {
+            get {
+                object obj = ResourceManager.GetObject("petCat2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petCat3 {
+            get {
+                object obj = ResourceManager.GetObject("petCat3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petCat4 {
+            get {
+                object obj = ResourceManager.GetObject("petCat4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petCorgi {
+            get {
+                object obj = ResourceManager.GetObject("petCorgi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petDog1 {
+            get {
+                object obj = ResourceManager.GetObject("petDog1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petDog2 {
+            get {
+                object obj = ResourceManager.GetObject("petDog2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petFrog1 {
+            get {
+                object obj = ResourceManager.GetObject("petFrog1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petFrog2 {
+            get {
+                object obj = ResourceManager.GetObject("petFrog2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap petFrog3 {
+            get {
+                object obj = ResourceManager.GetObject("petFrog3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

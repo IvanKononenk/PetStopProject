@@ -1,0 +1,108 @@
+[
+	{
+		"speciesInside": "Собаки",
+		"crateName": "crateDog",
+		"species": [
+			{
+				"speciesName": "Немецкая овчарка",
+				"speciesEng": "germanShepherd",
+				"possiblePics": [ "petGS1", "petGS2", "petGS3" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			},
+			{
+				"speciesName": "Корги",
+				"speciesEng": "corgi",
+				"possiblePics": [ "petCorgi" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			},
+			{
+				"speciesName": "Собака",
+				"speciesEng": "dog",
+				"possiblePics": [ "petDog1", "petDog2" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			}
+		]
+	},
+	{
+		"speciesInside": "Кошки",
+		"crateName": "crateCat",
+		"species": [
+			{
+				"speciesName": "Кот",
+				"speciesEng": "cat",
+				"possiblePics": [ "petCat1", "petCat2", "petCat3", "petCat4" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			}
+		]
+	},
+	{
+		"speciesInside": "Экзотика",
+		"crateName": "crateExotic",
+		"species": [
+			{
+				"speciesName": "Попугай",
+				"speciesEng": "parrot",
+				"possiblePics": [ "petParrot" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			},
+			{
+				"speciesName": "Утконос",
+				"speciesEng": "platypus",
+				"possiblePics": [ "petPlatypus" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			},
+			{
+				"speciesName": "Перри-утконос",
+				"speciesEng": "platypusPerry",
+				"possiblePics": [ "petPerry" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			},
+			{
+				"speciesName": "Лягушка",
+				"speciesEng": "frog",
+				"possiblePics": [ "petFrog1", "petFrog2", "petFrog3" ],
+				"modHappiness": 0,
+				"modSatiety": 0,
+				"modHydration": 0,
+				"modCommunication": 0,
+				"modVigor": 0,
+				"modCleanliness": 0
+			}
+		]
+	}
+]

@@ -96,7 +96,7 @@
 			// picBoxLogo
 			// 
 			this.picBoxLogo.BackColor = System.Drawing.Color.Transparent;
-			this.picBoxLogo.BackgroundImage = global::PetStop.Properties.Resources.logoBig;
+			this.picBoxLogo.BackgroundImage = global::PetStop.Properties.Resources.logoPetStop;
 			this.picBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.picBoxLogo.Location = new System.Drawing.Point(55, 31);
 			this.picBoxLogo.Name = "picBoxLogo";

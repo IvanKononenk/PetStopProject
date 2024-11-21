@@ -37,7 +37,7 @@
 			// 
 			// PIcBoxLogo
 			// 
-			this.PIcBoxLogo.Image = global::PetStop.Properties.Resources.logo;
+			this.PIcBoxLogo.Image = global::PetStop.Properties.Resources.logoSerpents;
 			this.PIcBoxLogo.Location = new System.Drawing.Point(12, 12);
 			this.PIcBoxLogo.Name = "PIcBoxLogo";
 			this.PIcBoxLogo.Size = new System.Drawing.Size(256, 256);

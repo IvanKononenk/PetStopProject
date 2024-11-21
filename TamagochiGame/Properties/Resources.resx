@@ -118,8 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CratesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\CratesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Effects.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GermanShepherdsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\GermanShepherdsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Items.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ParrotsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\ParrotsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PerryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\PerryList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PlatypusesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\PlatypusesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Species" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Species.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Traits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\game\configs\Traits.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="bgMainMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgMainMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\backgrounds\bgMainMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bgRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backgrounds\bgRoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,65 +181,44 @@
   <data name="cookie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cookie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crates\crate1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="crateCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crates\crateCat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crates\crate2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="crateDog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crates\crateDog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crate3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crates\crate3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CratesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\CratesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\Effects.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GermanShepherdsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\GermanShepherdsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="crateExotic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crates\crateExotic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Items" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\Items.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="logoPetStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logos\logoPetStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logoBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BigLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoSerpents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logos\logoSerpents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mascot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mascot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ParrotsList" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\ParrotsList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PerryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\PerryList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\mascot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petGS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\germanShepherds\petGS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\pets\dogs\germanShepherds\petGS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petGS2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\germanShepherds\petGS2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\pets\dogs\germanShepherds\petGS2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petGS3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\germanShepherds\petGS3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\pets\dogs\germanShepherds\petGS3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petParrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\parrots\petParrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\pets\exotic\parrots\petParrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petPerry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\platypuses\petPerry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\pets\exotic\platypuses\petPerry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="petPlatypus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pets\platypuses\petPlatypus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PlatypusesList" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\PlatypusesList.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\pets\exotic\platypuses\petPlatypus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sandwich" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sandwich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,13 +232,37 @@
   <data name="soapShadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soapShadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Species" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\Species.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="taco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Traits" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\game\configs\Traits.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="petCat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\cats\petCat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petCat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\cats\petCat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petCat3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\cats\petCat3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petCat4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\cats\petCat4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petCorgi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\dogs\petCorgi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petDog1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\dogs\petDog1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petDog2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\dogs\petDog2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petFrog1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\exotic\frogs\petFrog1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petFrog2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\exotic\frogs\petFrog2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petFrog3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pets\exotic\frogs\petFrog3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
