@@ -25,7 +25,6 @@ namespace PetStop
 		/// <summary>
 		/// Метод заполнения словаря черт из файла или грубым кодом
 		/// </summary>
-		/// <param name="filePath">Путь к JSON файлу</param>
 		private static void LoadTraitsFromJson()
 		{
 			var traitsList = JsonSerializer.Deserialize<List<Traits>>(Resources.Traits);

@@ -1,4 +1,5 @@
-﻿using PetStop.Properties;
+﻿using PetStop.Classes;
+using PetStop.Properties;
 using System;
 using System.Drawing;
 using System.Linq;
@@ -20,15 +21,16 @@ namespace PetStop.Forms
 
 		private void ChooseACrateForm_Load(object sender, EventArgs e)
 		{
-			PictureBox[] picBoxCrates = new PictureBox[crates.Count()];
+			PictureBox[] picBoxCrates = new PictureBox[CratesClasses.LoadCrates().Count()];
 			for (int i = 0; i < picBoxCrates.Length; i++)
 			{
 				picBoxCrates[i] = new PictureBox
 				{
-					Image = (Bitmap)Resources.ResourceManager.GetObject(crates[i].ToString()),
+					Image = (Bitmap)Resources.ResourceManager.GetObject(CratesClasses.LoadCrates()[i].crateName),
 					SizeMode = PictureBoxSizeMode.Zoom,
 					Parent = TLPCrates,
-					Dock = DockStyle.Fill
+					Dock = DockStyle.Fill,
+					Tag = i
 				};
 				picBoxCrates[i].Click += picBoxCrate_CLick;
 				TLPCrates.Controls.Add(picBoxCrates[i]);
@@ -40,8 +42,8 @@ namespace PetStop.Forms
 		private void picBoxCrate_CLick(object sender, EventArgs e)
 		{
 			TLPCrates.Enabled = false;
-			Species.newSpecies = SpeciesFactory.speciesDictionary[SpeciesFactory.speciesDictionary.ElementAt(rnd.Next(SpeciesFactory.speciesDictionary.Count)).Key];
 			chosenBox = (PictureBox)sender;
+			Species.newSpecies = CratesClasses.RandomSpecies(int.Parse(chosenBox.Tag.ToString()));
 			chosenBox.Image = (Bitmap)Resources.ResourceManager.GetObject(Species.newSpecies.possiblePics[rnd.Next(Species.newSpecies.possiblePics.Length)]);
 			BtnConfirm.Enabled = true;
 			LblPetName.Visible = true;

@@ -213,6 +213,16 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
+        internal static byte[] Crates {
+            get {
+                object obj = ResourceManager.GetObject("Crates", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
         internal static byte[] CratesList {
             get {
                 object obj = ResourceManager.GetObject("CratesList", resourceCulture);

@@ -186,6 +186,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\game\configs\Crates.json" />
     <None Include="bin\Debug\game\configs\CratesList.json" />
     <None Include="bin\Debug\game\configs\Effects.json" />
     <None Include="bin\Debug\game\configs\GermanShepherdsList.json" />

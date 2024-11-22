@@ -106,7 +106,7 @@ namespace PetStop
 		public void AssignItem(Items item) => inventory.Add(item);
 		
 		/// <summary>
-		/// Метод назначения питомца эффекта
+		/// Метод назначения питомцу эффекта
 		/// </summary>
 		/// <param name="effect">Название эффекта</param>
 		public void AssignEffect(Effects effect)
