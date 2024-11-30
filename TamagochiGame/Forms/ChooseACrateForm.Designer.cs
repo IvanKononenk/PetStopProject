@@ -38,26 +38,29 @@
 			this.TLPCrates = new System.Windows.Forms.TableLayoutPanel();
 			this.PanelName = new System.Windows.Forms.Panel();
 			this.PanelSpecies = new System.Windows.Forms.Panel();
-			this.TxtSpecies = new System.Windows.Forms.TextBox();
 			this.LblSpecies = new System.Windows.Forms.Label();
 			this.PanelTrait = new System.Windows.Forms.Panel();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.LblTrait = new System.Windows.Forms.Label();
 			this.PanelGender = new System.Windows.Forms.Panel();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.LblSex = new System.Windows.Forms.Label();
+			this.TLPPet = new System.Windows.Forms.TableLayoutPanel();
+			this.PanelInfo = new System.Windows.Forms.Panel();
+			this.PanelBig = new System.Windows.Forms.Panel();
+			this.TxtSpecies = new System.Windows.Forms.TextBox();
+			this.TxtSex = new System.Windows.Forms.TextBox();
+			this.TxtTrait = new System.Windows.Forms.TextBox();
 			this.PanelName.SuspendLayout();
 			this.PanelSpecies.SuspendLayout();
 			this.PanelTrait.SuspendLayout();
 			this.PanelGender.SuspendLayout();
-			this.tableLayoutPanel1.SuspendLayout();
-			this.panel1.SuspendLayout();
+			this.TLPPet.SuspendLayout();
+			this.PanelInfo.SuspendLayout();
+			this.PanelBig.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// LblPetName
 			// 
+			this.LblPetName.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.LblPetName.AutoSize = true;
 			this.LblPetName.Location = new System.Drawing.Point(0, 3);
 			this.LblPetName.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -65,23 +68,22 @@
 			this.LblPetName.Size = new System.Drawing.Size(90, 23);
 			this.LblPetName.TabIndex = 3;
 			this.LblPetName.Text = "Кличка:";
-			this.LblPetName.Visible = false;
 			// 
 			// TxtPetName
 			// 
+			this.TxtPetName.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.TxtPetName.Location = new System.Drawing.Point(96, 0);
 			this.TxtPetName.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
 			this.TxtPetName.Name = "TxtPetName";
 			this.TxtPetName.Size = new System.Drawing.Size(145, 31);
 			this.TxtPetName.TabIndex = 4;
-			this.TxtPetName.Visible = false;
 			// 
 			// BtnConfirm
 			// 
 			this.BtnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnConfirm.AutoSize = true;
 			this.BtnConfirm.Enabled = false;
-			this.BtnConfirm.Location = new System.Drawing.Point(466, 494);
+			this.BtnConfirm.Location = new System.Drawing.Point(451, 356);
 			this.BtnConfirm.Name = "BtnConfirm";
 			this.BtnConfirm.Size = new System.Drawing.Size(145, 33);
 			this.BtnConfirm.TabIndex = 5;
@@ -94,7 +96,7 @@
 			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnExit.AutoSize = true;
 			this.BtnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.BtnExit.Location = new System.Drawing.Point(528, 533);
+			this.BtnExit.Location = new System.Drawing.Point(513, 395);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(83, 33);
 			this.BtnExit.TabIndex = 6;
@@ -118,43 +120,36 @@
 			this.TLPCrates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.TLPCrates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.TLPCrates.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
-			this.TLPCrates.Location = new System.Drawing.Point(12, 12);
+			this.TLPCrates.Location = new System.Drawing.Point(3, 3);
 			this.TLPCrates.Name = "TLPCrates";
 			this.TLPCrates.RowCount = 1;
 			this.TLPCrates.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.TLPCrates.Size = new System.Drawing.Size(599, 241);
+			this.TLPCrates.Size = new System.Drawing.Size(578, 187);
 			this.TLPCrates.TabIndex = 8;
 			// 
 			// PanelName
 			// 
+			this.PanelName.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.PanelName.Controls.Add(this.TxtPetName);
 			this.PanelName.Controls.Add(this.LblPetName);
-			this.PanelName.Location = new System.Drawing.Point(3, 0);
+			this.PanelName.Location = new System.Drawing.Point(50, 0);
 			this.PanelName.Name = "PanelName";
 			this.PanelName.Size = new System.Drawing.Size(241, 31);
 			this.PanelName.TabIndex = 10;
 			// 
 			// PanelSpecies
 			// 
+			this.PanelSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.PanelSpecies.Controls.Add(this.TxtSpecies);
 			this.PanelSpecies.Controls.Add(this.LblSpecies);
-			this.PanelSpecies.Location = new System.Drawing.Point(3, 34);
+			this.PanelSpecies.Location = new System.Drawing.Point(50, 34);
 			this.PanelSpecies.Name = "PanelSpecies";
 			this.PanelSpecies.Size = new System.Drawing.Size(241, 31);
 			this.PanelSpecies.TabIndex = 10;
 			// 
-			// TxtSpecies
-			// 
-			this.TxtSpecies.Location = new System.Drawing.Point(96, 0);
-			this.TxtSpecies.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.TxtSpecies.Name = "TxtSpecies";
-			this.TxtSpecies.ReadOnly = true;
-			this.TxtSpecies.Size = new System.Drawing.Size(145, 31);
-			this.TxtSpecies.TabIndex = 4;
-			this.TxtSpecies.Visible = false;
-			// 
 			// LblSpecies
 			// 
+			this.LblSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.LblSpecies.AutoSize = true;
 			this.LblSpecies.Location = new System.Drawing.Point(0, 3);
 			this.LblSpecies.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -162,29 +157,20 @@
 			this.LblSpecies.Size = new System.Drawing.Size(92, 23);
 			this.LblSpecies.TabIndex = 3;
 			this.LblSpecies.Text = "Порода:";
-			this.LblSpecies.Visible = false;
 			// 
 			// PanelTrait
 			// 
-			this.PanelTrait.Controls.Add(this.textBox1);
+			this.PanelTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.PanelTrait.Controls.Add(this.TxtTrait);
 			this.PanelTrait.Controls.Add(this.LblTrait);
-			this.PanelTrait.Location = new System.Drawing.Point(17, 102);
+			this.PanelTrait.Location = new System.Drawing.Point(64, 102);
 			this.PanelTrait.Name = "PanelTrait";
 			this.PanelTrait.Size = new System.Drawing.Size(227, 31);
 			this.PanelTrait.TabIndex = 10;
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(82, 0);
-			this.textBox1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ReadOnly = true;
-			this.textBox1.Size = new System.Drawing.Size(145, 31);
-			this.textBox1.TabIndex = 4;
-			this.textBox1.Visible = false;
-			// 
 			// LblTrait
 			// 
+			this.LblTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.LblTrait.AutoSize = true;
 			this.LblTrait.Location = new System.Drawing.Point(0, 3);
 			this.LblTrait.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -192,78 +178,114 @@
 			this.LblTrait.Size = new System.Drawing.Size(76, 23);
 			this.LblTrait.TabIndex = 3;
 			this.LblTrait.Text = "Черта:";
-			this.LblTrait.Visible = false;
 			// 
 			// PanelGender
 			// 
-			this.PanelGender.Controls.Add(this.textBox2);
-			this.PanelGender.Controls.Add(this.label1);
-			this.PanelGender.Location = new System.Drawing.Point(36, 68);
+			this.PanelGender.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.PanelGender.Controls.Add(this.TxtSex);
+			this.PanelGender.Controls.Add(this.LblSex);
+			this.PanelGender.Location = new System.Drawing.Point(83, 68);
 			this.PanelGender.Name = "PanelGender";
 			this.PanelGender.Size = new System.Drawing.Size(208, 31);
 			this.PanelGender.TabIndex = 10;
 			// 
-			// textBox2
+			// LblSex
 			// 
-			this.textBox2.Location = new System.Drawing.Point(63, 0);
-			this.textBox2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.ReadOnly = true;
-			this.textBox2.Size = new System.Drawing.Size(145, 31);
-			this.textBox2.TabIndex = 4;
-			this.textBox2.Visible = false;
+			this.LblSex.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.LblSex.AutoSize = true;
+			this.LblSex.Location = new System.Drawing.Point(0, 3);
+			this.LblSex.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+			this.LblSex.Name = "LblSex";
+			this.LblSex.Size = new System.Drawing.Size(57, 23);
+			this.LblSex.TabIndex = 3;
+			this.LblSex.Text = "Пол:";
 			// 
-			// label1
+			// TLPPet
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(0, 3);
-			this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(57, 23);
-			this.label1.TabIndex = 3;
-			this.label1.Text = "Пол:";
-			this.label1.Visible = false;
+			this.TLPPet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.TLPPet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.TLPPet.ColumnCount = 3;
+			this.TLPPet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.TLPPet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+			this.TLPPet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.TLPPet.Controls.Add(this.PanelInfo, 1, 0);
+			this.TLPPet.Location = new System.Drawing.Point(3, 196);
+			this.TLPPet.Name = "TLPPet";
+			this.TLPPet.RowCount = 1;
+			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+			this.TLPPet.Size = new System.Drawing.Size(578, 139);
+			this.TLPPet.TabIndex = 10;
+			this.TLPPet.Visible = false;
 			// 
-			// tableLayoutPanel1
+			// PanelInfo
 			// 
-			this.tableLayoutPanel1.AutoSize = true;
-			this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.tableLayoutPanel1.ColumnCount = 3;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 259);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 1;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(417, 139);
-			this.tableLayoutPanel1.TabIndex = 10;
+			this.PanelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.PanelInfo.Controls.Add(this.PanelSpecies);
+			this.PanelInfo.Controls.Add(this.PanelName);
+			this.PanelInfo.Controls.Add(this.PanelTrait);
+			this.PanelInfo.Controls.Add(this.PanelGender);
+			this.PanelInfo.Location = new System.Drawing.Point(118, 3);
+			this.PanelInfo.Name = "PanelInfo";
+			this.PanelInfo.Size = new System.Drawing.Size(340, 133);
+			this.PanelInfo.TabIndex = 11;
 			// 
-			// panel1
+			// PanelBig
 			// 
-			this.panel1.Controls.Add(this.PanelSpecies);
-			this.panel1.Controls.Add(this.PanelName);
-			this.panel1.Controls.Add(this.PanelTrait);
-			this.panel1.Controls.Add(this.PanelGender);
-			this.panel1.Location = new System.Drawing.Point(86, 3);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(244, 133);
-			this.panel1.TabIndex = 11;
+			this.PanelBig.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.PanelBig.Controls.Add(this.TLPCrates);
+			this.PanelBig.Controls.Add(this.TLPPet);
+			this.PanelBig.Location = new System.Drawing.Point(12, 12);
+			this.PanelBig.Name = "PanelBig";
+			this.PanelBig.Size = new System.Drawing.Size(584, 338);
+			this.PanelBig.TabIndex = 11;
+			// 
+			// TxtSpecies
+			// 
+			this.TxtSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.TxtSpecies.Location = new System.Drawing.Point(96, 0);
+			this.TxtSpecies.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.TxtSpecies.Name = "TxtSpecies";
+			this.TxtSpecies.ReadOnly = true;
+			this.TxtSpecies.Size = new System.Drawing.Size(145, 31);
+			this.TxtSpecies.TabIndex = 4;
+			// 
+			// TxtSex
+			// 
+			this.TxtSex.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.TxtSex.Location = new System.Drawing.Point(63, 0);
+			this.TxtSex.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.TxtSex.Name = "TxtSex";
+			this.TxtSex.ReadOnly = true;
+			this.TxtSex.Size = new System.Drawing.Size(145, 31);
+			this.TxtSex.TabIndex = 4;
+			// 
+			// TxtTrait
+			// 
+			this.TxtTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.TxtTrait.Location = new System.Drawing.Point(82, 0);
+			this.TxtTrait.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.TxtTrait.Name = "TxtTrait";
+			this.TxtTrait.ReadOnly = true;
+			this.TxtTrait.Size = new System.Drawing.Size(145, 31);
+			this.TxtTrait.TabIndex = 4;
 			// 
 			// ChooseACrateForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(623, 578);
-			this.Controls.Add(this.tableLayoutPanel1);
-			this.Controls.Add(this.TLPCrates);
+			this.ClientSize = new System.Drawing.Size(608, 440);
+			this.Controls.Add(this.PanelBig);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.BtnConfirm);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MinimumSize = new System.Drawing.Size(624, 479);
 			this.Name = "ChooseACrateForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Новый питомец";
@@ -277,8 +299,9 @@
 			this.PanelTrait.PerformLayout();
 			this.PanelGender.ResumeLayout(false);
 			this.PanelGender.PerformLayout();
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
+			this.TLPPet.ResumeLayout(false);
+			this.PanelInfo.ResumeLayout(false);
+			this.PanelBig.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -293,15 +316,16 @@
 		private System.Windows.Forms.TableLayoutPanel TLPCrates;
 		private System.Windows.Forms.Panel PanelName;
 		private System.Windows.Forms.Panel PanelSpecies;
-		private System.Windows.Forms.TextBox TxtSpecies;
 		private System.Windows.Forms.Label LblSpecies;
 		private System.Windows.Forms.Panel PanelTrait;
-		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label LblTrait;
 		private System.Windows.Forms.Panel PanelGender;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Label LblSex;
+		private System.Windows.Forms.TableLayoutPanel TLPPet;
+		private System.Windows.Forms.Panel PanelInfo;
+		private System.Windows.Forms.Panel PanelBig;
+		private System.Windows.Forms.TextBox TxtSpecies;
+		private System.Windows.Forms.TextBox TxtTrait;
+		private System.Windows.Forms.TextBox TxtSex;
 	}
 }

@@ -3,6 +3,7 @@
   "species": {
     "speciesName": "Попугай",
     "speciesEng": "parrot",
+    "possiblePics": null,
     "modHappiness": 0,
     "modSatiety": 0,
     "modHydration": 0,

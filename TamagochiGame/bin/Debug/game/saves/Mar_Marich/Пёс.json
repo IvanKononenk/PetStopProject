@@ -3,6 +3,7 @@
   "species": {
     "speciesName": "Немецкая овчарка",
     "speciesEng": "germanShepherd",
+    "possiblePics": null,
     "modHappiness": 0,
     "modSatiety": 0,
     "modHydration": 0,

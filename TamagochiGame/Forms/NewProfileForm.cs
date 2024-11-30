@@ -32,26 +32,33 @@ namespace PetStop.Forms
 
 		private void BtnConfirm_Click(object sender, EventArgs e)
 		{
-			if (TxtProfileName.Text != "" && DTPBDay.Value > DTPBDay.MinDate)
-			{
-				if (!Directory.Exists("game\\saves\\" + TxtProfileName.Text))
-				{
-					List<Pet> petList = new List<Pet>();
-					Player.activePlayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value.Date, petList);
-					ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
-					creatingPet = true;
-					chsACrtFrm.Show();
-					Close();
+			if (TxtProfileName.Text != "")
+			{ 
+				if (DTPBDay.Value > DTPBDay.MinDate && DTPBDay.Value.Date != DateTime.Today.Date && DTPBDay.Value.Date < DateTime.Today.Date)
+					{
+					if (!Directory.Exists("game\\saves\\" + TxtProfileName.Text))
+					{
+						Player.activePlayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value.Date);
+						ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
+						creatingPet = true;
+						chsACrtFrm.Show();
+						Close();
+					}
+					else
+					{
+						MessageBox.Show("Данное имя пользователя занято!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						TxtProfileName.Focus();
+					}
 				}
 				else
 				{
-					MessageBox.Show("Данное имя пользователя занято!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					TxtProfileName.Focus();
+					MessageBox.Show("Введите корректную дату рождения пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					DTPBDay.Focus();
 				}
 			}
 			else
 			{
-				MessageBox.Show("Введите имя и дату рождения!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Введите имя пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				TxtProfileName.Focus();
 			}
 		}

@@ -93,5 +93,6 @@ namespace PetStop
 			this.modVigor = modVigor;
 			this.modCleanliness = modCleanliness;
 		}
+		public static Traits newTrait;
 	}
 }

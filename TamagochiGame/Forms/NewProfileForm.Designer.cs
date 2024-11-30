@@ -109,8 +109,11 @@
 			this.Controls.Add(this.LblUsername);
 			this.Controls.Add(this.TxtProfileName);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MaximumSize = new System.Drawing.Size(405, 170);
+			this.MinimumSize = new System.Drawing.Size(405, 170);
 			this.Name = "NewProfileForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Новый профиль";

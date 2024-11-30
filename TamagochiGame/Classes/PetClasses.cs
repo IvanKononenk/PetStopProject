@@ -44,7 +44,7 @@ namespace PetStop
 			this.species = species;
 			this.petPic = petPic;
 			this.gender = gender;
-			happiness = 500000;
+			happiness = 50000;
 			satiety = 10000;
 			hydration = 10000;
 			communication = 10000;

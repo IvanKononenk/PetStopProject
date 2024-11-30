@@ -13,6 +13,8 @@ namespace PetStop.Forms
 		Random rnd = new Random();
 		PictureBox chosenBox;
 		string[] crates = JsonSerializer.Deserialize<string[]>(Resources.CratesList);
+		string[] sex = new string[] { "Мужской", "Женский" };
+		string petPic;
 		bool petCreated = false;
 		public ChooseACrateForm()
 		{
@@ -44,10 +46,14 @@ namespace PetStop.Forms
 			TLPCrates.Enabled = false;
 			chosenBox = (PictureBox)sender;
 			Species.newSpecies = CratesClasses.RandomSpecies(int.Parse(chosenBox.Tag.ToString()));
-			chosenBox.Image = (Bitmap)Resources.ResourceManager.GetObject(Species.newSpecies.possiblePics[rnd.Next(Species.newSpecies.possiblePics.Length)]);
+			Traits.newTrait = TraitsFactory.RandomTrait();
+			petPic = Species.newSpecies.possiblePics[rnd.Next(Species.newSpecies.possiblePics.Length)];
+			chosenBox.Image = (Bitmap)Resources.ResourceManager.GetObject(petPic);
 			BtnConfirm.Enabled = true;
-			LblPetName.Visible = true;
-			TxtPetName.Visible = true;
+			TLPPet.Visible = true;
+			TxtSpecies.Text = Species.newSpecies.speciesName;
+			TxtSex.Text = sex[rnd.Next(sex.Length)];
+			TxtTrait.Text = Traits.newTrait.trait;
 		}
 
 		private void BtnConfirm_Click(object sender, EventArgs e)
@@ -55,6 +61,14 @@ namespace PetStop.Forms
 			if (TxtPetName.Text != "")
 			{
 				petCreated = true;
+				Player.activePlayer.SaveAUser(Player.activePlayer);
+				Pet.newPet = new Pet(TxtPetName.Text, Species.newSpecies, petPic, TxtSex.Text, Traits.newTrait);
+				Pet.newPet.SaveAPet(Pet.newPet);
+				Pet.activePet = Pet.newPet;
+				Player.activePlayer.pets.Add(Pet.activePet);
+				GameScreenForm gmScrnFrm = new GameScreenForm();
+				gmScrnFrm.Show();
+				Close();
 			}
 			else
 			{

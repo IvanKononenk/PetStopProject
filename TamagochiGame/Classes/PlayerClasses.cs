@@ -19,12 +19,12 @@ namespace PetStop.Classes
 		public int money { get; set; }
 		public DateTime birthday { get; set; }
 		public List<Pet> pets { get; set; }
-		public Player(string username, int money, DateTime birthday, List<Pet> pets)
+		public Player(string username, int money, DateTime birthday)
 		{
 			this.username = username;
 			this.money = money;
 			this.birthday = birthday;
-			this.pets = pets;
+			pets = new List<Pet>();
 		}
 		public void SaveAUser(Player player)
 		{
