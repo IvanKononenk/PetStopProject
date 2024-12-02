@@ -38,20 +38,16 @@
 			this.TLPCrates = new System.Windows.Forms.TableLayoutPanel();
 			this.PanelName = new System.Windows.Forms.Panel();
 			this.PanelSpecies = new System.Windows.Forms.Panel();
+			this.TxtSpecies = new System.Windows.Forms.TextBox();
 			this.LblSpecies = new System.Windows.Forms.Label();
-			this.PanelTrait = new System.Windows.Forms.Panel();
-			this.LblTrait = new System.Windows.Forms.Label();
 			this.PanelGender = new System.Windows.Forms.Panel();
+			this.TxtSex = new System.Windows.Forms.TextBox();
 			this.LblSex = new System.Windows.Forms.Label();
 			this.TLPPet = new System.Windows.Forms.TableLayoutPanel();
 			this.PanelInfo = new System.Windows.Forms.Panel();
 			this.PanelBig = new System.Windows.Forms.Panel();
-			this.TxtSpecies = new System.Windows.Forms.TextBox();
-			this.TxtSex = new System.Windows.Forms.TextBox();
-			this.TxtTrait = new System.Windows.Forms.TextBox();
 			this.PanelName.SuspendLayout();
 			this.PanelSpecies.SuspendLayout();
-			this.PanelTrait.SuspendLayout();
 			this.PanelGender.SuspendLayout();
 			this.TLPPet.SuspendLayout();
 			this.PanelInfo.SuspendLayout();
@@ -124,7 +120,7 @@
 			this.TLPCrates.Name = "TLPCrates";
 			this.TLPCrates.RowCount = 1;
 			this.TLPCrates.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.TLPCrates.Size = new System.Drawing.Size(578, 187);
+			this.TLPCrates.Size = new System.Drawing.Size(578, 218);
 			this.TLPCrates.TabIndex = 8;
 			// 
 			// PanelName
@@ -147,6 +143,16 @@
 			this.PanelSpecies.Size = new System.Drawing.Size(241, 31);
 			this.PanelSpecies.TabIndex = 10;
 			// 
+			// TxtSpecies
+			// 
+			this.TxtSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.TxtSpecies.Location = new System.Drawing.Point(96, 0);
+			this.TxtSpecies.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.TxtSpecies.Name = "TxtSpecies";
+			this.TxtSpecies.ReadOnly = true;
+			this.TxtSpecies.Size = new System.Drawing.Size(145, 31);
+			this.TxtSpecies.TabIndex = 4;
+			// 
 			// LblSpecies
 			// 
 			this.LblSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -158,27 +164,6 @@
 			this.LblSpecies.TabIndex = 3;
 			this.LblSpecies.Text = "Порода:";
 			// 
-			// PanelTrait
-			// 
-			this.PanelTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.PanelTrait.Controls.Add(this.TxtTrait);
-			this.PanelTrait.Controls.Add(this.LblTrait);
-			this.PanelTrait.Location = new System.Drawing.Point(64, 102);
-			this.PanelTrait.Name = "PanelTrait";
-			this.PanelTrait.Size = new System.Drawing.Size(227, 31);
-			this.PanelTrait.TabIndex = 10;
-			// 
-			// LblTrait
-			// 
-			this.LblTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.LblTrait.AutoSize = true;
-			this.LblTrait.Location = new System.Drawing.Point(0, 3);
-			this.LblTrait.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-			this.LblTrait.Name = "LblTrait";
-			this.LblTrait.Size = new System.Drawing.Size(76, 23);
-			this.LblTrait.TabIndex = 3;
-			this.LblTrait.Text = "Черта:";
-			// 
 			// PanelGender
 			// 
 			this.PanelGender.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -188,6 +173,16 @@
 			this.PanelGender.Name = "PanelGender";
 			this.PanelGender.Size = new System.Drawing.Size(208, 31);
 			this.PanelGender.TabIndex = 10;
+			// 
+			// TxtSex
+			// 
+			this.TxtSex.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.TxtSex.Location = new System.Drawing.Point(63, 0);
+			this.TxtSex.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.TxtSex.Name = "TxtSex";
+			this.TxtSex.ReadOnly = true;
+			this.TxtSex.Size = new System.Drawing.Size(145, 31);
+			this.TxtSex.TabIndex = 4;
 			// 
 			// LblSex
 			// 
@@ -210,12 +205,12 @@
 			this.TLPPet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
 			this.TLPPet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.TLPPet.Controls.Add(this.PanelInfo, 1, 0);
-			this.TLPPet.Location = new System.Drawing.Point(3, 196);
+			this.TLPPet.Location = new System.Drawing.Point(3, 227);
 			this.TLPPet.Name = "TLPPet";
 			this.TLPPet.RowCount = 1;
 			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 139F));
-			this.TLPPet.Size = new System.Drawing.Size(578, 139);
+			this.TLPPet.Size = new System.Drawing.Size(578, 108);
 			this.TLPPet.TabIndex = 10;
 			this.TLPPet.Visible = false;
 			// 
@@ -225,11 +220,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.PanelInfo.Controls.Add(this.PanelSpecies);
 			this.PanelInfo.Controls.Add(this.PanelName);
-			this.PanelInfo.Controls.Add(this.PanelTrait);
 			this.PanelInfo.Controls.Add(this.PanelGender);
 			this.PanelInfo.Location = new System.Drawing.Point(118, 3);
 			this.PanelInfo.Name = "PanelInfo";
-			this.PanelInfo.Size = new System.Drawing.Size(340, 133);
+			this.PanelInfo.Size = new System.Drawing.Size(340, 102);
 			this.PanelInfo.TabIndex = 11;
 			// 
 			// PanelBig
@@ -243,36 +237,6 @@
 			this.PanelBig.Name = "PanelBig";
 			this.PanelBig.Size = new System.Drawing.Size(584, 338);
 			this.PanelBig.TabIndex = 11;
-			// 
-			// TxtSpecies
-			// 
-			this.TxtSpecies.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.TxtSpecies.Location = new System.Drawing.Point(96, 0);
-			this.TxtSpecies.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.TxtSpecies.Name = "TxtSpecies";
-			this.TxtSpecies.ReadOnly = true;
-			this.TxtSpecies.Size = new System.Drawing.Size(145, 31);
-			this.TxtSpecies.TabIndex = 4;
-			// 
-			// TxtSex
-			// 
-			this.TxtSex.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.TxtSex.Location = new System.Drawing.Point(63, 0);
-			this.TxtSex.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.TxtSex.Name = "TxtSex";
-			this.TxtSex.ReadOnly = true;
-			this.TxtSex.Size = new System.Drawing.Size(145, 31);
-			this.TxtSex.TabIndex = 4;
-			// 
-			// TxtTrait
-			// 
-			this.TxtTrait.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.TxtTrait.Location = new System.Drawing.Point(82, 0);
-			this.TxtTrait.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.TxtTrait.Name = "TxtTrait";
-			this.TxtTrait.ReadOnly = true;
-			this.TxtTrait.Size = new System.Drawing.Size(145, 31);
-			this.TxtTrait.TabIndex = 4;
 			// 
 			// ChooseACrateForm
 			// 
@@ -295,8 +259,6 @@
 			this.PanelName.PerformLayout();
 			this.PanelSpecies.ResumeLayout(false);
 			this.PanelSpecies.PerformLayout();
-			this.PanelTrait.ResumeLayout(false);
-			this.PanelTrait.PerformLayout();
 			this.PanelGender.ResumeLayout(false);
 			this.PanelGender.PerformLayout();
 			this.TLPPet.ResumeLayout(false);
@@ -317,15 +279,12 @@
 		private System.Windows.Forms.Panel PanelName;
 		private System.Windows.Forms.Panel PanelSpecies;
 		private System.Windows.Forms.Label LblSpecies;
-		private System.Windows.Forms.Panel PanelTrait;
-		private System.Windows.Forms.Label LblTrait;
 		private System.Windows.Forms.Panel PanelGender;
 		private System.Windows.Forms.Label LblSex;
 		private System.Windows.Forms.TableLayoutPanel TLPPet;
 		private System.Windows.Forms.Panel PanelInfo;
 		private System.Windows.Forms.Panel PanelBig;
 		private System.Windows.Forms.TextBox TxtSpecies;
-		private System.Windows.Forms.TextBox TxtTrait;
 		private System.Windows.Forms.TextBox TxtSex;
 	}
 }
