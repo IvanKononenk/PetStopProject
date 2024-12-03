@@ -53,7 +53,6 @@ namespace PetStop.Forms
 			TLPPet.Visible = true;
 			TxtSpecies.Text = Species.newSpecies.speciesName;
 			TxtSex.Text = sex[rnd.Next(sex.Length)];
-			TxtTrait.Text = Traits.newTrait.trait;
 		}
 
 		private void BtnConfirm_Click(object sender, EventArgs e)

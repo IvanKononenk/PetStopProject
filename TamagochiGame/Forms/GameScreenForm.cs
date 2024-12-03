@@ -2,7 +2,10 @@
 using PetStop.Properties;
 using System;
 using System.Drawing;
+using System.Media;
+using System.Resources;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace PetStop
 {
@@ -10,6 +13,7 @@ namespace PetStop
 	public partial class GameScreenForm : Form
 	{
 		Random chance = new Random();
+		MediaPlayer music = new MediaPlayer();
 		public GameScreenForm()
 		{
 			InitializeComponent();
@@ -26,20 +30,44 @@ namespace PetStop
 			LblMoney.Text = "Не имплементировано";
 			LblAge.Text = Pet.activePet.ageMinutes.ToString();
 			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
+			music.Play();
+			BtnSettings.Parent = PicBoxPet;
 		}
 
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			Pet.activePet.SaveAPet(Pet.activePet);
-			Pet.activePet = null;
-			Player.activePlayer.SaveAUser(Player.activePlayer);
-			Player.activePlayer = null;
-			Application.OpenForms["MainMenuForm"].Show();
+			if (Pet.activePet.SaveAPet(Pet.activePet) && Player.activePlayer.SaveAUser(Player.activePlayer))
+			{
+				MessageBox.Show("Данные сохранены!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				Pet.activePet = null;
+				Player.activePlayer = null;
+				Application.OpenForms["MainMenuForm"].Show();
+			}
 		}
 
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
 			Close();
+		}
+
+		private void BtnSettings_MouseDown(object sender, MouseEventArgs e)
+		{
+			BtnSettings.BackgroundImage = Resources.settingsClick;
+		}
+
+		private void BtnSettings_MouseEnter(object sender, EventArgs e)
+		{
+			BtnSettings.BackgroundImage = Resources.settingsHover;
+		}
+
+		private void BtnSettings_MouseLeave(object sender, EventArgs e)
+		{
+			BtnSettings.BackgroundImage = Resources.settings;
+		}
+
+		private void BtnSettings_MouseUp(object sender, MouseEventArgs e)
+		{
+			BtnSettings.BackgroundImage = Resources.settingsHover;
 		}
 	}
 }

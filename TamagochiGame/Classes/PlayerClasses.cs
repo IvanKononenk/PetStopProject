@@ -26,7 +26,7 @@ namespace PetStop.Classes
 			this.birthday = birthday;
 			pets = new List<Pet>();
 		}
-		public void SaveAUser(Player player)
+		public bool SaveAUser(Player player)
 		{
 			try
 			{
@@ -40,11 +40,12 @@ namespace PetStop.Classes
 				var saveJson = JsonSerializer.Serialize<Player>(player, options);
 				sw.Write(saveJson);
 				sw.Close();
-				MessageBox.Show("Данные игрока сохранены!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				return true;
 			}
 			catch
 			{
 				MessageBox.Show("Ошибка при сохранении данных пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return false;
 			}
 		}
 		public static Player LoadAPlayer(string file)

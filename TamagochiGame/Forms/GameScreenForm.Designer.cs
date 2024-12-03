@@ -44,8 +44,8 @@
 			this.LblCommunication = new System.Windows.Forms.Label();
 			this.LblVigor = new System.Windows.Forms.Label();
 			this.LblCleanliness = new System.Windows.Forms.Label();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.BtnExit = new System.Windows.Forms.Button();
+			this.BtnSettings = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -86,7 +86,7 @@
 			// 
 			this.LblAge.AutoSize = true;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(715, 12);
+			this.LblAge.Location = new System.Drawing.Point(350, 99);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(20, 23);
 			this.LblAge.TabIndex = 11;
@@ -98,7 +98,7 @@
 			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblMoney.AutoSize = true;
 			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblMoney.Location = new System.Drawing.Point(885, 9);
+			this.LblMoney.Location = new System.Drawing.Point(350, 39);
 			this.LblMoney.Name = "LblMoney";
 			this.LblMoney.Size = new System.Drawing.Size(65, 23);
 			this.LblMoney.TabIndex = 12;
@@ -137,7 +137,7 @@
 			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
 			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.PicBoxPet.Image = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.Image")));
+			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
 			this.PicBoxPet.InitialImage = null;
 			this.PicBoxPet.Location = new System.Drawing.Point(0, 0);
 			this.PicBoxPet.Name = "PicBoxPet";
@@ -206,22 +206,6 @@
 			this.LblCleanliness.TabIndex = 21;
 			this.LblCleanliness.Text = "Чистота:";
 			// 
-			// tableLayoutPanel1
-			// 
-			this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.tableLayoutPanel1.AutoSize = true;
-			this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-			this.tableLayoutPanel1.ColumnCount = 1;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(950, 588);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 1;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(0, 0);
-			this.tableLayoutPanel1.TabIndex = 22;
-			// 
 			// BtnExit
 			// 
 			this.BtnExit.AutoSize = true;
@@ -233,13 +217,32 @@
 			this.BtnExit.UseVisualStyleBackColor = true;
 			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
 			// 
+			// BtnSettings
+			// 
+			this.BtnSettings.BackColor = System.Drawing.Color.Transparent;
+			this.BtnSettings.BackgroundImage = global::PetStop.Properties.Resources.settings;
+			this.BtnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnSettings.FlatAppearance.BorderSize = 0;
+			this.BtnSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnSettings.Location = new System.Drawing.Point(900, 12);
+			this.BtnSettings.Name = "BtnSettings";
+			this.BtnSettings.Size = new System.Drawing.Size(50, 50);
+			this.BtnSettings.TabIndex = 24;
+			this.BtnSettings.UseVisualStyleBackColor = true;
+			this.BtnSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSettings_MouseDown);
+			this.BtnSettings.MouseEnter += new System.EventHandler(this.BtnSettings_MouseEnter);
+			this.BtnSettings.MouseLeave += new System.EventHandler(this.BtnSettings_MouseLeave);
+			this.BtnSettings.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSettings_MouseUp);
+			// 
 			// GameScreenForm
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(962, 600);
+			this.Controls.Add(this.BtnSettings);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.LblAge);
-			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.LblCleanliness);
 			this.Controls.Add(this.LblVigor);
 			this.Controls.Add(this.LblCommunication);
@@ -285,8 +288,8 @@
 		private System.Windows.Forms.Label LblCommunication;
 		private System.Windows.Forms.Label LblVigor;
 		private System.Windows.Forms.Label LblCleanliness;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Button BtnExit;
+		private System.Windows.Forms.Button BtnSettings;
 	}
 }
 

@@ -51,6 +51,7 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.MainMenuForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.NewProfileForm.resources
+C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\Resources\bgMusic.wav
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.Buffers.dll
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.Memory.dll
@@ -70,3 +71,4 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.ValueTuple.xml
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\Tamagoch.6515E4D9.Up2Date
+C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.EscMenuForm.resources

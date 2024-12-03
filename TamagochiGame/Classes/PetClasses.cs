@@ -89,7 +89,6 @@ namespace PetStop
 				var saveJson = JsonSerializer.Serialize<Pet>(saveTarget, options);
 				sw.Write(saveJson);
 				sw.Close();
-				MessageBox.Show("Сохранение данных питомца выполнено!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return true;
 			}
 			catch
