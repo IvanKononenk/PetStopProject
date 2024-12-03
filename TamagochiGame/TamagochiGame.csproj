@@ -282,6 +282,7 @@
     <EmbeddedResource Include="Resources\bgMusic.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Include="Resources\ball.png" />
     <Content Include="Resources\crates\crateCat.png" />
     <Content Include="Resources\crates\crateDog.png" />
     <Content Include="Resources\crates\crateExotic.png" />
