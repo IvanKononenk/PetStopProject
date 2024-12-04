@@ -239,7 +239,7 @@
 			this.MaximumSize = new System.Drawing.Size(965, 629);
 			this.MinimumSize = new System.Drawing.Size(965, 629);
 			this.Name = "GameScreenForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "PetStop";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreenForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainScreenForm_Load);

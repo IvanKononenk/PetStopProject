@@ -289,4 +289,19 @@
   <data name="interfaceMoney" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\interfaceMoney.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnNewBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btnNewBlank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnNewBlankHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\btnNewBlankHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconDrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\iconDrink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\iconFeed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttons\iconWash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -293,6 +293,11 @@
     </EmbeddedResource>
     <None Include="Resources\ball.png" />
     <None Include="Resources\bedding.png" />
+    <None Include="Resources\buttons\iconDrink.png" />
+    <None Include="Resources\buttons\iconFeed.png" />
+    <None Include="Resources\buttons\iconWash.png" />
+    <None Include="Resources\buttons\btnNewBlank.png" />
+    <None Include="Resources\buttons\btnNewBlankHover.png" />
     <Content Include="Resources\crates\crateCat.png" />
     <Content Include="Resources\crates\crateDog.png" />
     <Content Include="Resources\crates\crateExotic.png" />

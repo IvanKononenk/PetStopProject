@@ -27,20 +27,15 @@ namespace PetStop.Forms
 		private void BtnLoadProfile_Click(object sender, EventArgs e)
 		{
 			LoadProfileForm ldPrflFrm = new LoadProfileForm();
-			ldPrflFrm.Show();
+			ldPrflFrm.Show(this);
 			Hide();
 		}
 
 		private void BtnNewProfile_Click(object sender, EventArgs e)
 		{
 			NewProfileForm nwPrflFrm = new NewProfileForm();
-			nwPrflFrm.Show();
+			nwPrflFrm.Show(this);
 			Hide();
-		}
-
-		private void MainMenuForm_Load(object sender, EventArgs e)
-		{
-			
 		}
 
 		private void MainMenuForm_Shown(object sender, EventArgs e)

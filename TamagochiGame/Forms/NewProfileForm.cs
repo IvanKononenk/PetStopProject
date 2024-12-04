@@ -41,7 +41,7 @@ namespace PetStop.Forms
 						Player.activePlayer = new Player(TxtProfileName.Text, 0, DTPBDay.Value.Date);
 						ChooseACrateForm chsACrtFrm = new ChooseACrateForm();
 						creatingPet = true;
-						chsACrtFrm.Show();
+						chsACrtFrm.Show(this);
 						Close();
 					}
 					else

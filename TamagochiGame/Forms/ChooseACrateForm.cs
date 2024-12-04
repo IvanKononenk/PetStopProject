@@ -66,7 +66,7 @@ namespace PetStop.Forms
 				Pet.activePet = Pet.newPet;
 				Player.activePlayer.pets.Add(Pet.activePet);
 				GameScreenForm gmScrnFrm = new GameScreenForm();
-				gmScrnFrm.Show();
+				gmScrnFrm.Show(this);
 				Close();
 			}
 			else

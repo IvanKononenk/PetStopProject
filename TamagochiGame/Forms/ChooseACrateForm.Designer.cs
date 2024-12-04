@@ -209,7 +209,7 @@
 			this.TLPPet.Name = "TLPPet";
 			this.TLPPet.RowCount = 1;
 			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
 			this.TLPPet.Size = new System.Drawing.Size(578, 108);
 			this.TLPPet.TabIndex = 10;
 			this.TLPPet.Visible = false;
@@ -251,7 +251,7 @@
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.MinimumSize = new System.Drawing.Size(624, 479);
 			this.Name = "ChooseACrateForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Новый питомец";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChooseACrateForm_FormClosing);
 			this.Load += new System.EventHandler(this.ChooseACrateForm_Load);

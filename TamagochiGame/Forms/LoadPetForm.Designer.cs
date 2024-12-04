@@ -31,11 +31,11 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadPetForm));
 			this.DGVSaveFIles = new System.Windows.Forms.DataGridView();
+			this.SaveFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SaveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.BtnExit = new System.Windows.Forms.Button();
 			this.BtnLoad = new System.Windows.Forms.Button();
 			this.LblSavesCount = new System.Windows.Forms.Label();
-			this.SaveFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SaveDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.DGVSaveFIles)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -65,6 +65,18 @@
 			this.DGVSaveFIles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.DGVSaveFIles.Size = new System.Drawing.Size(573, 157);
 			this.DGVSaveFIles.TabIndex = 0;
+			// 
+			// SaveFile
+			// 
+			this.SaveFile.HeaderText = "Имя профиля";
+			this.SaveFile.Name = "SaveFile";
+			this.SaveFile.ReadOnly = true;
+			// 
+			// SaveDate
+			// 
+			this.SaveDate.HeaderText = "Последний запуск";
+			this.SaveDate.Name = "SaveDate";
+			this.SaveDate.ReadOnly = true;
 			// 
 			// BtnExit
 			// 
@@ -100,18 +112,6 @@
 			this.LblSavesCount.TabIndex = 3;
 			this.LblSavesCount.Text = "Сохранений найдено: 0";
 			// 
-			// SaveFile
-			// 
-			this.SaveFile.HeaderText = "Имя профиля";
-			this.SaveFile.Name = "SaveFile";
-			this.SaveFile.ReadOnly = true;
-			// 
-			// SaveDate
-			// 
-			this.SaveDate.HeaderText = "Последний запуск";
-			this.SaveDate.Name = "SaveDate";
-			this.SaveDate.ReadOnly = true;
-			// 
 			// LoadPetForm
 			// 
 			this.AcceptButton = this.BtnLoad;
@@ -127,7 +127,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MinimumSize = new System.Drawing.Size(613, 298);
 			this.Name = "LoadPetForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Список сохранений";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoadSaveForm_FormClosing);
 			this.Load += new System.EventHandler(this.LoadSaveForm_Load);

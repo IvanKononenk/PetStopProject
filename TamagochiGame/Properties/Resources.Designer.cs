@@ -172,6 +172,26 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnNewBlank {
+            get {
+                object obj = ResourceManager.GetObject("btnNewBlank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnNewBlankHover {
+            get {
+                object obj = ResourceManager.GetObject("btnNewBlankHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnWash {
             get {
                 object obj = ResourceManager.GetObject("btnWash", resourceCulture);
@@ -285,6 +305,36 @@ namespace PetStop.Properties {
         internal static System.Drawing.Bitmap hat {
             get {
                 object obj = ResourceManager.GetObject("hat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconDrink {
+            get {
+                object obj = ResourceManager.GetObject("iconDrink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconFeed {
+            get {
+                object obj = ResourceManager.GetObject("iconFeed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconWash {
+            get {
+                object obj = ResourceManager.GetObject("iconWash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
