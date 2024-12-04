@@ -73,6 +73,16 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bedding {
+            get {
+                object obj = ResourceManager.GetObject("bedding", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgMainMenu {
             get {
                 object obj = ResourceManager.GetObject("bgMainMenu", resourceCulture);
@@ -275,6 +285,16 @@ namespace PetStop.Properties {
         internal static System.Drawing.Bitmap hat {
             get {
                 object obj = ResourceManager.GetObject("hat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap interfaceMoney {
+            get {
+                object obj = ResourceManager.GetObject("interfaceMoney", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

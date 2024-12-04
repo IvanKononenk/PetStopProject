@@ -126,6 +126,12 @@
     <Compile Include="Classes\PlayerClasses.cs" />
     <Compile Include="Classes\SpeciesClasses.cs" />
     <Compile Include="Classes\TraitsClasses.cs" />
+    <Compile Include="Forms\BioMonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BioMonForm.Designer.cs">
+      <DependentUpon>BioMonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ChooseACrateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BioMonForm.resx">
+      <DependentUpon>BioMonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChooseACrateForm.resx">
       <DependentUpon>ChooseACrateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,9 +292,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="Resources\ball.png" />
+    <None Include="Resources\bedding.png" />
     <Content Include="Resources\crates\crateCat.png" />
     <Content Include="Resources\crates\crateDog.png" />
     <Content Include="Resources\crates\crateExotic.png" />
+    <None Include="Resources\interfaceMoney.png" />
     <Content Include="Resources\logos\logoPetStop.png" />
     <Content Include="Resources\logos\logoSerpents.png" />
     <None Include="Resources\pets\cats\petCat1.png" />

@@ -29,187 +29,53 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameScreenForm));
-			this.LblHunger = new System.Windows.Forms.Label();
-			this.LblThirst = new System.Windows.Forms.Label();
-			this.LblHappy = new System.Windows.Forms.Label();
-			this.LblAge = new System.Windows.Forms.Label();
 			this.LblMoney = new System.Windows.Forms.Label();
-			this.PrBarHydration = new System.Windows.Forms.ProgressBar();
-			this.PrBarSatiety = new System.Windows.Forms.ProgressBar();
-			this.PrBarHappiness = new System.Windows.Forms.ProgressBar();
 			this.PicBoxPet = new System.Windows.Forms.PictureBox();
-			this.PrBarCommunication = new System.Windows.Forms.ProgressBar();
-			this.PrBarVigor = new System.Windows.Forms.ProgressBar();
-			this.PrBarCleanliness = new System.Windows.Forms.ProgressBar();
-			this.LblCommunication = new System.Windows.Forms.Label();
-			this.LblVigor = new System.Windows.Forms.Label();
-			this.LblCleanliness = new System.Windows.Forms.Label();
 			this.BtnExit = new System.Windows.Forms.Button();
 			this.BtnSettings = new System.Windows.Forms.Button();
+			this.BtnFeed = new System.Windows.Forms.Button();
+			this.BtnDrink = new System.Windows.Forms.Button();
+			this.BtnPlay = new System.Windows.Forms.Button();
+			this.BtnWash = new System.Windows.Forms.Button();
+			this.PicBoxMoneyBG = new System.Windows.Forms.PictureBox();
+			this.PicBoxBedding = new System.Windows.Forms.PictureBox();
+			this.panelOutside = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// LblHunger
-			// 
-			this.LblHunger.AutoSize = true;
-			this.LblHunger.BackColor = System.Drawing.Color.Transparent;
-			this.LblHunger.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.LblHunger.Location = new System.Drawing.Point(35, 41);
-			this.LblHunger.Name = "LblHunger";
-			this.LblHunger.Size = new System.Drawing.Size(62, 23);
-			this.LblHunger.TabIndex = 4;
-			this.LblHunger.Text = "Голод:";
-			// 
-			// LblThirst
-			// 
-			this.LblThirst.AutoSize = true;
-			this.LblThirst.BackColor = System.Drawing.Color.Transparent;
-			this.LblThirst.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblThirst.Location = new System.Drawing.Point(32, 70);
-			this.LblThirst.Name = "LblThirst";
-			this.LblThirst.Size = new System.Drawing.Size(65, 23);
-			this.LblThirst.TabIndex = 5;
-			this.LblThirst.Text = "Жажда:";
-			// 
-			// LblHappy
-			// 
-			this.LblHappy.AutoSize = true;
-			this.LblHappy.BackColor = System.Drawing.Color.Transparent;
-			this.LblHappy.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblHappy.Location = new System.Drawing.Point(23, 12);
-			this.LblHappy.Name = "LblHappy";
-			this.LblHappy.Size = new System.Drawing.Size(74, 23);
-			this.LblHappy.TabIndex = 6;
-			this.LblHappy.Text = "Счастье:";
-			// 
-			// LblAge
-			// 
-			this.LblAge.AutoSize = true;
-			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblAge.Location = new System.Drawing.Point(350, 99);
-			this.LblAge.Name = "LblAge";
-			this.LblAge.Size = new System.Drawing.Size(20, 23);
-			this.LblAge.TabIndex = 11;
-			this.LblAge.Text = "0";
-			this.LblAge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// LblMoney
 			// 
-			this.LblMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.LblMoney.AutoSize = true;
+			this.LblMoney.BackColor = System.Drawing.Color.Transparent;
 			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblMoney.Location = new System.Drawing.Point(350, 39);
+			this.LblMoney.Location = new System.Drawing.Point(12, 12);
 			this.LblMoney.Name = "LblMoney";
-			this.LblMoney.Size = new System.Drawing.Size(65, 23);
+			this.LblMoney.Size = new System.Drawing.Size(207, 58);
 			this.LblMoney.TabIndex = 12;
 			this.LblMoney.Text = "Деньги";
-			// 
-			// PrBarHydration
-			// 
-			this.PrBarHydration.Location = new System.Drawing.Point(103, 70);
-			this.PrBarHydration.Maximum = 10000;
-			this.PrBarHydration.Name = "PrBarHydration";
-			this.PrBarHydration.Size = new System.Drawing.Size(150, 23);
-			this.PrBarHydration.TabIndex = 2;
-			this.PrBarHydration.Value = 10000;
-			// 
-			// PrBarSatiety
-			// 
-			this.PrBarSatiety.Location = new System.Drawing.Point(103, 41);
-			this.PrBarSatiety.Maximum = 10000;
-			this.PrBarSatiety.Name = "PrBarSatiety";
-			this.PrBarSatiety.Size = new System.Drawing.Size(150, 23);
-			this.PrBarSatiety.TabIndex = 1;
-			this.PrBarSatiety.Value = 10000;
-			// 
-			// PrBarHappiness
-			// 
-			this.PrBarHappiness.Location = new System.Drawing.Point(103, 12);
-			this.PrBarHappiness.Maximum = 50000;
-			this.PrBarHappiness.Name = "PrBarHappiness";
-			this.PrBarHappiness.Size = new System.Drawing.Size(150, 23);
-			this.PrBarHappiness.TabIndex = 0;
-			this.PrBarHappiness.Value = 50000;
+			this.LblMoney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// PicBoxPet
 			// 
-			this.PicBoxPet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicBoxPet.BackgroundImage")));
+			this.PicBoxPet.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.PicBoxPet.BackColor = System.Drawing.Color.Transparent;
 			this.PicBoxPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
-			this.PicBoxPet.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
 			this.PicBoxPet.InitialImage = null;
-			this.PicBoxPet.Location = new System.Drawing.Point(0, 0);
+			this.PicBoxPet.Location = new System.Drawing.Point(624, 311);
 			this.PicBoxPet.Name = "PicBoxPet";
-			this.PicBoxPet.Size = new System.Drawing.Size(962, 600);
+			this.PicBoxPet.Size = new System.Drawing.Size(229, 199);
 			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.PicBoxPet.TabIndex = 3;
 			this.PicBoxPet.TabStop = false;
 			// 
-			// PrBarCommunication
-			// 
-			this.PrBarCommunication.Location = new System.Drawing.Point(103, 99);
-			this.PrBarCommunication.Maximum = 10000;
-			this.PrBarCommunication.Name = "PrBarCommunication";
-			this.PrBarCommunication.Size = new System.Drawing.Size(150, 23);
-			this.PrBarCommunication.TabIndex = 16;
-			this.PrBarCommunication.Value = 10000;
-			// 
-			// PrBarVigor
-			// 
-			this.PrBarVigor.Location = new System.Drawing.Point(103, 128);
-			this.PrBarVigor.Maximum = 10000;
-			this.PrBarVigor.Name = "PrBarVigor";
-			this.PrBarVigor.Size = new System.Drawing.Size(150, 23);
-			this.PrBarVigor.TabIndex = 17;
-			this.PrBarVigor.Value = 10000;
-			// 
-			// PrBarCleanliness
-			// 
-			this.PrBarCleanliness.Location = new System.Drawing.Point(103, 157);
-			this.PrBarCleanliness.Maximum = 10000;
-			this.PrBarCleanliness.Name = "PrBarCleanliness";
-			this.PrBarCleanliness.Size = new System.Drawing.Size(150, 23);
-			this.PrBarCleanliness.TabIndex = 18;
-			this.PrBarCleanliness.Value = 10000;
-			// 
-			// LblCommunication
-			// 
-			this.LblCommunication.AutoSize = true;
-			this.LblCommunication.BackColor = System.Drawing.Color.Transparent;
-			this.LblCommunication.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblCommunication.Location = new System.Drawing.Point(13, 99);
-			this.LblCommunication.Name = "LblCommunication";
-			this.LblCommunication.Size = new System.Drawing.Size(84, 23);
-			this.LblCommunication.TabIndex = 19;
-			this.LblCommunication.Text = "Общение:";
-			// 
-			// LblVigor
-			// 
-			this.LblVigor.AutoSize = true;
-			this.LblVigor.BackColor = System.Drawing.Color.Transparent;
-			this.LblVigor.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblVigor.Location = new System.Drawing.Point(12, 128);
-			this.LblVigor.Name = "LblVigor";
-			this.LblVigor.Size = new System.Drawing.Size(85, 23);
-			this.LblVigor.TabIndex = 20;
-			this.LblVigor.Text = "Бодрость:";
-			// 
-			// LblCleanliness
-			// 
-			this.LblCleanliness.AutoSize = true;
-			this.LblCleanliness.BackColor = System.Drawing.Color.Transparent;
-			this.LblCleanliness.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-			this.LblCleanliness.Location = new System.Drawing.Point(21, 157);
-			this.LblCleanliness.Name = "LblCleanliness";
-			this.LblCleanliness.Size = new System.Drawing.Size(76, 23);
-			this.LblCleanliness.TabIndex = 21;
-			this.LblCleanliness.Text = "Чистота:";
-			// 
 			// BtnExit
 			// 
+			this.BtnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnExit.AutoSize = true;
-			this.BtnExit.Location = new System.Drawing.Point(790, 555);
+			this.BtnExit.Location = new System.Drawing.Point(777, 545);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(160, 33);
 			this.BtnExit.TabIndex = 23;
@@ -219,16 +85,19 @@
 			// 
 			// BtnSettings
 			// 
+			this.BtnSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.BtnSettings.BackColor = System.Drawing.Color.Transparent;
 			this.BtnSettings.BackgroundImage = global::PetStop.Properties.Resources.settings;
 			this.BtnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.BtnSettings.FlatAppearance.BorderSize = 0;
 			this.BtnSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.BtnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.BtnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnSettings.Location = new System.Drawing.Point(900, 12);
+			this.BtnSettings.Location = new System.Drawing.Point(865, 9);
+			this.BtnSettings.Margin = new System.Windows.Forms.Padding(0);
 			this.BtnSettings.Name = "BtnSettings";
-			this.BtnSettings.Size = new System.Drawing.Size(50, 50);
+			this.BtnSettings.Size = new System.Drawing.Size(75, 75);
 			this.BtnSettings.TabIndex = 24;
 			this.BtnSettings.UseVisualStyleBackColor = true;
 			this.BtnSettings.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSettings_MouseDown);
@@ -236,60 +105,164 @@
 			this.BtnSettings.MouseLeave += new System.EventHandler(this.BtnSettings_MouseLeave);
 			this.BtnSettings.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSettings_MouseUp);
 			// 
+			// BtnFeed
+			// 
+			this.BtnFeed.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnFeed.BackColor = System.Drawing.Color.Transparent;
+			this.BtnFeed.BackgroundImage = global::PetStop.Properties.Resources.btnFeed;
+			this.BtnFeed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnFeed.FlatAppearance.BorderSize = 0;
+			this.BtnFeed.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+			this.BtnFeed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnFeed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnFeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnFeed.Location = new System.Drawing.Point(344, 518);
+			this.BtnFeed.Name = "BtnFeed";
+			this.BtnFeed.Size = new System.Drawing.Size(60, 60);
+			this.BtnFeed.TabIndex = 25;
+			this.BtnFeed.UseVisualStyleBackColor = false;
+			this.BtnFeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnFeed_MouseDown);
+			this.BtnFeed.MouseEnter += new System.EventHandler(this.BtnFeed_MouseEnter);
+			this.BtnFeed.MouseLeave += new System.EventHandler(this.BtnFeed_MouseLeave);
+			// 
+			// BtnDrink
+			// 
+			this.BtnDrink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnDrink.BackColor = System.Drawing.Color.Transparent;
+			this.BtnDrink.BackgroundImage = global::PetStop.Properties.Resources.btnDrink;
+			this.BtnDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnDrink.FlatAppearance.BorderSize = 0;
+			this.BtnDrink.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+			this.BtnDrink.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnDrink.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnDrink.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnDrink.Location = new System.Drawing.Point(410, 518);
+			this.BtnDrink.Name = "BtnDrink";
+			this.BtnDrink.Size = new System.Drawing.Size(60, 60);
+			this.BtnDrink.TabIndex = 26;
+			this.BtnDrink.UseVisualStyleBackColor = false;
+			this.BtnDrink.MouseEnter += new System.EventHandler(this.BtnDrink_MouseEnter);
+			this.BtnDrink.MouseLeave += new System.EventHandler(this.BtnDrink_MouseLeave);
+			// 
+			// BtnPlay
+			// 
+			this.BtnPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnPlay.BackColor = System.Drawing.Color.Transparent;
+			this.BtnPlay.BackgroundImage = global::PetStop.Properties.Resources.btnBlank;
+			this.BtnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnPlay.FlatAppearance.BorderSize = 0;
+			this.BtnPlay.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+			this.BtnPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnPlay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnPlay.Location = new System.Drawing.Point(476, 518);
+			this.BtnPlay.Name = "BtnPlay";
+			this.BtnPlay.Size = new System.Drawing.Size(60, 60);
+			this.BtnPlay.TabIndex = 27;
+			this.BtnPlay.UseVisualStyleBackColor = false;
+			this.BtnPlay.MouseEnter += new System.EventHandler(this.BtnPlay_MouseEnter);
+			this.BtnPlay.MouseLeave += new System.EventHandler(this.BtnPlay_MouseLeave);
+			// 
+			// BtnWash
+			// 
+			this.BtnWash.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+			this.BtnWash.BackColor = System.Drawing.Color.Transparent;
+			this.BtnWash.BackgroundImage = global::PetStop.Properties.Resources.btnWash;
+			this.BtnWash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnWash.FlatAppearance.BorderSize = 0;
+			this.BtnWash.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+			this.BtnWash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnWash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnWash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnWash.Location = new System.Drawing.Point(542, 518);
+			this.BtnWash.Name = "BtnWash";
+			this.BtnWash.Size = new System.Drawing.Size(60, 60);
+			this.BtnWash.TabIndex = 29;
+			this.BtnWash.UseVisualStyleBackColor = false;
+			this.BtnWash.MouseEnter += new System.EventHandler(this.BtnWash_MouseEnter);
+			this.BtnWash.MouseLeave += new System.EventHandler(this.BtnWash_MouseLeave);
+			// 
+			// PicBoxMoneyBG
+			// 
+			this.PicBoxMoneyBG.BackColor = System.Drawing.Color.Transparent;
+			this.PicBoxMoneyBG.Image = global::PetStop.Properties.Resources.interfaceMoney;
+			this.PicBoxMoneyBG.Location = new System.Drawing.Point(0, 12);
+			this.PicBoxMoneyBG.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+			this.PicBoxMoneyBG.Name = "PicBoxMoneyBG";
+			this.PicBoxMoneyBG.Size = new System.Drawing.Size(219, 58);
+			this.PicBoxMoneyBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.PicBoxMoneyBG.TabIndex = 30;
+			this.PicBoxMoneyBG.TabStop = false;
+			// 
+			// PicBoxBedding
+			// 
+			this.PicBoxBedding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+			this.PicBoxBedding.BackColor = System.Drawing.Color.Transparent;
+			this.PicBoxBedding.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PicBoxBedding.Image = global::PetStop.Properties.Resources.bedding;
+			this.PicBoxBedding.Location = new System.Drawing.Point(399, 397);
+			this.PicBoxBedding.Name = "PicBoxBedding";
+			this.PicBoxBedding.Size = new System.Drawing.Size(152, 73);
+			this.PicBoxBedding.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.PicBoxBedding.TabIndex = 31;
+			this.PicBoxBedding.TabStop = false;
+			// 
+			// panelOutside
+			// 
+			this.panelOutside.BackColor = System.Drawing.Color.Transparent;
+			this.panelOutside.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.panelOutside.Location = new System.Drawing.Point(0, 138);
+			this.panelOutside.Name = "panelOutside";
+			this.panelOutside.Size = new System.Drawing.Size(49, 359);
+			this.panelOutside.TabIndex = 32;
+			// 
 			// GameScreenForm
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(962, 600);
+			this.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(949, 590);
+			this.Controls.Add(this.panelOutside);
+			this.Controls.Add(this.PicBoxBedding);
+			this.Controls.Add(this.LblMoney);
+			this.Controls.Add(this.PicBoxMoneyBG);
+			this.Controls.Add(this.BtnWash);
+			this.Controls.Add(this.BtnPlay);
+			this.Controls.Add(this.BtnDrink);
+			this.Controls.Add(this.BtnFeed);
 			this.Controls.Add(this.BtnSettings);
 			this.Controls.Add(this.BtnExit);
-			this.Controls.Add(this.LblAge);
-			this.Controls.Add(this.LblCleanliness);
-			this.Controls.Add(this.LblVigor);
-			this.Controls.Add(this.LblCommunication);
-			this.Controls.Add(this.PrBarCleanliness);
-			this.Controls.Add(this.PrBarVigor);
-			this.Controls.Add(this.PrBarCommunication);
-			this.Controls.Add(this.LblMoney);
-			this.Controls.Add(this.LblHappy);
-			this.Controls.Add(this.LblThirst);
-			this.Controls.Add(this.LblHunger);
-			this.Controls.Add(this.PrBarHydration);
-			this.Controls.Add(this.PrBarSatiety);
-			this.Controls.Add(this.PrBarHappiness);
 			this.Controls.Add(this.PicBoxPet);
+			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MinimumSize = new System.Drawing.Size(759, 394);
+			this.MaximumSize = new System.Drawing.Size(965, 629);
+			this.MinimumSize = new System.Drawing.Size(965, 629);
 			this.Name = "GameScreenForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "PetStop";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreenForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainScreenForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.ProgressBar PrBarHappiness;
-		private System.Windows.Forms.ProgressBar PrBarSatiety;
-		private System.Windows.Forms.ProgressBar PrBarHydration;
 		private System.Windows.Forms.PictureBox PicBoxPet;
-		private System.Windows.Forms.Label LblHunger;
-		private System.Windows.Forms.Label LblThirst;
-		private System.Windows.Forms.Label LblHappy;
-		private System.Windows.Forms.Label LblAge;
 		private System.Windows.Forms.Label LblMoney;
-		private System.Windows.Forms.ProgressBar PrBarCommunication;
-		private System.Windows.Forms.ProgressBar PrBarVigor;
-		private System.Windows.Forms.ProgressBar PrBarCleanliness;
-		private System.Windows.Forms.Label LblCommunication;
-		private System.Windows.Forms.Label LblVigor;
-		private System.Windows.Forms.Label LblCleanliness;
 		private System.Windows.Forms.Button BtnExit;
 		private System.Windows.Forms.Button BtnSettings;
+		private System.Windows.Forms.Button BtnFeed;
+		private System.Windows.Forms.Button BtnDrink;
+		private System.Windows.Forms.Button BtnPlay;
+		private System.Windows.Forms.Button BtnWash;
+		private System.Windows.Forms.PictureBox PicBoxMoneyBG;
+		private System.Windows.Forms.PictureBox PicBoxBedding;
+		private System.Windows.Forms.Panel panelOutside;
 	}
 }
 

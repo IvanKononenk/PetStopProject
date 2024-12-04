@@ -72,3 +72,4 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\bin\Debug\System.ValueTuple.xml
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\Tamagoch.6515E4D9.Up2Date
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.EscMenuForm.resources
+C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.BioMonForm.resources

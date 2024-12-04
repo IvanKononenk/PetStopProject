@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.Media;
 using System.Resources;
+using System.Runtime.Versioning;
 using System.Windows.Forms;
 using System.Windows.Media;
 
@@ -21,17 +22,10 @@ namespace PetStop
 
 		private void MainScreenForm_Load(object sender, EventArgs e)
 		{
-			PrBarHappiness.Value = Pet.activePet.happiness;
-			PrBarSatiety.Value = Pet.activePet.satiety;
-			PrBarHydration.Value = Pet.activePet.hydration;
-			PrBarCommunication.Value = Pet.activePet.communication;
-			PrBarVigor.Value = Pet.activePet.vigor;
-			PrBarCleanliness.Value = Pet.activePet.cleanliness;
-			LblMoney.Text = "Не имплементировано";
-			LblAge.Text = Pet.activePet.ageMinutes.ToString();
 			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 			music.Play();
-			BtnSettings.Parent = PicBoxPet;
+			LblMoney.Parent = PicBoxMoneyBG;
+			LblMoney.Text = Player.activePlayer.money.ToString() + " $";
 		}
 
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -54,20 +48,53 @@ namespace PetStop
 		{
 			BtnSettings.BackgroundImage = Resources.settingsClick;
 		}
-
 		private void BtnSettings_MouseEnter(object sender, EventArgs e)
 		{
 			BtnSettings.BackgroundImage = Resources.settingsHover;
 		}
-
 		private void BtnSettings_MouseLeave(object sender, EventArgs e)
 		{
 			BtnSettings.BackgroundImage = Resources.settings;
 		}
-
 		private void BtnSettings_MouseUp(object sender, MouseEventArgs e)
 		{
 			BtnSettings.BackgroundImage = Resources.settingsHover;
+		}
+		private void BtnFeed_MouseEnter(object sender, EventArgs e)
+		{
+			BtnFeed.BackgroundImage = Resources.btnFeedHover;
+		}
+		private void BtnFeed_MouseLeave(object sender, EventArgs e)
+		{
+			BtnFeed.BackgroundImage = Resources.btnFeed;
+		}
+		private void BtnDrink_MouseEnter(object sender, EventArgs e)
+		{
+			BtnDrink.BackgroundImage = Resources.btnDrinkHover;
+		}
+		private void BtnDrink_MouseLeave(object sender, EventArgs e)
+		{
+			BtnDrink.BackgroundImage = Resources.btnDrink;
+		}
+		private void BtnPlay_MouseEnter(object sender, EventArgs e)
+		{
+
+		}
+		private void BtnPlay_MouseLeave(object sender, EventArgs e)
+		{
+
+		}
+		private void BtnWash_MouseEnter(object sender, EventArgs e)
+		{
+			BtnWash.BackgroundImage = Resources.btnWashHover;
+		}
+		private void BtnWash_MouseLeave(object sender, EventArgs e)
+		{
+			BtnWash.BackgroundImage = Resources.btnWash;
+		}
+		private void BtnFeed_MouseDown(object sender, MouseEventArgs e)
+		{
+			DoDragDrop(Resources.ball, DragDropEffects.Move);
 		}
 	}
 }
