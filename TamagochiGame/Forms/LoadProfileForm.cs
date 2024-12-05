@@ -39,7 +39,7 @@ namespace PetStop.Forms
 			Player.activePlayer = Player.LoadAPlayer("game\\saves\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + "\\player.json");
 			LoadPetForm ldPtFrm = new LoadPetForm();
 			petLoading = true;
-			ldPtFrm.Show(this);
+			ldPtFrm.Show();
 			Close();
 		}
 

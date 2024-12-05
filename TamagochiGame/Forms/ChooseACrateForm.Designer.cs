@@ -251,7 +251,7 @@
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.MinimumSize = new System.Drawing.Size(624, 479);
 			this.Name = "ChooseACrateForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Новый питомец";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChooseACrateForm_FormClosing);
 			this.Load += new System.EventHandler(this.ChooseACrateForm_Load);

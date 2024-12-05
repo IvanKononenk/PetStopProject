@@ -44,8 +44,8 @@ namespace PetStop.Forms
 		{
 			Pet.activePet = Pet.LoadAPet("game\\saves\\" + Player.activePlayer.username + "\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + ".json");
 			Pet.lastPlay = DateTime.UtcNow - DateTime.Parse(File.GetLastWriteTimeUtc("game\\saves\\" + DGVSaveFIles.CurrentRow.Cells[0].Value.ToString() + ".json").ToString());
-			GameScreenForm mainScrFrm = new GameScreenForm();
-			mainScrFrm.Show(this);
+			GameScreenHomeForm mainScrFrm = new GameScreenHomeForm();
+			mainScrFrm.Show();
 			gameLoading = true;
 			Close();
 		}

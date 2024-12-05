@@ -140,7 +140,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.Name = "PetInfoForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Карточка питомца";
 			this.Load += new System.EventHandler(this.PetInfoForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();

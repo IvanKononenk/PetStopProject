@@ -102,6 +102,16 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgOutside {
+            get {
+                object obj = ResourceManager.GetObject("bgOutside", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgRoom {
             get {
                 object obj = ResourceManager.GetObject("bgRoom", resourceCulture);
@@ -125,6 +135,16 @@ namespace PetStop.Properties {
         internal static System.Drawing.Bitmap btnBlank {
             get {
                 object obj = ResourceManager.GetObject("btnBlank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBlankHover {
+            get {
+                object obj = ResourceManager.GetObject("btnBlankHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -172,9 +192,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnNewBlank {
+        internal static System.Drawing.Bitmap btnRIght {
             get {
-                object obj = ResourceManager.GetObject("btnNewBlank", resourceCulture);
+                object obj = ResourceManager.GetObject("btnRIght", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -182,9 +202,9 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap btnNewBlankHover {
+        internal static System.Drawing.Bitmap btnRIghtHover {
             get {
-                object obj = ResourceManager.GetObject("btnNewBlankHover", resourceCulture);
+                object obj = ResourceManager.GetObject("btnRIghtHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

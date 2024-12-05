@@ -45,7 +45,6 @@ D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.exe
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.pdb
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.LoadPetForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.LoadProfileForm.resources
-C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.MainMenuForm.resources
 C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.NewProfileForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenForm.resources
@@ -76,3 +75,4 @@ C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop
 D:\Git\gameProjectTamagochi\TamagochiGame\bin\Debug\Resources\bgMusic.wav
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.BioMonForm.resources
 D:\Git\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.Forms.EscMenuForm.resources
+C:\Users\hp\Desktop\project\gameProjectTamagochi\TamagochiGame\obj\Debug\PetStop.GameScreenHomeForm.resources

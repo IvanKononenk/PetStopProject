@@ -127,7 +127,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MinimumSize = new System.Drawing.Size(613, 298);
 			this.Name = "LoadPetForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Список сохранений";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoadSaveForm_FormClosing);
 			this.Load += new System.EventHandler(this.LoadSaveForm_Load);

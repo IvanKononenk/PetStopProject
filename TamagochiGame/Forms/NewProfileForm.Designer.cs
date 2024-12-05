@@ -115,7 +115,7 @@
 			this.MaximumSize = new System.Drawing.Size(405, 170);
 			this.MinimumSize = new System.Drawing.Size(405, 170);
 			this.Name = "NewProfileForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Новый профиль";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewPlayerForm_FormClosing);
 			this.ResumeLayout(false);
