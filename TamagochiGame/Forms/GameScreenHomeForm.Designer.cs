@@ -41,6 +41,7 @@
 			this.PicBoxBedding = new System.Windows.Forms.PictureBox();
 			this.panelOutside = new System.Windows.Forms.Panel();
 			this.panelHome = new System.Windows.Forms.Panel();
+			this.PanelPet = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).BeginInit();
@@ -66,12 +67,14 @@
 			this.PicBoxPet.Cursor = System.Windows.Forms.Cursors.Default;
 			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
 			this.PicBoxPet.InitialImage = null;
-			this.PicBoxPet.Location = new System.Drawing.Point(624, 311);
+			this.PicBoxPet.Location = new System.Drawing.Point(586, 545);
 			this.PicBoxPet.Name = "PicBoxPet";
 			this.PicBoxPet.Size = new System.Drawing.Size(229, 199);
 			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.PicBoxPet.TabIndex = 3;
 			this.PicBoxPet.TabStop = false;
+			this.PicBoxPet.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicBoxPet_DragEnter);
+			this.PicBoxPet.DragOver += new System.Windows.Forms.DragEventHandler(this.PicBoxPet_DragOver);
 			// 
 			// BtnExit
 			// 
@@ -124,6 +127,9 @@
 			this.BtnFeed.Size = new System.Drawing.Size(60, 60);
 			this.BtnFeed.TabIndex = 25;
 			this.BtnFeed.UseVisualStyleBackColor = false;
+			this.BtnFeed.DragOver += new System.Windows.Forms.DragEventHandler(this.BtnFeed_DragOver);
+			this.BtnFeed.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.BtnFeed_GiveFeedback);
+			this.BtnFeed.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.BtnFeed_QueryContinueDrag);
 			this.BtnFeed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnFeed_MouseDown);
 			this.BtnFeed.MouseEnter += new System.EventHandler(this.BtnFeed_MouseEnter);
 			this.BtnFeed.MouseLeave += new System.EventHandler(this.BtnFeed_MouseLeave);
@@ -235,12 +241,26 @@
 			this.panelHome.MouseEnter += new System.EventHandler(this.panelHome_MouseEnter);
 			this.panelHome.MouseLeave += new System.EventHandler(this.panelHome_MouseLeave);
 			// 
+			// PanelPet
+			// 
+			this.PanelPet.AllowDrop = true;
+			this.PanelPet.BackColor = System.Drawing.Color.Transparent;
+			this.PanelPet.BackgroundImage = global::PetStop.Properties.Resources.petGS1;
+			this.PanelPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.PanelPet.Location = new System.Drawing.Point(628, 307);
+			this.PanelPet.Name = "PanelPet";
+			this.PanelPet.Size = new System.Drawing.Size(208, 190);
+			this.PanelPet.TabIndex = 33;
+			this.PanelPet.DragDrop += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragDrop);
+			this.PanelPet.DragOver += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragOver);
+			// 
 			// GameScreenHomeForm
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(949, 590);
+			this.Controls.Add(this.PanelPet);
 			this.Controls.Add(this.panelHome);
 			this.Controls.Add(this.panelOutside);
 			this.Controls.Add(this.PicBoxBedding);
@@ -285,6 +305,7 @@
 		private System.Windows.Forms.PictureBox PicBoxBedding;
 		private System.Windows.Forms.Panel panelOutside;
 		private System.Windows.Forms.Panel panelHome;
+		private System.Windows.Forms.Panel PanelPet;
 	}
 }
 

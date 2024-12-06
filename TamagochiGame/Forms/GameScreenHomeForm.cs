@@ -2,6 +2,7 @@
 using PetStop.Properties;
 using System;
 using System.Drawing;
+using System.IO;
 using System.Media;
 using System.Resources;
 using System.Runtime.Versioning;
@@ -61,13 +62,7 @@ namespace PetStop
 		private void panelHome_MouseLeave(object sender, EventArgs e) => panelHome.BackgroundImage = Resources.btnRIght;
 		private void BtnFeed_MouseDown(object sender, MouseEventArgs e)
 		{
-			DoDragDrop(Resources.ball, DragDropEffects.Move);
-			PictureBox PicBoxBall = new PictureBox()
-			{
-				BackgroundImage = Resources.ball,
-				Location = new Point(Cursor.Position.X - BackgroundImage.Width/2, Cursor.Position.Y - BackgroundImage.Height/2),
-			};
-			Controls.Add(PicBoxBall);
+			BtnFeed.DoDragDrop("feed", DragDropEffects.Copy);
 		}
 		private void ChangePlace()
 		{
@@ -99,6 +94,57 @@ namespace PetStop
 		private void BtnSettings_Click(object sender, EventArgs e)
 		{
 			MessageBox.Show("");
+		}
+
+		private void BtnFeed_GiveFeedback(object sender, GiveFeedbackEventArgs e)
+		{
+			e.UseDefaultCursors = false;
+			Cursor.Current = new Cursor((Resources.ball).GetHicon());
+		}
+
+		private void BtnFeed_DragOver(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.Bitmap))
+			{
+				MessageBox.Show("Работает");
+			}
+		}
+
+		private void PicBoxPet_DragEnter(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.Text))
+			{
+				e.Effect = DragDropEffects.Copy;
+			}
+		}
+
+		private void BtnFeed_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+		{
+			e.Action = DragAction.Continue;
+		}
+
+		private void PicBoxPet_DragOver(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.Text))
+			{
+				e.Effect = DragDropEffects.Copy;
+			}
+		}
+
+		private void PanelPet_DragOver(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.Text))
+			{
+				e.Effect = DragDropEffects.Copy;
+			}
+		}
+
+		private void PanelPet_DragDrop(object sender, DragEventArgs e)
+		{
+			if (e.Data.GetDataPresent(DataFormats.Text))
+			{
+				MessageBox.Show(e.Data.ToString());
+			}
 		}
 	}
 }
