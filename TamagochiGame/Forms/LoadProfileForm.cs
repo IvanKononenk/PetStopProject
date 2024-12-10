@@ -26,6 +26,7 @@ namespace PetStop.Forms
 			foreach (string save in Directory.GetDirectories("game\\saves"))
 			{ DGVSaveFIles.Rows.Add(Regex.Replace(save, @"game\\saves\\", ""), Directory.GetLastAccessTime(save)); }
 			LblSavesCount.Text = "Найдено сохранений: " + DGVSaveFIles.RowCount;
+			EscMenuForm.switchingPlayer = false;
 		}
 
 		private void BtnExit_Click(object sender, EventArgs e)

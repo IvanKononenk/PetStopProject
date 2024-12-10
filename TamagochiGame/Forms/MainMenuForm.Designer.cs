@@ -34,10 +34,8 @@
 			this.BtnExit = new System.Windows.Forms.Button();
 			this.picBoxMascot = new System.Windows.Forms.PictureBox();
 			this.picBoxLogo = new System.Windows.Forms.PictureBox();
-			this.picBoxBackground = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.picBoxMascot)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.picBoxBackground)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// BtnNewProfile
@@ -105,21 +103,12 @@
 			this.picBoxLogo.TabIndex = 4;
 			this.picBoxLogo.TabStop = false;
 			// 
-			// picBoxBackground
-			// 
-			this.picBoxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.picBoxBackground.Image = global::PetStop.Properties.Resources.bgMainMenu;
-			this.picBoxBackground.Location = new System.Drawing.Point(0, 0);
-			this.picBoxBackground.Name = "picBoxBackground";
-			this.picBoxBackground.Size = new System.Drawing.Size(634, 419);
-			this.picBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.picBoxBackground.TabIndex = 3;
-			this.picBoxBackground.TabStop = false;
-			// 
 			// MainMenuForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::PetStop.Properties.Resources.bgMainMenu;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.CancelButton = this.BtnExit;
 			this.ClientSize = new System.Drawing.Size(634, 419);
 			this.Controls.Add(this.picBoxMascot);
@@ -127,7 +116,7 @@
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.BtnLoadProfile);
 			this.Controls.Add(this.BtnNewProfile);
-			this.Controls.Add(this.picBoxBackground);
+			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -141,7 +130,6 @@
 			this.Shown += new System.EventHandler(this.MainMenuForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.picBoxMascot)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.picBoxBackground)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -152,7 +140,6 @@
 		private System.Windows.Forms.Button BtnNewProfile;
 		private System.Windows.Forms.Button BtnLoadProfile;
 		private System.Windows.Forms.Button BtnExit;
-		private System.Windows.Forms.PictureBox picBoxBackground;
 		private System.Windows.Forms.PictureBox picBoxLogo;
 		private System.Windows.Forms.PictureBox picBoxMascot;
 	}

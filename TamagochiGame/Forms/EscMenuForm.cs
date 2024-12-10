@@ -13,7 +13,7 @@ namespace PetStop.Forms
 {
 	public partial class EscMenuForm : Form
 	{
-		public bool toMainMenu, switchingPlayer = false;
+		static public bool toMainMenu, switchingPlayer = false;
 		public EscMenuForm()
 		{
 			InitializeComponent();
@@ -28,6 +28,17 @@ namespace PetStop.Forms
 		private void BtnLoadGame_Click(object sender, EventArgs e)
 		{
 			switchingPlayer = true;
+			toMainMenu = false;
+			if (Pet.activePet.SaveAPet(Pet.activePet) && Player.activePlayer.SaveAUser(Player.activePlayer))
+			{
+				MessageBox.Show("Данные сохранены!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			Pet.activePet = null;
+			Player.activePlayer = null;
+			LoadProfileForm ldPrflFrm = new LoadProfileForm();
+			Application.OpenForms["GameScreenForm"].Hide();
+			ldPrflFrm.Show();
+			Close();
 		}
 
 		private void BtnSaveGame_Click(object sender, EventArgs e)
@@ -40,7 +51,7 @@ namespace PetStop.Forms
 
 		private void BtnSettings_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			MessageBox.Show("Пока нечего настраивать", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
 		private void EscMenuForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,6 +59,7 @@ namespace PetStop.Forms
 			if (toMainMenu)
 			{
 				Application.OpenForms["GameScreenForm"].Close();
+				toMainMenu = false;
 			}
 		}
 

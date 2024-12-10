@@ -1,4 +1,5 @@
 ﻿using PetStop.Classes;
+using PetStop.Forms;
 using PetStop.Properties;
 using System;
 using System.Drawing;
@@ -39,12 +40,9 @@ namespace PetStop
 		//Конец секции реакций кнопок на наведение и нажатия
 
 
-		private void MainScreenForm_Load(object sender, EventArgs e)
+		public void MainScreenForm_Load(object sender, EventArgs e)
 		{
-			PanelPet.BackgroundImage = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
-			music.Play();
-			LblMoney.Parent = PicBoxMoneyBG;
-			LblMoney.Text = Player.activePlayer.money.ToString() + " $";
+			UpdatePet();
 		}
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
@@ -84,12 +82,19 @@ namespace PetStop
 				outside = false;
 			}
 		}
-
+		public void UpdatePet()
+		{
+			music.Play();
+			PanelPet.BackgroundImage = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
+			LblMoney.Parent = PicBoxMoneyBG;
+			LblMoney.Text = Player.activePlayer.money.ToString() + " $";
+		}
 		private void panelChangePlace_Click(object sender, EventArgs e) => ChangePlace();
 
 		private void BtnSettings_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Пока не работает.");
+			EscMenuForm escMnFrm = new EscMenuForm();
+			escMnFrm.ShowDialog();
 		}
 
 
