@@ -62,7 +62,7 @@
 			this.LblPetName.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
 			this.LblPetName.Name = "LblPetName";
 			this.LblPetName.Size = new System.Drawing.Size(90, 23);
-			this.LblPetName.TabIndex = 3;
+			this.LblPetName.TabIndex = 0;
 			this.LblPetName.Text = "Кличка:";
 			// 
 			// TxtPetName
@@ -72,7 +72,7 @@
 			this.TxtPetName.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
 			this.TxtPetName.Name = "TxtPetName";
 			this.TxtPetName.Size = new System.Drawing.Size(145, 31);
-			this.TxtPetName.TabIndex = 4;
+			this.TxtPetName.TabIndex = 1;
 			// 
 			// BtnConfirm
 			// 
@@ -82,7 +82,7 @@
 			this.BtnConfirm.Location = new System.Drawing.Point(451, 356);
 			this.BtnConfirm.Name = "BtnConfirm";
 			this.BtnConfirm.Size = new System.Drawing.Size(145, 33);
-			this.BtnConfirm.TabIndex = 5;
+			this.BtnConfirm.TabIndex = 0;
 			this.BtnConfirm.Text = "Подтвердить";
 			this.BtnConfirm.UseVisualStyleBackColor = true;
 			this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
@@ -95,7 +95,7 @@
 			this.BtnExit.Location = new System.Drawing.Point(513, 395);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(83, 33);
-			this.BtnExit.TabIndex = 6;
+			this.BtnExit.TabIndex = 1;
 			this.BtnExit.Text = "Выход";
 			this.BtnExit.UseVisualStyleBackColor = true;
 			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -113,15 +113,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.TLPCrates.ColumnCount = 1;
 			this.TLPCrates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.TLPCrates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.TLPCrates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.TLPCrates.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
 			this.TLPCrates.Location = new System.Drawing.Point(3, 3);
 			this.TLPCrates.Name = "TLPCrates";
 			this.TLPCrates.RowCount = 1;
 			this.TLPCrates.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.TLPCrates.Size = new System.Drawing.Size(578, 218);
-			this.TLPCrates.TabIndex = 8;
+			this.TLPCrates.TabIndex = 0;
 			// 
 			// PanelName
 			// 
@@ -131,7 +129,7 @@
 			this.PanelName.Location = new System.Drawing.Point(50, 0);
 			this.PanelName.Name = "PanelName";
 			this.PanelName.Size = new System.Drawing.Size(241, 31);
-			this.PanelName.TabIndex = 10;
+			this.PanelName.TabIndex = 0;
 			// 
 			// PanelSpecies
 			// 
@@ -141,7 +139,7 @@
 			this.PanelSpecies.Location = new System.Drawing.Point(50, 34);
 			this.PanelSpecies.Name = "PanelSpecies";
 			this.PanelSpecies.Size = new System.Drawing.Size(241, 31);
-			this.PanelSpecies.TabIndex = 10;
+			this.PanelSpecies.TabIndex = 1;
 			// 
 			// TxtSpecies
 			// 
@@ -151,7 +149,7 @@
 			this.TxtSpecies.Name = "TxtSpecies";
 			this.TxtSpecies.ReadOnly = true;
 			this.TxtSpecies.Size = new System.Drawing.Size(145, 31);
-			this.TxtSpecies.TabIndex = 4;
+			this.TxtSpecies.TabIndex = 1;
 			// 
 			// LblSpecies
 			// 
@@ -161,7 +159,7 @@
 			this.LblSpecies.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
 			this.LblSpecies.Name = "LblSpecies";
 			this.LblSpecies.Size = new System.Drawing.Size(92, 23);
-			this.LblSpecies.TabIndex = 3;
+			this.LblSpecies.TabIndex = 0;
 			this.LblSpecies.Text = "Порода:";
 			// 
 			// PanelGender
@@ -172,7 +170,7 @@
 			this.PanelGender.Location = new System.Drawing.Point(83, 68);
 			this.PanelGender.Name = "PanelGender";
 			this.PanelGender.Size = new System.Drawing.Size(208, 31);
-			this.PanelGender.TabIndex = 10;
+			this.PanelGender.TabIndex = 2;
 			// 
 			// TxtSex
 			// 
@@ -182,7 +180,7 @@
 			this.TxtSex.Name = "TxtSex";
 			this.TxtSex.ReadOnly = true;
 			this.TxtSex.Size = new System.Drawing.Size(145, 31);
-			this.TxtSex.TabIndex = 4;
+			this.TxtSex.TabIndex = 0;
 			// 
 			// LblSex
 			// 
@@ -192,7 +190,7 @@
 			this.LblSex.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
 			this.LblSex.Name = "LblSex";
 			this.LblSex.Size = new System.Drawing.Size(57, 23);
-			this.LblSex.TabIndex = 3;
+			this.LblSex.TabIndex = 1;
 			this.LblSex.Text = "Пол:";
 			// 
 			// TLPPet
@@ -211,7 +209,7 @@
 			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.TLPPet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
 			this.TLPPet.Size = new System.Drawing.Size(578, 108);
-			this.TLPPet.TabIndex = 10;
+			this.TLPPet.TabIndex = 1;
 			this.TLPPet.Visible = false;
 			// 
 			// PanelInfo
@@ -224,7 +222,7 @@
 			this.PanelInfo.Location = new System.Drawing.Point(118, 3);
 			this.PanelInfo.Name = "PanelInfo";
 			this.PanelInfo.Size = new System.Drawing.Size(340, 102);
-			this.PanelInfo.TabIndex = 11;
+			this.PanelInfo.TabIndex = 0;
 			// 
 			// PanelBig
 			// 
@@ -236,7 +234,7 @@
 			this.PanelBig.Location = new System.Drawing.Point(12, 12);
 			this.PanelBig.Name = "PanelBig";
 			this.PanelBig.Size = new System.Drawing.Size(584, 338);
-			this.PanelBig.TabIndex = 11;
+			this.PanelBig.TabIndex = 2;
 			// 
 			// ChooseACrateForm
 			// 

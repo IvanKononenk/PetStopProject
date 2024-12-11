@@ -54,19 +54,13 @@ namespace PetStop
 				Application.OpenForms["MainMenuForm"].Show();
 			}
 		}
-		private void BtnExit_Click(object sender, EventArgs e)
-		{
-			Close();
-		}
 		private void ChangePlace()
 		{
 			Control[] elements = { BtnFeed, BtnDrink, BtnWash, BtnPlay, PicBoxBedding, panelOutside };
 			if (!outside) //Выходим на улицу
 			{
 				foreach (Control element in elements)
-				{
 					element.Visible = false;
-				}
 				BackgroundImage = Resources.bgOutside;
 				panelHome.Visible = true;
 				outside = true;
@@ -74,9 +68,7 @@ namespace PetStop
 			else //Возвращаемся домой
 			{
 				foreach (Control element in elements)
-				{
 					element.Visible = true;
-				}
 				BackgroundImage = Resources.bgRoom;
 				panelHome.Visible = false;
 				outside = false;

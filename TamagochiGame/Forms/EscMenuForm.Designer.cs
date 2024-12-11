@@ -40,7 +40,8 @@
 			// BtnContinue
 			// 
 			this.BtnContinue.AutoSize = true;
-			this.BtnContinue.Location = new System.Drawing.Point(237, 14);
+			this.BtnContinue.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.BtnContinue.Location = new System.Drawing.Point(15, 14);
 			this.BtnContinue.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnContinue.Name = "BtnContinue";
 			this.BtnContinue.Size = new System.Drawing.Size(192, 41);
@@ -52,10 +53,10 @@
 			// BtnSaveGame
 			// 
 			this.BtnSaveGame.AutoSize = true;
-			this.BtnSaveGame.Location = new System.Drawing.Point(238, 65);
+			this.BtnSaveGame.Location = new System.Drawing.Point(15, 65);
 			this.BtnSaveGame.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnSaveGame.Name = "BtnSaveGame";
-			this.BtnSaveGame.Size = new System.Drawing.Size(191, 41);
+			this.BtnSaveGame.Size = new System.Drawing.Size(192, 41);
 			this.BtnSaveGame.TabIndex = 1;
 			this.BtnSaveGame.Text = "Сохранить игру";
 			this.BtnSaveGame.UseVisualStyleBackColor = true;
@@ -64,10 +65,10 @@
 			// BtnLoadGame
 			// 
 			this.BtnLoadGame.AutoSize = true;
-			this.BtnLoadGame.Location = new System.Drawing.Point(238, 116);
+			this.BtnLoadGame.Location = new System.Drawing.Point(15, 116);
 			this.BtnLoadGame.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnLoadGame.Name = "BtnLoadGame";
-			this.BtnLoadGame.Size = new System.Drawing.Size(191, 41);
+			this.BtnLoadGame.Size = new System.Drawing.Size(192, 41);
 			this.BtnLoadGame.TabIndex = 2;
 			this.BtnLoadGame.Text = "Загрузить игру";
 			this.BtnLoadGame.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
 			// BtnPetInfo
 			// 
 			this.BtnPetInfo.AutoSize = true;
-			this.BtnPetInfo.Location = new System.Drawing.Point(237, 167);
+			this.BtnPetInfo.Location = new System.Drawing.Point(15, 167);
 			this.BtnPetInfo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnPetInfo.Name = "BtnPetInfo";
 			this.BtnPetInfo.Size = new System.Drawing.Size(192, 41);
@@ -88,7 +89,7 @@
 			// BtnSettings
 			// 
 			this.BtnSettings.AutoSize = true;
-			this.BtnSettings.Location = new System.Drawing.Point(237, 218);
+			this.BtnSettings.Location = new System.Drawing.Point(15, 218);
 			this.BtnSettings.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnSettings.Name = "BtnSettings";
 			this.BtnSettings.Size = new System.Drawing.Size(192, 41);
@@ -100,10 +101,10 @@
 			// BtnExit
 			// 
 			this.BtnExit.AutoSize = true;
-			this.BtnExit.Location = new System.Drawing.Point(238, 269);
+			this.BtnExit.Location = new System.Drawing.Point(15, 269);
 			this.BtnExit.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
 			this.BtnExit.Name = "BtnExit";
-			this.BtnExit.Size = new System.Drawing.Size(191, 41);
+			this.BtnExit.Size = new System.Drawing.Size(192, 41);
 			this.BtnExit.TabIndex = 5;
 			this.BtnExit.Text = "В главное меню";
 			this.BtnExit.UseVisualStyleBackColor = true;
@@ -113,7 +114,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(662, 343);
+			this.CancelButton = this.BtnContinue;
+			this.ClientSize = new System.Drawing.Size(222, 324);
 			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.BtnSettings);
 			this.Controls.Add(this.BtnPetInfo);
@@ -121,8 +123,13 @@
 			this.Controls.Add(this.BtnSaveGame);
 			this.Controls.Add(this.BtnContinue);
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(238, 363);
+			this.MinimizeBox = false;
+			this.MinimumSize = new System.Drawing.Size(238, 363);
 			this.Name = "EscMenuForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Меню";

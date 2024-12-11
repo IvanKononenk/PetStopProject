@@ -43,7 +43,9 @@
 			this.PrBarHappiness = new System.Windows.Forms.ProgressBar();
 			this.LblAgeText = new System.Windows.Forms.Label();
 			this.LblAge = new System.Windows.Forms.Label();
-			this.LblExit = new System.Windows.Forms.Button();
+			this.BtnExit = new System.Windows.Forms.Button();
+			this.PicBoxPet = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// LblCleanliness
@@ -54,7 +56,7 @@
 			this.LblCleanliness.Location = new System.Drawing.Point(21, 157);
 			this.LblCleanliness.Name = "LblCleanliness";
 			this.LblCleanliness.Size = new System.Drawing.Size(76, 23);
-			this.LblCleanliness.TabIndex = 33;
+			this.LblCleanliness.TabIndex = 11;
 			this.LblCleanliness.Text = "Чистота:";
 			// 
 			// LblVigor
@@ -65,7 +67,7 @@
 			this.LblVigor.Location = new System.Drawing.Point(12, 128);
 			this.LblVigor.Name = "LblVigor";
 			this.LblVigor.Size = new System.Drawing.Size(85, 23);
-			this.LblVigor.TabIndex = 32;
+			this.LblVigor.TabIndex = 9;
 			this.LblVigor.Text = "Бодрость:";
 			// 
 			// LblCommunication
@@ -76,7 +78,7 @@
 			this.LblCommunication.Location = new System.Drawing.Point(13, 99);
 			this.LblCommunication.Name = "LblCommunication";
 			this.LblCommunication.Size = new System.Drawing.Size(84, 23);
-			this.LblCommunication.TabIndex = 31;
+			this.LblCommunication.TabIndex = 7;
 			this.LblCommunication.Text = "Общение:";
 			// 
 			// PrBarCleanliness
@@ -85,7 +87,7 @@
 			this.PrBarCleanliness.Maximum = 10000;
 			this.PrBarCleanliness.Name = "PrBarCleanliness";
 			this.PrBarCleanliness.Size = new System.Drawing.Size(150, 23);
-			this.PrBarCleanliness.TabIndex = 30;
+			this.PrBarCleanliness.TabIndex = 12;
 			this.PrBarCleanliness.Value = 10000;
 			// 
 			// PrBarVigor
@@ -94,7 +96,7 @@
 			this.PrBarVigor.Maximum = 10000;
 			this.PrBarVigor.Name = "PrBarVigor";
 			this.PrBarVigor.Size = new System.Drawing.Size(150, 23);
-			this.PrBarVigor.TabIndex = 29;
+			this.PrBarVigor.TabIndex = 10;
 			this.PrBarVigor.Value = 10000;
 			// 
 			// PrBarCommunication
@@ -103,7 +105,7 @@
 			this.PrBarCommunication.Maximum = 10000;
 			this.PrBarCommunication.Name = "PrBarCommunication";
 			this.PrBarCommunication.Size = new System.Drawing.Size(150, 23);
-			this.PrBarCommunication.TabIndex = 28;
+			this.PrBarCommunication.TabIndex = 8;
 			this.PrBarCommunication.Value = 10000;
 			// 
 			// LblHappy
@@ -114,7 +116,7 @@
 			this.LblHappy.Location = new System.Drawing.Point(23, 9);
 			this.LblHappy.Name = "LblHappy";
 			this.LblHappy.Size = new System.Drawing.Size(74, 23);
-			this.LblHappy.TabIndex = 27;
+			this.LblHappy.TabIndex = 1;
 			this.LblHappy.Text = "Счастье:";
 			// 
 			// LblThirst
@@ -125,7 +127,7 @@
 			this.LblThirst.Location = new System.Drawing.Point(32, 70);
 			this.LblThirst.Name = "LblThirst";
 			this.LblThirst.Size = new System.Drawing.Size(65, 23);
-			this.LblThirst.TabIndex = 26;
+			this.LblThirst.TabIndex = 5;
 			this.LblThirst.Text = "Жажда:";
 			// 
 			// LblHunger
@@ -136,7 +138,7 @@
 			this.LblHunger.Location = new System.Drawing.Point(35, 41);
 			this.LblHunger.Name = "LblHunger";
 			this.LblHunger.Size = new System.Drawing.Size(62, 23);
-			this.LblHunger.TabIndex = 25;
+			this.LblHunger.TabIndex = 3;
 			this.LblHunger.Text = "Голод:";
 			// 
 			// PrBarHydration
@@ -145,7 +147,7 @@
 			this.PrBarHydration.Maximum = 10000;
 			this.PrBarHydration.Name = "PrBarHydration";
 			this.PrBarHydration.Size = new System.Drawing.Size(150, 23);
-			this.PrBarHydration.TabIndex = 24;
+			this.PrBarHydration.TabIndex = 6;
 			this.PrBarHydration.Value = 10000;
 			// 
 			// PrBarSatiety
@@ -154,7 +156,7 @@
 			this.PrBarSatiety.Maximum = 10000;
 			this.PrBarSatiety.Name = "PrBarSatiety";
 			this.PrBarSatiety.Size = new System.Drawing.Size(150, 23);
-			this.PrBarSatiety.TabIndex = 23;
+			this.PrBarSatiety.TabIndex = 4;
 			this.PrBarSatiety.Value = 10000;
 			// 
 			// PrBarHappiness
@@ -163,7 +165,7 @@
 			this.PrBarHappiness.Maximum = 50000;
 			this.PrBarHappiness.Name = "PrBarHappiness";
 			this.PrBarHappiness.Size = new System.Drawing.Size(150, 23);
-			this.PrBarHappiness.TabIndex = 22;
+			this.PrBarHappiness.TabIndex = 2;
 			this.PrBarHappiness.Value = 50000;
 			// 
 			// LblAgeText
@@ -173,7 +175,7 @@
 			this.LblAgeText.Location = new System.Drawing.Point(103, 186);
 			this.LblAgeText.Name = "LblAgeText";
 			this.LblAgeText.Size = new System.Drawing.Size(20, 23);
-			this.LblAgeText.TabIndex = 34;
+			this.LblAgeText.TabIndex = 14;
 			this.LblAgeText.Text = "0";
 			this.LblAgeText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
@@ -184,26 +186,40 @@
 			this.LblAge.Location = new System.Drawing.Point(23, 186);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(74, 23);
-			this.LblAge.TabIndex = 34;
+			this.LblAge.TabIndex = 13;
 			this.LblAge.Text = "Возраст:";
 			this.LblAge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// LblExit
+			// BtnExit
 			// 
-			this.LblExit.AutoSize = true;
-			this.LblExit.Location = new System.Drawing.Point(257, 238);
-			this.LblExit.Name = "LblExit";
-			this.LblExit.Size = new System.Drawing.Size(101, 33);
-			this.LblExit.TabIndex = 35;
-			this.LblExit.Text = "Закрыть";
-			this.LblExit.UseVisualStyleBackColor = true;
+			this.BtnExit.AutoSize = true;
+			this.BtnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.BtnExit.Location = new System.Drawing.Point(578, 238);
+			this.BtnExit.Name = "BtnExit";
+			this.BtnExit.Size = new System.Drawing.Size(101, 33);
+			this.BtnExit.TabIndex = 0;
+			this.BtnExit.Text = "Закрыть";
+			this.BtnExit.UseVisualStyleBackColor = true;
+			// 
+			// PicBoxPet
+			// 
+			this.PicBoxPet.BackColor = System.Drawing.Color.Transparent;
+			this.PicBoxPet.Image = global::PetStop.Properties.Resources.petGS1;
+			this.PicBoxPet.Location = new System.Drawing.Point(449, 42);
+			this.PicBoxPet.Name = "PicBoxPet";
+			this.PicBoxPet.Size = new System.Drawing.Size(230, 167);
+			this.PicBoxPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.PicBoxPet.TabIndex = 36;
+			this.PicBoxPet.TabStop = false;
 			// 
 			// BioMonForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(370, 283);
-			this.Controls.Add(this.LblExit);
+			this.CancelButton = this.BtnExit;
+			this.ClientSize = new System.Drawing.Size(691, 283);
+			this.Controls.Add(this.PicBoxPet);
+			this.Controls.Add(this.BtnExit);
 			this.Controls.Add(this.LblAge);
 			this.Controls.Add(this.LblAgeText);
 			this.Controls.Add(this.LblCleanliness);
@@ -225,6 +241,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Биомон";
 			this.Load += new System.EventHandler(this.BioMonForm_Load);
+			((System.ComponentModel.ISupportInitialize)(this.PicBoxPet)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -246,6 +263,7 @@
 		private System.Windows.Forms.ProgressBar PrBarHappiness;
 		private System.Windows.Forms.Label LblAgeText;
 		private System.Windows.Forms.Label LblAge;
-		private System.Windows.Forms.Button LblExit;
+		private System.Windows.Forms.Button BtnExit;
+		private System.Windows.Forms.PictureBox PicBoxPet;
 	}
 }

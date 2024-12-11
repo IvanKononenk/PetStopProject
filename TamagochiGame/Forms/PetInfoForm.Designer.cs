@@ -117,7 +117,7 @@
 			this.BtnClose.Location = new System.Drawing.Point(871, 316);
 			this.BtnClose.Name = "BtnClose";
 			this.BtnClose.Size = new System.Drawing.Size(101, 33);
-			this.BtnClose.TabIndex = 7;
+			this.BtnClose.TabIndex = 0;
 			this.BtnClose.Text = "Закрыть";
 			this.BtnClose.UseVisualStyleBackColor = true;
 			this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);

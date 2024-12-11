@@ -16,11 +16,7 @@ namespace PetStop.Forms
 		string[] sex = new string[] { "Мужской", "Женский" };
 		string petPic;
 		bool petCreated = false;
-		public ChooseACrateForm()
-		{
-			InitializeComponent();
-		}
-
+		public ChooseACrateForm() => InitializeComponent();
 		private void ChooseACrateForm_Load(object sender, EventArgs e)
 		{
 			PictureBox[] picBoxCrates = new PictureBox[CratesClasses.LoadCrates().Count()];
@@ -35,6 +31,8 @@ namespace PetStop.Forms
 					Tag = i
 				};
 				picBoxCrates[i].Click += picBoxCrate_CLick;
+				ColumnStyle style = new ColumnStyle();
+				if(i>0) TLPCrates.ColumnStyles.Add(style);
 				TLPCrates.Controls.Add(picBoxCrates[i]);
 				TLPCrates.ColumnStyles[i].SizeType = SizeType.Percent;
 				TLPCrates.ColumnStyles[i].Width = 100 / picBoxCrates.Length;

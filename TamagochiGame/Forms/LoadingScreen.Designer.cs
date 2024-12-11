@@ -51,7 +51,7 @@
 			this.LblHello.Location = new System.Drawing.Point(274, 12);
 			this.LblHello.Name = "LblHello";
 			this.LblHello.Size = new System.Drawing.Size(514, 128);
-			this.LblHello.TabIndex = 1;
+			this.LblHello.TabIndex = 0;
 			this.LblHello.Text = "Shadow Serpents представляют...\r\nPetStop";
 			this.LblHello.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -62,12 +62,13 @@
 			this.LoadingBar.Name = "LoadingBar";
 			this.LoadingBar.Size = new System.Drawing.Size(514, 32);
 			this.LoadingBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.LoadingBar.TabIndex = 2;
+			this.LoadingBar.TabIndex = 1;
 			// 
 			// LoadingScreen
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(800, 280);
+			this.ControlBox = false;
 			this.Controls.Add(this.LoadingBar);
 			this.Controls.Add(this.LblHello);
 			this.Controls.Add(this.PIcBoxLogo);
@@ -76,9 +77,9 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MaximumSize = new System.Drawing.Size(816, 319);
+			this.MinimizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(816, 319);
 			this.Name = "LoadingScreen";
-			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Загрузка...";
 			this.Load += new System.EventHandler(this.LoadingScreen_Load);

@@ -127,6 +127,7 @@
 			this.Name = "MainMenuForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Главное меню";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenuForm_FormClosing);
 			this.Shown += new System.EventHandler(this.MainMenuForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.picBoxMascot)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();

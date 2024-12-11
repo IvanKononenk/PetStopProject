@@ -42,7 +42,7 @@
 			this.TxtProfileName.Location = new System.Drawing.Point(200, 12);
 			this.TxtProfileName.Name = "TxtProfileName";
 			this.TxtProfileName.Size = new System.Drawing.Size(150, 31);
-			this.TxtProfileName.TabIndex = 0;
+			this.TxtProfileName.TabIndex = 1;
 			// 
 			// LblUsername
 			// 
@@ -50,7 +50,7 @@
 			this.LblUsername.Location = new System.Drawing.Point(43, 15);
 			this.LblUsername.Name = "LblUsername";
 			this.LblUsername.Size = new System.Drawing.Size(151, 23);
-			this.LblUsername.TabIndex = 1;
+			this.LblUsername.TabIndex = 0;
 			this.LblUsername.Text = "Имя профиля:";
 			// 
 			// BtnExit
@@ -61,7 +61,7 @@
 			this.BtnExit.Location = new System.Drawing.Point(12, 86);
 			this.BtnExit.Name = "BtnExit";
 			this.BtnExit.Size = new System.Drawing.Size(94, 33);
-			this.BtnExit.TabIndex = 2;
+			this.BtnExit.TabIndex = 5;
 			this.BtnExit.Text = "Выход";
 			this.BtnExit.UseVisualStyleBackColor = true;
 			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -73,7 +73,7 @@
 			this.BtnConfirm.Location = new System.Drawing.Point(254, 86);
 			this.BtnConfirm.Name = "BtnConfirm";
 			this.BtnConfirm.Size = new System.Drawing.Size(123, 33);
-			this.BtnConfirm.TabIndex = 3;
+			this.BtnConfirm.TabIndex = 4;
 			this.BtnConfirm.Text = "Сохранить";
 			this.BtnConfirm.UseVisualStyleBackColor = true;
 			this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
@@ -84,7 +84,7 @@
 			this.DTPBDay.Location = new System.Drawing.Point(200, 49);
 			this.DTPBDay.Name = "DTPBDay";
 			this.DTPBDay.Size = new System.Drawing.Size(150, 31);
-			this.DTPBDay.TabIndex = 4;
+			this.DTPBDay.TabIndex = 3;
 			// 
 			// LblBDay
 			// 
@@ -92,7 +92,7 @@
 			this.LblBDay.Location = new System.Drawing.Point(26, 55);
 			this.LblBDay.Name = "LblBDay";
 			this.LblBDay.Size = new System.Drawing.Size(168, 23);
-			this.LblBDay.TabIndex = 5;
+			this.LblBDay.TabIndex = 2;
 			this.LblBDay.Text = "Дата рождения:";
 			// 
 			// NewProfileForm
@@ -112,6 +112,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MaximizeBox = false;
 			this.MaximumSize = new System.Drawing.Size(405, 170);
 			this.MinimumSize = new System.Drawing.Size(405, 170);
 			this.Name = "NewProfileForm";

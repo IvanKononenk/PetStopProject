@@ -1,23 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlTypes;
+﻿using PetStop.Properties;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PetStop.Forms
 {
 	public partial class BioMonForm : Form
 	{
-		public BioMonForm()
-		{
-			InitializeComponent();
-		}
-
+		public BioMonForm() => InitializeComponent();
 		private void BioMonForm_Load(object sender, EventArgs e)
 		{
 			PrBarHappiness.Value = Pet.activePet.happiness;
@@ -27,6 +17,7 @@ namespace PetStop.Forms
 			PrBarVigor.Value = Pet.activePet.vigor;
 			PrBarCleanliness.Value = Pet.activePet.cleanliness;
 			LblAgeText.Text = Pet.activePet.ageMinutes.ToString();
+			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 		}
 	}
 }

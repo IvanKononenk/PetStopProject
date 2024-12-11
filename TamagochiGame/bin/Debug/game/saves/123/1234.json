@@ -1,0 +1,38 @@
+{
+  "name": "1234",
+  "species": {
+    "speciesName": "Немецкая овчарка",
+    "speciesEng": "germanShepherd",
+    "possiblePics": [
+      "petGS1",
+      "petGS2",
+      "petGS3"
+    ],
+    "modHappiness": 0,
+    "modSatiety": 0,
+    "modHydration": 0,
+    "modCommunication": 0,
+    "modVigor": 0,
+    "modCleanliness": 0
+  },
+  "petPic": "petGS3",
+  "gender": "Женский",
+  "happiness": 50000,
+  "satiety": 10000,
+  "hydration": 10000,
+  "communication": 10000,
+  "vigor": 10000,
+  "cleanliness": 10000,
+  "trait": {
+    "trait": "Грязнуля",
+    "traitEng": "muddy",
+    "modSatiety": 100,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 150
+  },
+  "ageMinutes": 0,
+  "inventory": [],
+  "effects": []
+}
