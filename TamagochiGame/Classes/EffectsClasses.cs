@@ -58,6 +58,7 @@ namespace PetStop
 		public string effect { get; set; }
 		public string effectEng { get; set; }
 		public string effectType { get; set; }
+		public int hoursAffect { get; set; }
 		public int modHappiness { get; set; }
 		public int modSatiety { get; set; }
 		public int modHydration { get; set; }
@@ -71,17 +72,19 @@ namespace PetStop
 		/// <param name="effect">Название эффекта</param>
 		/// <param name="effectEng">Название эффекта по-английски</param>
 		/// <param name="effectType">Тип эффекта</param>
+		/// <param name="hoursAffect">Длительность действия эффекта (если применимо)</param>
 		/// <param name="modHappiness">Модификатор счастья</param>
 		/// <param name="modSatiety">Модификатор голода</param>
 		/// <param name="modHydration">Модификатор жажды</param>
 		/// <param name="modCommunication">Модификатор общения</param>
 		/// <param name="modVigor">Модификатор бодрости</param>
 		/// <param name="modCleanliness">Модификатор чистоты</param>
-		public Effects(string effect, string effectEng, string effectType, int modHappiness, int modSatiety, int modHydration, int modCommunication, int modVigor, int modCleanliness)
+		public Effects(string effect, string effectEng, string effectType, int hoursAffect, int modHappiness, int modSatiety, int modHydration, int modCommunication, int modVigor, int modCleanliness)
 		{
 			this.effect = effect;
 			this.effectEng = effectEng;
 			this.effectType = effectType;
+			this.hoursAffect = hoursAffect;
 			this.modHappiness = modHappiness;
 			this.modSatiety = modSatiety;
 			this.modHydration = modHydration;

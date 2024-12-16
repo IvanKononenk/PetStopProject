@@ -20,11 +20,17 @@ namespace PetStop
 		public string gender { get; set; }
 
 		public int happiness { get; set; }
+		public int maxHappiness { get; set; }
 		public int satiety { get; set; }
+		public int maxSatiety {  get; set; }
 		public int hydration { get; set; }
+		public int maxHydration {  get; set; }
 		public int communication { get; set; }
+		public int maxCommunication { get; set; }
 		public int vigor { get; set; }
+		public int maxVigor {  get; set; }
 		public int cleanliness { get; set; }
+		public int maxCleanliness { get; set; }
 
 		public Traits trait { get; set; }
 		public int ageMinutes { get; set; }
@@ -111,12 +117,24 @@ namespace PetStop
 		public void AssignEffect(Effects effect)
 		{
 			effects.Add(effect);
-			happiness += effect.modHappiness;
-			satiety += effect.modSatiety;
-			hydration += effect.modHydration;
-			communication += effect.modCommunication;
-			vigor += effect.modVigor;
-			cleanliness += effect.modCleanliness;
+			if (effect.effectType == "Limit Changer") //Если эффект имеет тип "Изменяющий лимит"
+			{
+				maxHappiness += effect.modHappiness;
+				maxSatiety += effect.modSatiety;
+				maxHydration += effect.modHydration;
+				maxCommunication += effect.modCommunication;
+				maxVigor += effect.modVigor;
+				maxCleanliness += effect.modCleanliness;
+			}
+			if (effect.effectType == "One-Timer") //Если эффект имеет тип "Одноразовый"
+			{
+				happiness += effect.modHappiness;
+				satiety += effect.modSatiety;
+				hydration += effect.modHydration;
+				communication += effect.modCommunication;
+				vigor += effect.modVigor;
+				cleanliness += effect.modCleanliness;
+			}
 		}
 
 		/// <summary>
@@ -126,12 +144,24 @@ namespace PetStop
 		public void RemoveEffect(Effects effect)
 		{
 			effects.Remove(effect);
-			happiness -= effect.modHappiness;
-			satiety -= effect.modSatiety;
-			hydration -= effect.modHydration;
-			communication -= effect.modCommunication;
-			vigor -= effect.modVigor;
-			cleanliness -= effect.modCleanliness;
+			if (effect.effectType == "Limit Changer") //Если эффект имеет тип "Изменяющий лимит"
+			{
+				maxHappiness -= effect.modHappiness;
+				maxSatiety -= effect.modSatiety;
+				maxHydration -= effect.modHydration;
+				maxCommunication -= effect.modCommunication;
+				maxVigor -= effect.modVigor;
+				maxCleanliness -= effect.modCleanliness;
+			}
+			if (effect.effectType == "One-Timer") //Если эффект имеет тип "Одноразовый"
+			{
+				happiness -= effect.modHappiness;
+				satiety -= effect.modSatiety;
+				hydration -= effect.modHydration;
+				communication -= effect.modCommunication;
+				vigor -= effect.modVigor;
+				cleanliness -= effect.modCleanliness;
+			}
 		}
 
 		/// <summary>
@@ -147,12 +177,15 @@ namespace PetStop
 			int effectModCleanlinessSum = 0;
 			foreach (Effects effect in effects)
 			{
-				effectModHappinessSum += effect.modHappiness;
-				effectModSatietySum += effect.modSatiety;
-				effectModHydrationSum += effect.modHydration;
-				effectModCommunicationSum += effect.modCommunication;
-				effectModVigorSum += effect.modVigor;
-				effectModCleanlinessSum += effect.modCleanliness;
+				if (effect.effectType == "Accelerator") //Добавляем модификаторы эффектов типа "Ускоритель"
+				{
+					effectModHappinessSum += effect.modHappiness;
+					effectModSatietySum += effect.modSatiety;
+					effectModHydrationSum += effect.modHydration;
+					effectModCommunicationSum += effect.modCommunication;
+					effectModVigorSum += effect.modVigor;
+					effectModCleanlinessSum += effect.modCleanliness;
+				}
 			}
 			satiety -= species.modSatiety - trait.modSatiety - effectModSatietySum;
 			hydration -= species.modHydration - trait.modHydration - effectModHydrationSum;
@@ -161,7 +194,6 @@ namespace PetStop
 			cleanliness -= species.modCleanliness - trait.modCleanliness - effectModCleanlinessSum;
 			happiness = (satiety + hydration + communication + vigor + cleanliness) - species.modHappiness - effectModHappinessSum;
 		}
-
 		public static TimeSpan lastPlay;
 		public static Pet activePet;
 		public static Pet newPet;
