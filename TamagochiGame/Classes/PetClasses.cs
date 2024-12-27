@@ -14,11 +14,12 @@ namespace PetStop
 	[Serializable]
 	public class Pet
 	{
+		//Основные данные
 		public string name { get; set; }
 		public Species species { get; set; }
 		public string petPic { get; set; }
 		public string gender { get; set; }
-
+		//Показатели
 		public int happiness { get; set; }
 		public int maxHappiness { get; set; }
 		public int satiety { get; set; }
@@ -33,6 +34,7 @@ namespace PetStop
 		public int maxCleanliness { get; set; }
 
 		public Traits trait { get; set; }
+		public DateTime lastTick { get; set; }
 		public int ageMinutes { get; set; }
 		public List<Items> inventory { get; set; }
 		public List<Effects> effects { get; set; }
@@ -56,6 +58,7 @@ namespace PetStop
 			communication = 10000;
 			vigor = 10000;
 			cleanliness = 10000;
+			lastTick = DateTime.Now;
 			ageMinutes = 0;
 			this.trait = trait;
 			inventory = new List<Items>();

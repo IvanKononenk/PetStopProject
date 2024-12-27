@@ -42,6 +42,7 @@ namespace PetStop
 
 		public void MainScreenForm_Load(object sender, EventArgs e)
 		{
+			
 			UpdatePet();
 		}
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
