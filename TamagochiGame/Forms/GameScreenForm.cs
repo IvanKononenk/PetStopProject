@@ -81,6 +81,8 @@ namespace PetStop
 			PanelPet.BackgroundImage = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 			LblMoney.Parent = PicBoxMoneyBG;
 			LblMoney.Text = Player.activePlayer.money.ToString() + " $";
+			MessageBox.Show("С момента последней игры прошло " + TimerClasses.CheckPeriods().ToString() + " тиков.");
+			TimerClasses.DoTicks();
 		}
 		private void panelChangePlace_Click(object sender, EventArgs e) => ChangePlace();
 

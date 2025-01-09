@@ -28,7 +28,7 @@ namespace PetStop.Forms
 		private void BtnLoad_Click(object sender, EventArgs e)
 		{
 			Pet.activePet = Pet.LoadAPet("game\\saves\\" + Player.activePlayer.username + "\\" + DGVSaveFiles.CurrentRow.Cells[0].Value.ToString() + ".json");
-			Pet.lastPlay = DateTime.UtcNow - DateTime.Parse(File.GetLastWriteTimeUtc("game\\saves\\" + DGVSaveFiles.CurrentRow.Cells[0].Value.ToString() + ".json").ToString());
+			Pet.lastPlay = DateTime.Now - DateTime.Parse(File.GetLastWriteTimeUtc("game\\saves\\" + DGVSaveFiles.CurrentRow.Cells[0].Value.ToString() + ".json").ToString());
 			if (Application.OpenForms["GameScreenForm"] != null)
 			{
 				GameScreenForm gmScrnFrm = (GameScreenForm)Application.OpenForms["GameScreenForm"];

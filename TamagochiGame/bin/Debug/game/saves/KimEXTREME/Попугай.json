@@ -14,11 +14,17 @@
   "petPic": "petParrot",
   "gender": "Женский",
   "happiness": 15000,
+  "maxHappiness": 0,
   "satiety": 1000,
+  "maxSatiety": 0,
   "hydration": 2000,
+  "maxHydration": 0,
   "communication": 3000,
+  "maxCommunication": 0,
   "vigor": 4000,
+  "maxVigor": 0,
   "cleanliness": 5000,
+  "maxCleanliness": 0,
   "trait": {
     "trait": "Лентяй",
     "traitEng": "lazy",
@@ -28,6 +34,7 @@
     "modVigor": 125,
     "modCleanliness": 100
   },
+  "lastTick": "0001-01-01T00:00:00",
   "ageMinutes": 0,
   "inventory": [],
   "effects": []
