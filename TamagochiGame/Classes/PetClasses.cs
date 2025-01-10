@@ -190,12 +190,18 @@ namespace PetStop
 					effectModCleanlinessSum += effect.modCleanliness;
 				}
 			}
-			satiety -= species.modSatiety - trait.modSatiety - effectModSatietySum;
-			hydration -= species.modHydration - trait.modHydration - effectModHydrationSum;
-			communication -= species.modCommunication - trait.modCommunication - effectModCommunicationSum;
-			vigor -= species.modVigor - trait.modVigor - effectModVigorSum;
-			cleanliness -= species.modCleanliness - trait.modCleanliness - effectModCleanlinessSum;
+			satiety += - species.modSatiety - trait.modSatiety - effectModSatietySum;
+			//if (satiety > maxSatiety) satiety = maxSatiety;
+			hydration += - species.modHydration - trait.modHydration - effectModHydrationSum;
+			//if (hydration > maxHydration) hydration = maxHydration;
+			communication += - species.modCommunication - trait.modCommunication - effectModCommunicationSum;
+			//if (communication > maxCommunication) communication = maxCommunication;
+			vigor += - species.modVigor - trait.modVigor - effectModVigorSum;
+			//if (vigor > maxVigor) vigor = maxVigor;
+			cleanliness += - species.modCleanliness - trait.modCleanliness - effectModCleanlinessSum;
+			//if (cleanliness > maxCleanliness) cleanliness = maxCleanliness;
 			happiness = (satiety + hydration + communication + vigor + cleanliness) - species.modHappiness - effectModHappinessSum;
+			//if (happiness > maxHappiness) happiness = maxHappiness;
 		}
 		public static TimeSpan lastPlay;
 		public static Pet activePet;

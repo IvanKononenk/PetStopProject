@@ -31,12 +31,16 @@ namespace PetStop
 		private void BtnFeed_MouseLeave(object sender, EventArgs e) => BtnFeed.BackgroundImage = Resources.btnFeed;
 		private void BtnDrink_MouseEnter(object sender, EventArgs e) => BtnDrink.BackgroundImage = Resources.btnDrinkHover;
 		private void BtnDrink_MouseLeave(object sender, EventArgs e) => BtnDrink.BackgroundImage = Resources.btnDrink;
-		private void BtnPlay_MouseEnter(object sender, EventArgs e) => BtnPlay.BackgroundImage = Resources.btnBlankHover;
-		private void BtnPlay_MouseLeave(object sender, EventArgs e) => BtnPlay.BackgroundImage = Resources.btnBlank;
+		private void BtnPlay_MouseEnter(object sender, EventArgs e) => BtnPlay.BackgroundImage = Resources.btnPlayHover;
+		private void BtnPlay_MouseLeave(object sender, EventArgs e) => BtnPlay.BackgroundImage = Resources.btnPlay;
 		private void BtnWash_MouseEnter(object sender, EventArgs e) => BtnWash.BackgroundImage = Resources.btnWashHover;
 		private void BtnWash_MouseLeave(object sender, EventArgs e) => BtnWash.BackgroundImage = Resources.btnWash;
 		private void panelHome_MouseEnter(object sender, EventArgs e) => panelHome.BackgroundImage = Resources.btnRIghtHover;
 		private void panelHome_MouseLeave(object sender, EventArgs e) => panelHome.BackgroundImage = Resources.btnRIght;
+		private void BtnBioMon_MouseDown(object sender, MouseEventArgs e) => BtnBioMon.BackgroundImage = Resources.btnBioMonClick;
+		private void BtnBioMon_MouseEnter(object sender, EventArgs e) => BtnBioMon.BackgroundImage = Resources.btnBioMonHover;
+		private void BtnBioMon_MouseLeave(object sender, EventArgs e) => BtnBioMon.BackgroundImage = Resources.btnBioMon;
+		private void BtnBioMon_MouseUp(object sender, MouseEventArgs e) => BtnBioMon.BackgroundImage = Resources.btnBioMonHover;
 		//Конец секции реакций кнопок на наведение и нажатия
 
 
@@ -110,7 +114,7 @@ namespace PetStop
 		private void BtnPlay_GiveFeedback(object sender, GiveFeedbackEventArgs e)
 		{
 			e.UseDefaultCursors = false;
-			Cursor.Current = new Cursor((Resources.ball).GetHicon());
+			Cursor.Current = new Cursor((Resources.cursorBall).GetHicon());
 		}
 		private void BtnWash_MouseDown(object sender, MouseEventArgs e) => BtnWash.DoDragDrop("wash", DragDropEffects.Move);
 		private void BtnWash_GiveFeedback(object sender, GiveFeedbackEventArgs e)
@@ -134,6 +138,14 @@ namespace PetStop
 			{
 				MessageBox.Show(e.Data.GetData("Text").ToString());
 			}
+		}
+
+
+
+		private void BtnBioMon_Click(object sender, EventArgs e)
+		{
+			BioMonForm bioMnFrm = new BioMonForm();
+			bioMnFrm.ShowDialog();
 		}
 	}
 }

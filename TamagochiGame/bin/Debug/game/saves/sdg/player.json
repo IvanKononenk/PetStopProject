@@ -1,0 +1,51 @@
+{
+  "username": "sdg",
+  "money": 0,
+  "birthday": "2018-06-07T00:00:00",
+  "pets": [
+    {
+      "name": "Уолтер",
+      "species": {
+        "speciesName": "Собака",
+        "speciesEng": "dog",
+        "possiblePics": [
+          "petDog1",
+          "petDog2"
+        ],
+        "modHappiness": 0,
+        "modSatiety": 0,
+        "modHydration": 0,
+        "modCommunication": 0,
+        "modVigor": 0,
+        "modCleanliness": 0
+      },
+      "petPic": "petDog2",
+      "gender": "Женский",
+      "happiness": 50000,
+      "maxHappiness": 0,
+      "satiety": 10000,
+      "maxSatiety": 0,
+      "hydration": 10000,
+      "maxHydration": 0,
+      "communication": 10000,
+      "maxCommunication": 0,
+      "vigor": 10000,
+      "maxVigor": 0,
+      "cleanliness": 10000,
+      "maxCleanliness": 0,
+      "trait": {
+        "trait": "Обжора",
+        "traitEng": "glutton",
+        "modSatiety": 135,
+        "modHydration": 100,
+        "modCommunication": 100,
+        "modVigor": 100,
+        "modCleanliness": 100
+      },
+      "lastTick": "2025-01-10T09:59:02.8102598+03:00",
+      "ageMinutes": 0,
+      "inventory": [],
+      "effects": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Уолтер",
+  "species": {
+    "speciesName": "Собака",
+    "speciesEng": "dog",
+    "possiblePics": [
+      "petDog1",
+      "petDog2"
+    ],
+    "modHappiness": 0,
+    "modSatiety": 0,
+    "modHydration": 0,
+    "modCommunication": 0,
+    "modVigor": 0,
+    "modCleanliness": 0
+  },
+  "petPic": "petDog2",
+  "gender": "Женский",
+  "happiness": 38765,
+  "maxHappiness": 50000,
+  "satiety": 8000,
+  "maxSatiety": 10000,
+  "hydration": 7900,
+  "maxHydration": 10000,
+  "communication": 7900,
+  "maxCommunication": 10000,
+  "vigor": 7900,
+  "maxVigor": 10000,
+  "cleanliness": 7900,
+  "maxCleanliness": 10000,
+  "trait": {
+    "trait": "Обжора",
+    "traitEng": "glutton",
+    "modSatiety": 135,
+    "modHydration": 100,
+    "modCommunication": 100,
+    "modVigor": 100,
+    "modCleanliness": 100
+  },
+  "lastTick": "2025-01-10T16:41:02.8102598+03:00",
+  "ageMinutes": 0,
+  "inventory": [],
+  "effects": []
+}

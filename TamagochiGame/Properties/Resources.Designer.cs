@@ -83,6 +83,16 @@ namespace PetStop.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgBioMon {
+            get {
+                object obj = ResourceManager.GetObject("bgBioMon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bgMainMenu {
             get {
                 object obj = ResourceManager.GetObject("bgMainMenu", resourceCulture);
@@ -125,6 +135,36 @@ namespace PetStop.Properties {
         internal static System.Drawing.Bitmap bone {
             get {
                 object obj = ResourceManager.GetObject("bone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBioMon {
+            get {
+                object obj = ResourceManager.GetObject("btnBioMon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBioMonClick {
+            get {
+                object obj = ResourceManager.GetObject("btnBioMonClick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBioMonHover {
+            get {
+                object obj = ResourceManager.GetObject("btnBioMonHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,6 +225,26 @@ namespace PetStop.Properties {
         internal static System.Drawing.Bitmap btnFeedHover {
             get {
                 object obj = ResourceManager.GetObject("btnFeedHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnPlay {
+            get {
+                object obj = ResourceManager.GetObject("btnPlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnPlayHover {
+            get {
+                object obj = ResourceManager.GetObject("btnPlayHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +356,16 @@ namespace PetStop.Properties {
             get {
                 object obj = ResourceManager.GetObject("CratesList", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cursorBall {
+            get {
+                object obj = ResourceManager.GetObject("cursorBall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

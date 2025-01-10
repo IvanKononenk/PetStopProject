@@ -40,6 +40,7 @@
 			this.panelOutside = new System.Windows.Forms.Panel();
 			this.panelHome = new System.Windows.Forms.Panel();
 			this.PanelPet = new System.Windows.Forms.Panel();
+			this.BtnBioMon = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).BeginInit();
 			this.SuspendLayout();
@@ -127,7 +128,7 @@
 			// 
 			this.BtnPlay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
 			this.BtnPlay.BackColor = System.Drawing.Color.Transparent;
-			this.BtnPlay.BackgroundImage = global::PetStop.Properties.Resources.btnBlank;
+			this.BtnPlay.BackgroundImage = global::PetStop.Properties.Resources.btnPlay;
 			this.BtnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.BtnPlay.FlatAppearance.BorderSize = 0;
 			this.BtnPlay.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -172,7 +173,7 @@
 			this.PicBoxMoneyBG.Location = new System.Drawing.Point(0, 12);
 			this.PicBoxMoneyBG.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
 			this.PicBoxMoneyBG.Name = "PicBoxMoneyBG";
-			this.PicBoxMoneyBG.Size = new System.Drawing.Size(219, 58);
+			this.PicBoxMoneyBG.Size = new System.Drawing.Size(219, 60);
 			this.PicBoxMoneyBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.PicBoxMoneyBG.TabIndex = 30;
 			this.PicBoxMoneyBG.TabStop = false;
@@ -228,6 +229,27 @@
 			this.PanelPet.DragDrop += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragDrop);
 			this.PanelPet.DragOver += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragOver);
 			// 
+			// BtnBioMon
+			// 
+			this.BtnBioMon.BackColor = System.Drawing.Color.Transparent;
+			this.BtnBioMon.BackgroundImage = global::PetStop.Properties.Resources.btnBioMon;
+			this.BtnBioMon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.BtnBioMon.FlatAppearance.BorderSize = 0;
+			this.BtnBioMon.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+			this.BtnBioMon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+			this.BtnBioMon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+			this.BtnBioMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnBioMon.Location = new System.Drawing.Point(225, 12);
+			this.BtnBioMon.Name = "BtnBioMon";
+			this.BtnBioMon.Size = new System.Drawing.Size(60, 60);
+			this.BtnBioMon.TabIndex = 3;
+			this.BtnBioMon.UseVisualStyleBackColor = false;
+			this.BtnBioMon.Click += new System.EventHandler(this.BtnBioMon_Click);
+			this.BtnBioMon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBioMon_MouseDown);
+			this.BtnBioMon.MouseEnter += new System.EventHandler(this.BtnBioMon_MouseEnter);
+			this.BtnBioMon.MouseLeave += new System.EventHandler(this.BtnBioMon_MouseLeave);
+			this.BtnBioMon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnBioMon_MouseUp);
+			// 
 			// GameScreenForm
 			// 
 			this.AllowDrop = true;
@@ -243,6 +265,7 @@
 			this.Controls.Add(this.LblMoney);
 			this.Controls.Add(this.PicBoxMoneyBG);
 			this.Controls.Add(this.BtnWash);
+			this.Controls.Add(this.BtnBioMon);
 			this.Controls.Add(this.BtnPlay);
 			this.Controls.Add(this.BtnDrink);
 			this.Controls.Add(this.BtnFeed);
@@ -277,6 +300,7 @@
 		private System.Windows.Forms.Panel panelOutside;
 		private System.Windows.Forms.Panel panelHome;
 		private System.Windows.Forms.Panel PanelPet;
+		private System.Windows.Forms.Button BtnBioMon;
 	}
 }
 

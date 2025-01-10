@@ -19,5 +19,10 @@ namespace PetStop.Forms
 			LblAgeText.Text = Pet.activePet.ageMinutes.ToString();
 			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 		}
+
+		private void BtnExit_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

@@ -51,8 +51,9 @@
 			// LblCleanliness
 			// 
 			this.LblCleanliness.AutoSize = true;
-			this.LblCleanliness.BackColor = System.Drawing.SystemColors.Control;
+			this.LblCleanliness.BackColor = System.Drawing.Color.Transparent;
 			this.LblCleanliness.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblCleanliness.ForeColor = System.Drawing.Color.White;
 			this.LblCleanliness.Location = new System.Drawing.Point(21, 157);
 			this.LblCleanliness.Name = "LblCleanliness";
 			this.LblCleanliness.Size = new System.Drawing.Size(76, 23);
@@ -62,8 +63,9 @@
 			// LblVigor
 			// 
 			this.LblVigor.AutoSize = true;
-			this.LblVigor.BackColor = System.Drawing.SystemColors.Control;
+			this.LblVigor.BackColor = System.Drawing.Color.Transparent;
 			this.LblVigor.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblVigor.ForeColor = System.Drawing.Color.White;
 			this.LblVigor.Location = new System.Drawing.Point(12, 128);
 			this.LblVigor.Name = "LblVigor";
 			this.LblVigor.Size = new System.Drawing.Size(85, 23);
@@ -73,8 +75,9 @@
 			// LblCommunication
 			// 
 			this.LblCommunication.AutoSize = true;
-			this.LblCommunication.BackColor = System.Drawing.SystemColors.Control;
+			this.LblCommunication.BackColor = System.Drawing.Color.Transparent;
 			this.LblCommunication.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblCommunication.ForeColor = System.Drawing.Color.White;
 			this.LblCommunication.Location = new System.Drawing.Point(13, 99);
 			this.LblCommunication.Name = "LblCommunication";
 			this.LblCommunication.Size = new System.Drawing.Size(84, 23);
@@ -111,8 +114,9 @@
 			// LblHappy
 			// 
 			this.LblHappy.AutoSize = true;
-			this.LblHappy.BackColor = System.Drawing.SystemColors.Control;
+			this.LblHappy.BackColor = System.Drawing.Color.Black;
 			this.LblHappy.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblHappy.ForeColor = System.Drawing.Color.White;
 			this.LblHappy.Location = new System.Drawing.Point(23, 9);
 			this.LblHappy.Name = "LblHappy";
 			this.LblHappy.Size = new System.Drawing.Size(74, 23);
@@ -122,8 +126,9 @@
 			// LblThirst
 			// 
 			this.LblThirst.AutoSize = true;
-			this.LblThirst.BackColor = System.Drawing.SystemColors.Control;
+			this.LblThirst.BackColor = System.Drawing.Color.Transparent;
 			this.LblThirst.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblThirst.ForeColor = System.Drawing.Color.White;
 			this.LblThirst.Location = new System.Drawing.Point(32, 70);
 			this.LblThirst.Name = "LblThirst";
 			this.LblThirst.Size = new System.Drawing.Size(65, 23);
@@ -133,8 +138,9 @@
 			// LblHunger
 			// 
 			this.LblHunger.AutoSize = true;
-			this.LblHunger.BackColor = System.Drawing.SystemColors.Control;
+			this.LblHunger.BackColor = System.Drawing.Color.Transparent;
 			this.LblHunger.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.LblHunger.ForeColor = System.Drawing.Color.White;
 			this.LblHunger.Location = new System.Drawing.Point(35, 41);
 			this.LblHunger.Name = "LblHunger";
 			this.LblHunger.Size = new System.Drawing.Size(62, 23);
@@ -171,7 +177,9 @@
 			// LblAgeText
 			// 
 			this.LblAgeText.AutoSize = true;
+			this.LblAgeText.BackColor = System.Drawing.Color.Transparent;
 			this.LblAgeText.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblAgeText.ForeColor = System.Drawing.Color.White;
 			this.LblAgeText.Location = new System.Drawing.Point(103, 186);
 			this.LblAgeText.Name = "LblAgeText";
 			this.LblAgeText.Size = new System.Drawing.Size(20, 23);
@@ -182,7 +190,9 @@
 			// LblAge
 			// 
 			this.LblAge.AutoSize = true;
+			this.LblAge.BackColor = System.Drawing.Color.Transparent;
 			this.LblAge.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblAge.ForeColor = System.Drawing.Color.White;
 			this.LblAge.Location = new System.Drawing.Point(23, 186);
 			this.LblAge.Name = "LblAge";
 			this.LblAge.Size = new System.Drawing.Size(74, 23);
@@ -200,6 +210,7 @@
 			this.BtnExit.TabIndex = 0;
 			this.BtnExit.Text = "Закрыть";
 			this.BtnExit.UseVisualStyleBackColor = true;
+			this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
 			// 
 			// PicBoxPet
 			// 
@@ -216,6 +227,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::PetStop.Properties.Resources.bgBioMon;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.CancelButton = this.BtnExit;
 			this.ClientSize = new System.Drawing.Size(691, 283);
 			this.Controls.Add(this.PicBoxPet);
@@ -234,10 +247,15 @@
 			this.Controls.Add(this.PrBarHydration);
 			this.Controls.Add(this.PrBarSatiety);
 			this.Controls.Add(this.PrBarHappiness);
+			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(707, 322);
+			this.MinimumSize = new System.Drawing.Size(707, 322);
 			this.Name = "BioMonForm";
+			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Биомон";
 			this.Load += new System.EventHandler(this.BioMonForm_Load);
