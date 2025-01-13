@@ -1,4 +1,5 @@
 ﻿using PetStop.Classes;
+using PetStop.Forms;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -191,17 +192,54 @@ namespace PetStop
 				}
 			}
 			satiety += - species.modSatiety - trait.modSatiety - effectModSatietySum;
-			//if (satiety > maxSatiety) satiety = maxSatiety;
+			if (satiety < 0) satiety = 0;
 			hydration += - species.modHydration - trait.modHydration - effectModHydrationSum;
-			//if (hydration > maxHydration) hydration = maxHydration;
+			if (hydration < 0) hydration = 0;
 			communication += - species.modCommunication - trait.modCommunication - effectModCommunicationSum;
-			//if (communication > maxCommunication) communication = maxCommunication;
+			if (communication < 0) communication = 0;
 			vigor += - species.modVigor - trait.modVigor - effectModVigorSum;
-			//if (vigor > maxVigor) vigor = maxVigor;
+			if (vigor < 0) vigor = 0;
 			cleanliness += - species.modCleanliness - trait.modCleanliness - effectModCleanlinessSum;
-			//if (cleanliness > maxCleanliness) cleanliness = maxCleanliness;
+			if (cleanliness < 0) cleanliness = 0;
 			happiness = (satiety + hydration + communication + vigor + cleanliness) - species.modHappiness - effectModHappinessSum;
-			//if (happiness > maxHappiness) happiness = maxHappiness;
+			if (happiness < 0) happiness = 0;
+		}
+		public void FeedPet(string type)
+		{
+			switch (type)
+			{
+				case "feed":
+					{
+						satiety += 500;
+						if (satiety > maxSatiety) satiety = maxSatiety;
+						break;
+					}
+				case "drink":
+					{
+						hydration += 500;
+						if (hydration > maxHydration) hydration = maxHydration;
+						break;
+					}
+				case "play":
+					{
+						communication += 500;
+						if (communication > maxCommunication) communication = maxCommunication;
+						break;
+					}
+				case "wash":
+					{
+						cleanliness += 500;
+						if (cleanliness > maxCleanliness) cleanliness = maxCleanliness;
+						break;
+					}
+				case "sleep":
+					{
+						vigor += 500;
+						if (vigor > maxVigor) vigor = maxVigor;
+						break;
+					}
+			}
+			BioMonForm.UpdateBioMon();
 		}
 		public static TimeSpan lastPlay;
 		public static Pet activePet;

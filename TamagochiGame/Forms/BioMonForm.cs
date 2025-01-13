@@ -10,6 +10,10 @@ namespace PetStop.Forms
 		public BioMonForm() => InitializeComponent();
 		private void BioMonForm_Load(object sender, EventArgs e)
 		{
+			UpdateBioMon();
+		}
+		public void UpdateBioMon()
+		{
 			PrBarHappiness.Value = Pet.activePet.happiness;
 			PrBarSatiety.Value = Pet.activePet.satiety;
 			PrBarHydration.Value = Pet.activePet.hydration;
@@ -19,7 +23,6 @@ namespace PetStop.Forms
 			LblAgeText.Text = Pet.activePet.ageMinutes.ToString();
 			PicBoxPet.Image = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 		}
-
 		private void BtnExit_Click(object sender, EventArgs e)
 		{
 			Close();

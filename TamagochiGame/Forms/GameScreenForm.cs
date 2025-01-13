@@ -46,7 +46,7 @@ namespace PetStop
 
 		public void MainScreenForm_Load(object sender, EventArgs e)
 		{
-			
+
 			UpdatePet();
 		}
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -139,8 +139,6 @@ namespace PetStop
 				MessageBox.Show(e.Data.GetData("Text").ToString());
 			}
 		}
-
-
 
 		private void BtnBioMon_Click(object sender, EventArgs e)
 		{

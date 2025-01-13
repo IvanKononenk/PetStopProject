@@ -49,10 +49,10 @@
 			// 
 			this.LblMoney.AutoSize = true;
 			this.LblMoney.BackColor = System.Drawing.Color.Transparent;
-			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+			this.LblMoney.Font = new System.Drawing.Font("Comic Sans MS", 14F);
 			this.LblMoney.Location = new System.Drawing.Point(12, 27);
 			this.LblMoney.Name = "LblMoney";
-			this.LblMoney.Size = new System.Drawing.Size(65, 23);
+			this.LblMoney.Size = new System.Drawing.Size(78, 26);
 			this.LblMoney.TabIndex = 8;
 			this.LblMoney.Text = "Деньги";
 			this.LblMoney.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,7 +184,7 @@
 			this.PicBoxBedding.BackColor = System.Drawing.Color.Transparent;
 			this.PicBoxBedding.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.PicBoxBedding.Image = global::PetStop.Properties.Resources.bedding;
-			this.PicBoxBedding.Location = new System.Drawing.Point(399, 397);
+			this.PicBoxBedding.Location = new System.Drawing.Point(410, 395);
 			this.PicBoxBedding.Name = "PicBoxBedding";
 			this.PicBoxBedding.Size = new System.Drawing.Size(152, 73);
 			this.PicBoxBedding.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,7 +222,7 @@
 			this.PanelPet.BackColor = System.Drawing.Color.Transparent;
 			this.PanelPet.BackgroundImage = global::PetStop.Properties.Resources.petGS1;
 			this.PanelPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.PanelPet.Location = new System.Drawing.Point(622, 337);
+			this.PanelPet.Location = new System.Drawing.Point(643, 355);
 			this.PanelPet.Name = "PanelPet";
 			this.PanelPet.Size = new System.Drawing.Size(172, 142);
 			this.PanelPet.TabIndex = 5;
@@ -259,17 +259,17 @@
 			this.CancelButton = this.BtnSettings;
 			this.ClientSize = new System.Drawing.Size(949, 590);
 			this.Controls.Add(this.PanelPet);
-			this.Controls.Add(this.panelHome);
-			this.Controls.Add(this.panelOutside);
-			this.Controls.Add(this.PicBoxBedding);
-			this.Controls.Add(this.LblMoney);
-			this.Controls.Add(this.PicBoxMoneyBG);
 			this.Controls.Add(this.BtnWash);
-			this.Controls.Add(this.BtnBioMon);
 			this.Controls.Add(this.BtnPlay);
 			this.Controls.Add(this.BtnDrink);
 			this.Controls.Add(this.BtnFeed);
+			this.Controls.Add(this.panelHome);
+			this.Controls.Add(this.panelOutside);
+			this.Controls.Add(this.LblMoney);
+			this.Controls.Add(this.PicBoxMoneyBG);
+			this.Controls.Add(this.BtnBioMon);
 			this.Controls.Add(this.BtnSettings);
+			this.Controls.Add(this.PicBoxBedding);
 			this.DoubleBuffered = true;
 			this.Font = new System.Drawing.Font("Verdana", 14.25F);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -279,6 +279,7 @@
 			this.Name = "GameScreenForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "PetStop";
+			this.TransparencyKey = System.Drawing.Color.Transparent;
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreenForm_FormClosing);
 			this.Load += new System.EventHandler(this.MainScreenForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).EndInit();
