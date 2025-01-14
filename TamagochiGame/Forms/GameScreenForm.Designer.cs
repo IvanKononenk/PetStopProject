@@ -222,7 +222,7 @@
 			this.PanelPet.BackColor = System.Drawing.Color.Transparent;
 			this.PanelPet.BackgroundImage = global::PetStop.Properties.Resources.petGS1;
 			this.PanelPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.PanelPet.Location = new System.Drawing.Point(643, 355);
+			this.PanelPet.Location = new System.Drawing.Point(656, 341);
 			this.PanelPet.Name = "PanelPet";
 			this.PanelPet.Size = new System.Drawing.Size(172, 142);
 			this.PanelPet.TabIndex = 5;
