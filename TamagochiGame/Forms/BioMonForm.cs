@@ -10,10 +10,6 @@ namespace PetStop.Forms
 		public BioMonForm() => InitializeComponent();
 		private void BioMonForm_Load(object sender, EventArgs e)
 		{
-			UpdateBioMon();
-		}
-		public void UpdateBioMon()
-		{
 			PrBarHappiness.Value = Pet.activePet.happiness;
 			PrBarSatiety.Value = Pet.activePet.satiety;
 			PrBarHydration.Value = Pet.activePet.hydration;

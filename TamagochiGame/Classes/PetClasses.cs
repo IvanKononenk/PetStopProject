@@ -239,7 +239,6 @@ namespace PetStop
 						break;
 					}
 			}
-			BioMonForm.UpdateBioMon();
 		}
 		public static TimeSpan lastPlay;
 		public static Pet activePet;

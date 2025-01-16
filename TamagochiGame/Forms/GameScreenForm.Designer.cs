@@ -252,7 +252,6 @@
 			// 
 			// GameScreenForm
 			// 
-			this.AllowDrop = true;
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

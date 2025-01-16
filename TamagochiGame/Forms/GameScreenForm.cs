@@ -43,7 +43,6 @@ namespace PetStop
 		private void BtnBioMon_MouseUp(object sender, MouseEventArgs e) => BtnBioMon.BackgroundImage = Resources.btnBioMonHover;
 		//Конец секции реакций кнопок на наведение и нажатия
 
-
 		public void MainScreenForm_Load(object sender, EventArgs e)
 		{
 
@@ -96,7 +95,6 @@ namespace PetStop
 			escMnFrm.ShowDialog();
 		}
 
-
 		//Начало секции Drag-n-Drop операций
 		private void BtnFeed_MouseDown(object sender, MouseEventArgs e) => BtnFeed.DoDragDrop("feed", DragDropEffects.Move);
 		private void BtnFeed_GiveFeedback(object sender, GiveFeedbackEventArgs e)
@@ -136,10 +134,10 @@ namespace PetStop
 		{
 			if (e.Data.GetDataPresent(DataFormats.Text))
 			{
+				Pet.activePet.FeedPet(e.Data.GetData("Text").ToString());
 				MessageBox.Show(e.Data.GetData("Text").ToString());
 			}
 		}
-
 		private void BtnBioMon_Click(object sender, EventArgs e)
 		{
 			BioMonForm bioMnFrm = new BioMonForm();
