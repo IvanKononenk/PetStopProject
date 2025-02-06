@@ -41,6 +41,7 @@
 			this.panelHome = new System.Windows.Forms.Panel();
 			this.PanelPet = new System.Windows.Forms.Panel();
 			this.BtnBioMon = new System.Windows.Forms.Button();
+			this.panel1 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).BeginInit();
 			this.SuspendLayout();
@@ -184,7 +185,7 @@
 			this.PicBoxBedding.BackColor = System.Drawing.Color.Transparent;
 			this.PicBoxBedding.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.PicBoxBedding.Image = global::PetStop.Properties.Resources.bedding;
-			this.PicBoxBedding.Location = new System.Drawing.Point(410, 395);
+			this.PicBoxBedding.Location = new System.Drawing.Point(410, 386);
 			this.PicBoxBedding.Name = "PicBoxBedding";
 			this.PicBoxBedding.Size = new System.Drawing.Size(152, 73);
 			this.PicBoxBedding.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,9 +223,9 @@
 			this.PanelPet.BackColor = System.Drawing.Color.Transparent;
 			this.PanelPet.BackgroundImage = global::PetStop.Properties.Resources.petGS1;
 			this.PanelPet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.PanelPet.Location = new System.Drawing.Point(656, 341);
+			this.PanelPet.Location = new System.Drawing.Point(638, 283);
 			this.PanelPet.Name = "PanelPet";
-			this.PanelPet.Size = new System.Drawing.Size(172, 142);
+			this.PanelPet.Size = new System.Drawing.Size(173, 160);
 			this.PanelPet.TabIndex = 5;
 			this.PanelPet.DragDrop += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragDrop);
 			this.PanelPet.DragOver += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragOver);
@@ -250,18 +251,32 @@
 			this.BtnBioMon.MouseLeave += new System.EventHandler(this.BtnBioMon_MouseLeave);
 			this.BtnBioMon.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnBioMon_MouseUp);
 			// 
+			// panel1
+			// 
+			this.panel1.AllowDrop = true;
+			this.panel1.BackColor = System.Drawing.Color.Transparent;
+			this.panel1.BackgroundImage = global::PetStop.Properties.Resources.petGS1;
+			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.panel1.Location = new System.Drawing.Point(80, 339);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(258, 239);
+			this.panel1.TabIndex = 6;
+			// 
 			// GameScreenForm
 			// 
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::PetStop.Properties.Resources.bgRoom;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.CancelButton = this.BtnSettings;
 			this.ClientSize = new System.Drawing.Size(949, 590);
-			this.Controls.Add(this.PanelPet);
-			this.Controls.Add(this.BtnWash);
-			this.Controls.Add(this.BtnPlay);
-			this.Controls.Add(this.BtnDrink);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.BtnFeed);
+			this.Controls.Add(this.BtnDrink);
+			this.Controls.Add(this.BtnPlay);
+			this.Controls.Add(this.BtnWash);
+			this.Controls.Add(this.PanelPet);
 			this.Controls.Add(this.panelHome);
 			this.Controls.Add(this.panelOutside);
 			this.Controls.Add(this.LblMoney);
@@ -301,6 +316,7 @@
 		private System.Windows.Forms.Panel panelHome;
 		private System.Windows.Forms.Panel PanelPet;
 		private System.Windows.Forms.Button BtnBioMon;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
 

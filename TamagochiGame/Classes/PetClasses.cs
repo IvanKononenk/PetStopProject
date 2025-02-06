@@ -206,39 +206,65 @@ namespace PetStop
 		}
 		public void FeedPet(string type)
 		{
+			int mod = 0;
 			switch (type)
 			{
+				
 				case "feed":
 					{
 						satiety += 500;
-						if (satiety > maxSatiety) satiety = maxSatiety;
+						if (satiety > maxSatiety)
+						{
+							mod = maxSatiety - satiety;
+							satiety = maxSatiety;
+						}
 						break;
 					}
 				case "drink":
 					{
 						hydration += 500;
-						if (hydration > maxHydration) hydration = maxHydration;
+						if (hydration > maxHydration)
+						{
+							mod = hydration - maxHydration;
+							hydration = maxHydration;
+						}	
 						break;
 					}
 				case "play":
 					{
 						communication += 500;
-						if (communication > maxCommunication) communication = maxCommunication;
+						if (communication > maxCommunication)
+						{
+							mod = communication - maxCommunication;
+							communication = maxCommunication;
+						}
 						break;
 					}
 				case "wash":
 					{
 						cleanliness += 500;
-						if (cleanliness > maxCleanliness) cleanliness = maxCleanliness;
+						if (cleanliness > maxCleanliness)
+						{
+							mod = cleanliness - maxCleanliness;
+							cleanliness = maxCleanliness;
+						}
 						break;
 					}
 				case "sleep":
 					{
 						vigor += 500;
-						if (vigor > maxVigor) vigor = maxVigor;
+						if (vigor > maxVigor)
+						{
+							mod = vigor - maxVigor;
+							vigor = maxVigor;
+						}
 						break;
 					}
 			}
+			if (mod == 0)
+				happiness += 500;
+			else 
+				happiness += mod;
 		}
 		public static TimeSpan lastPlay;
 		public static Pet activePet;

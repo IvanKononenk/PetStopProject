@@ -127,6 +127,7 @@
     <Compile Include="Classes\SpeciesClasses.cs" />
     <Compile Include="Classes\TimerClasses.cs" />
     <Compile Include="Classes\TraitsClasses.cs" />
+    <Compile Include="Classes\WalkingClasses.cs" />
     <Compile Include="Forms\BioMonForm.cs">
       <SubType>Form</SubType>
     </Compile>

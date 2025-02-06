@@ -5,16 +5,16 @@ namespace PetStop.Classes
 {
 	public class TimerClasses
 	{ 
-		public void WorkTimer(int interval, string name)
+		public static void WorkTimer()
 		{
 			Timer tmr = new Timer();
-			tmr.Interval = 10000;
+			tmr.Interval = 60000;
 			tmr.Tick += Timer_Tick;
 			tmr.Start();
 		}
-		private void Timer_Tick(object sender, EventArgs e)
+		private static void Timer_Tick(object sender, EventArgs e)
 		{
-			DoTicks();	
+			DoTicks();
 		}
 		public static long CheckPeriods()
 		{

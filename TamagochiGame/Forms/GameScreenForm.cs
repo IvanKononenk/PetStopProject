@@ -2,6 +2,7 @@
 using PetStop.Forms;
 using PetStop.Properties;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using System.Media;
@@ -45,7 +46,7 @@ namespace PetStop
 
 		public void MainScreenForm_Load(object sender, EventArgs e)
 		{
-
+			TimerClasses.WorkTimer();
 			UpdatePet();
 		}
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -80,7 +81,7 @@ namespace PetStop
 		}
 		public void UpdatePet()
 		{
-			music.Play();
+			//music.Play();
 			PanelPet.BackgroundImage = (Bitmap)Resources.ResourceManager.GetObject(Pet.activePet.petPic);
 			LblMoney.Parent = PicBoxMoneyBG;
 			LblMoney.Text = Player.activePlayer.money.ToString() + " $";
