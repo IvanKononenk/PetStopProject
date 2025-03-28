@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WalkingClasses.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Classes\\WalkingClasses.cs",
-              "RelativeDocumentMoniker": "Classes\\WalkingClasses.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Classes\\WalkingClasses.cs",
-              "RelativeToolTip": "Classes\\WalkingClasses.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T12:56:28.237Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -44,6 +31,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T08:45:52.134Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WalkingClasses.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Classes\\WalkingClasses.cs",
+              "RelativeDocumentMoniker": "Classes\\WalkingClasses.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\project\\gameProjectTamagochi\\TamagochiGame\\Classes\\WalkingClasses.cs",
+              "RelativeToolTip": "Classes\\WalkingClasses.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T12:56:28.237Z",
+              "EditorCaption": ""
             }
           ]
         }
