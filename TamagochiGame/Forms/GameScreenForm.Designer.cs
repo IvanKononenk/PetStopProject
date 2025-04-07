@@ -42,6 +42,7 @@
 			this.PanelPet = new System.Windows.Forms.Panel();
 			this.BtnBioMon = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxMoneyBG)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.PicBoxBedding)).BeginInit();
 			this.SuspendLayout();
@@ -231,6 +232,7 @@
 			this.PanelPet.Name = "PanelPet";
 			this.PanelPet.Size = new System.Drawing.Size(174, 160);
 			this.PanelPet.TabIndex = 5;
+			this.PanelPet.SizeChanged += new System.EventHandler(this.PanelPet_SizeChanged);
 			this.PanelPet.DragDrop += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragDrop);
 			this.PanelPet.DragOver += new System.Windows.Forms.DragEventHandler(this.PanelPet_DragOver);
 			// 
@@ -267,6 +269,15 @@
 			this.panel1.TabIndex = 6;
 			this.panel1.Visible = false;
 			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(291, 28);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(68, 23);
+			this.label1.TabIndex = 32;
+			this.label1.Text = "label1";
+			// 
 			// GameScreenForm
 			// 
 			this.AllowDrop = true;
@@ -276,6 +287,7 @@
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.CancelButton = this.BtnSettings;
 			this.ClientSize = new System.Drawing.Size(1014, 655);
+			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.BtnFeed);
 			this.Controls.Add(this.BtnDrink);
@@ -321,6 +333,7 @@
 		private System.Windows.Forms.Panel PanelPet;
 		private System.Windows.Forms.Button BtnBioMon;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Label label1;
 	}
 }
 

@@ -1,19 +1,24 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PetStop.Classes
 {
 	public class TimerClasses
-	{ 
+	{
+		static Timer tmr = new Timer();
 		/// <summary>
 		/// Таймер, срабатывающий каждую минуту
 		/// </summary>
 		public static void WorkTimer()
 		{
-			Timer tmr = new Timer();
-			tmr.Interval = 60000;
+			tmr.Interval = 1000;
 			tmr.Tick += Timer_Tick;
 			tmr.Start();
+		}
+		public static void StopTimer()
+		{
+			tmr.Stop();
 		}
 		/// <summary>
 		/// Вызывается при каждом тике таймера
@@ -38,6 +43,8 @@ namespace PetStop.Classes
 		/// </summary>
 		public static void DoTicks()
 		{
+			Panel petWalking = GameScreenForm.petPic;
+			WalkingClasses wlkCls = new WalkingClasses();
 			long ticksAmount = CheckPeriods();
 			if (ticksAmount > 0)
 			{
@@ -47,7 +54,13 @@ namespace PetStop.Classes
 				}
 				Pet.activePet.lastTick += TimeSpan.FromTicks(TimeSpan.FromMinutes(6).Ticks * ticksAmount);
 			}
-
+			if (petWalking != null)
+			{
+				int[,] newPos = wlkCls.DoStep(petWalking.Location.X, petWalking.Location.Y, petWalking.Width, petWalking.Height);
+				petWalking.Location = new Point(newPos[0, 0], newPos[0, 1]);
+				petWalking.Width = newPos[1, 0];
+				petWalking.Height = newPos[1, 1];
+			}
 		}
 	}
 }
