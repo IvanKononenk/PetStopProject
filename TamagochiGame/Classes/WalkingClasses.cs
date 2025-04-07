@@ -32,14 +32,13 @@ namespace PetStop.Classes
 			int posNewX = posOldX + step[0];
 			int posNewY = posOldY + step[1];
 
-			int widthNew = 0;
-			int heightNew = 0;
+			int widthNew = smallerWidth * (((33 / 100) * ((posNewY - smallerHeightPos) / 150)) + 1);
+			int heightNew = smallerHeight * (((33 / 100) * ((posNewY - smallerHeightPos) / 150)) + 1);
 
 			int locNewX = posNewX - (widthNew / 2);
 			int locNewY = posNewY - heightNew;
 			int[] newLoc = { locNewX, locNewY };
 			return newLoc;
-
 		}
 	}
 }
