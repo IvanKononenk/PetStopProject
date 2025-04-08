@@ -18,7 +18,7 @@ namespace PetStop.Classes
 		int smallerHeightPos = 493; //Максимальное положение по оси Y (высоты) для "ног" спрайта питомца
 		int screenRightBorder = 1030; //Ширина игрового окна
 		int screenDownBorder = 694; //Высота игрового окна
-		
+
 		Random movePerStep = new Random(); //Генератор случайных чисел для "шагов" питомца
 		/// <summary>
 		/// Определяет, на какое расстояние сместится питомец
@@ -47,8 +47,8 @@ namespace PetStop.Classes
 			int posNewX = posOldX + step[0]; //Определение новой нижней центральной точки спрайта по оси X (ширины)
 			int posNewY = posOldY + step[1]; //Определение новой нижней центральной точки спрайта по оси Y (высоты)
 
-			int widthNew = CalculateWidth(width);
-			int heightNew = CalculateHeight(height);
+			int widthNew = CalculateWidth(posNewY);
+			int heightNew = CalculateHeight(posNewY);
 
 			if (posNewX < (widthNew / 2)) //Если спрайт заходит за левый край окна
 				posNewX = (widthNew / 2) + 5; //Сместить спрайт вправо с отступом от края окна
@@ -65,7 +65,7 @@ namespace PetStop.Classes
 			if (posNewX + (width / 2) > beddingLeftBorder) //Если спрайт заходит за левый край лежанки
 				posNewX = beddingLeftBorder - (widthNew / 2) - 5; //Сместить спрайт влево от лежанки с отступом
 
-			if (posNewY > smallerHeightPos) //Если спрайт уходит слишком высоко
+			if (posNewY < smallerHeightPos) //Если спрайт уходит слишком высоко
 			{
 				posNewY = smallerHeightPos; //Сместить питомца вниз, в минимальное значение высоты
 				widthNew = smallerWidth;
@@ -73,9 +73,9 @@ namespace PetStop.Classes
 			}
 			if (posNewY > screenDownBorder) //Если спрайт уходит слишком низко
 			{
-				posNewY = screenDownBorder; //Сместить питомца вверх, в максимальное значение высоты
-				widthNew = CalculateWidth(smallerWidth);
-				heightNew = CalculateHeight(smallerHeight);
+				posNewY = screenDownBorder - 5; //Сместить питомца вверх, в максимальное значение высоты с отступом
+				widthNew = CalculateWidth(posNewY);
+				heightNew = CalculateHeight(posNewY);
 			}
 
 
@@ -89,7 +89,7 @@ namespace PetStop.Classes
 		/// </summary>
 		/// <param name="width">Минимальное значение ширины спрайта</param>
 		/// <returns>Новая ширина спрайта</returns>
-		public int CalculateWidth(int smallerWidth)
+		public int CalculateWidth(int posNewY)
 		{
 			int widthNew = (int)(smallerWidth * (((33f / 100f) * ((posNewY - smallerHeightPos) / 150f)) + 1));
 			return widthNew;
@@ -99,9 +99,10 @@ namespace PetStop.Classes
 		/// </summary>
 		/// <param name="height">Минимальное значение высоты спрайта</param>
 		/// <returns>Новая высота спрайта</returns>
-		public int CalculateHeight(int smallerHeight) 
+		public int CalculateHeight(int posNewY)
 		{
 			int heightNew = (int)(smallerHeight * (((33f / 100f) * ((posNewY - smallerHeightPos) / 150f)) + 1));
 			return heightNew;
 		}
+	}
 }
