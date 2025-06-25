@@ -13,12 +13,18 @@
   },
   "petPic": "petGS1",
   "gender": "Мужской",
-  "happiness": 49850,
-  "satiety": 9500,
-  "hydration": 9500,
-  "communication": 10000,
-  "vigor": 8750,
-  "cleanliness": 10000,
+  "happiness": 0,
+  "maxHappiness": 0,
+  "satiety": 0,
+  "maxSatiety": 0,
+  "hydration": 0,
+  "maxHydration": 0,
+  "communication": 0,
+  "maxCommunication": 0,
+  "vigor": 0,
+  "maxVigor": 0,
+  "cleanliness": 0,
+  "maxCleanliness": 0,
   "trait": {
     "trait": "Лентяй",
     "traitEng": "lazy",
@@ -28,6 +34,7 @@
     "modVigor": 125,
     "modCleanliness": 100
   },
+  "lastTick": "2025-04-08T10:24:00",
   "ageMinutes": 0,
   "inventory": [
     {
@@ -50,6 +57,9 @@
     {
       "effect": "Болезнь",
       "effectEng": "sick",
+      "effectType": null,
+      "ticksAffect": 0,
+      "tickStart": "0001-01-01T00:00:00",
       "modHappiness": -500,
       "modSatiety": 0,
       "modHydration": 0,
@@ -60,6 +70,9 @@
     {
       "effect": "Отравление",
       "effectEng": "poisoned",
+      "effectType": null,
+      "ticksAffect": 0,
+      "tickStart": "0001-01-01T00:00:00",
       "modHappiness": -1000,
       "modSatiety": -500,
       "modHydration": -500,

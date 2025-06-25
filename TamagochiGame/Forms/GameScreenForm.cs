@@ -16,6 +16,7 @@ namespace PetStop
 
 	public partial class GameScreenForm : Form
 	{
+		public static Panel petPic;
 		bool outside = false;
 		Random chance = new Random();
 		MediaPlayer music = new MediaPlayer();
@@ -48,11 +49,13 @@ namespace PetStop
 		{
 			TimerClasses.WorkTimer();
 			UpdatePet();
+			petPic = PanelPet;
 		}
 		private void MainScreenForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			if (Pet.activePet.SaveAPet(Pet.activePet) && Player.activePlayer.SaveAUser(Player.activePlayer))
 			{
+				TimerClasses.StopTimer();
 				MessageBox.Show("Данные сохранены!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				Pet.activePet = null;
 				Player.activePlayer = null;
@@ -143,6 +146,11 @@ namespace PetStop
 		{
 			BioMonForm bioMnFrm = new BioMonForm();
 			bioMnFrm.ShowDialog();
+		}
+
+		private void PanelPet_SizeChanged(object sender, EventArgs e)
+		{
+			label1.Text = PanelPet.Width + "; " + PanelPet.Height;
 		}
 	}
 }
